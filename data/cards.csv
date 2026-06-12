@@ -1,1 +1,7 @@
 card_id,card_name,issuer,network,annual_fee,reward_type,base_reward_rate,grocery_reward_rate,fuel_reward_rate,dining_reward_rate,travel_reward_rate,online_shopping_reward_rate,welcome_offer,foreign_transaction_fee,apr_range,notable_conditions,limitations,target_user_type,source_url,notes
+card_id,card_name,issuer,network,annual_fee,reward_type,base_reward_rate,grocery_reward_rate,fuel_reward_rate,dining_reward_rate,travel_reward_rate,online_shopping_reward_rate,welcome_offer,foreign_transaction_fee,apr_range,notable_conditions,limitations,target_user_type,source_url,notes
+CC001,,,,,,,,,,,,,,,,,,,
+CC002,,,,,,,,,,,,,,,,,,,
+CC003,,,,,,,,,,,,,,,,,,,
+CC004,,,,,,,,,,,,,,,,,,,
+CC005,,,,,,,,,,,,,,,,,,,
