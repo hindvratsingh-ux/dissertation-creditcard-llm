@@ -1,0 +1,21 @@
+# prompts/structured.txt
+You are a helpful assistant. Using only the credit‑card data provided, recommend the top 3 UK credit cards for the user profile below. Return a JSON object with the keys "rank_1", "rank_2", "rank_3". Each entry must contain:
+- "card_id"
+- "card_name"
+- "reason" – a concise (one‑sentence) justification that references the user's spending pattern and the card's reward/fee features.
+- "warnings" – any important limitation (e.g., high annual fee, foreign‑transaction fee).
+
+Do NOT fabricate any card that is not present in the data.
+
+User Profile:
+{profile}
+
+Credit Card Data (CSV excerpt):
+{cards_data}
+
+Output format (pretty‑printed JSON):
+{
+  "rank_1": {"card_id": "...", "card_name": "...", "reason": "...", "warnings": "..."},
+  "rank_2": {"card_id": "...", "card_name": "...", "reason": "...", "warnings": "..."},
+  "rank_3": {"card_id": "...", "card_name": "...", "reason": "...", "warnings": "..."}
+}

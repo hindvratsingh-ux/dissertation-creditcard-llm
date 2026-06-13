@@ -1,0 +1,12 @@
+# zero_shot.txt
+"""Zero‑shot prompt for credit‑card recommendation.
+
+User profile (CSV row) is provided as a JSON‑like dictionary. The model must output a list of up to three recommended card IDs, one per line.
+
+**Prompt template**:
+```
+Given the following user spending profile, recommend the top three UK credit cards that best match the user's preferences. Return only the card IDs, one per line.
+
+Profile:
+{profile_json}
+```"""
