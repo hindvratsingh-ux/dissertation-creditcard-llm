@@ -1,0 +1,70 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+% \usepackage[backend=biber,style=apa]{biblatex}
+% Note: If references.bib is empty, this might cause errors.
+% \addbibresource{references.bib}
+
+\begin{document}
+
+\title{Credit Card Recommendation System Using Large Language Models}
+\author{Your Name}
+\date{\today}
+\maketitle
+
+\begin{abstract}
+A short abstract summarising the aims, methods, results and conclusions of the dissertation.
+\end{abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Introduction}
+Provide background, motivation and objectives.
+
+\chapter{Literature Review}
+Summarise relevant works and position your contribution.
+
+\chapter{Methodology}
+Describe data generation, profiling, LLM prompting, scoring and evaluation.
+
+\chapter{Results}
+The experimental results are summarised in this chapter. We evaluated three prompting strategies (zero‑shot, structured, and few‑shot) across synthetic user profiles.
+
+\section{Overlap Scores}
+Figure~\ref{fig:overlap} shows the overlap score (the proportion of top‑3 recommendations that match the rule‑based baseline) for each prompt type.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{overlap_boxplot.png}
+    \caption{Overlap score distribution per prompt type.}
+    \label{fig:overlap}
+\end{figure}
+
+\section{Accuracy Distribution}
+The overall accuracy (top‑1 match rate) is shown in Figure~\ref{fig:accuracy}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{accuracy_hist.png}
+    \caption{Distribution of top‑1 accuracy across all experiments.}
+    \label{fig:accuracy}
+\end{figure}
+
+\chapter{Discussion}
+Interpret findings, limitations and future work.
+
+\chapter{Conclusion}
+Summarise key contributions and take‑aways.
+
+% \printbibliography
+
+\appendix
+\chapter{Appendix A – Code}
+Include selected code listings or a link to the GitHub repo.
+
+\end{document}
