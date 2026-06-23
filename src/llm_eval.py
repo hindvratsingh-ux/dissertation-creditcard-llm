@@ -1,174 +1,153 @@
-# src/llm_eval.py
-"""LLM evaluation script using the Groq API (model ``llama3-8b-8192``).
+"""LLM evaluation script using the Groq API (model llama3-8b-8192).
 
-The script reads ``data/profiles.csv`` and the three prompt templates in the
-``prompts`` directory (zero‑shot, structured, few‑shot).  For every profile and
-every strategy it calls the Groq chat model, extracts the top‑3 recommended
-credit‑card IDs and writes a row to ``data/llm_results.csv``.
+Reads : data/profiles.csv, data/cards.csv
+        prompts/zero_shot.txt, prompts/structured.txt, prompts/few_shot.txt
+Writes: data/llm_results.csv
 
-Features
---------
-* Environment variable ``GROQ_API_KEY`` is loaded from a ``.env`` file (via
-  ``python‑dotenv``) for secure credential handling.
-* Rate‑limit handling – on HTTP 429 the request is retried up to three times
-  with a 10‑second back‑off.
-* ``--dry‑run`` CLI flag processes only the first three profiles (useful for
-  testing without exhausting the free‑tier quota).
-* Progress is displayed with ``tqdm``.
-* All file handling uses ``pathlib.Path`` relative to the repository root.
-* The output CSV contains the columns:
-  ``profile_id, strategy, recommended_card_1, recommended_card_2, recommended_card_3,
-  raw_response, latency_seconds``.
+Columns in output
+-----------------
+profile_id, strategy, recommended_card_1, recommended_card_2,
+recommended_card_3, raw_response, latency_seconds
+
+Usage
+-----
+  python src/llm_eval.py             # full run (240 calls)
+  python src/llm_eval.py --dry-run   # first 3 profiles only
 """
 
+import argparse
+import json
 import os
 import re
-import json
 import time
 from pathlib import Path
-from typing import List, Dict, Tuple
+from typing import Dict, List, Tuple
 
 import pandas as pd
-from tqdm import tqdm
 from dotenv import load_dotenv
 from groq import Groq
+from tqdm import tqdm
 
 # ---------------------------------------------------------------------------
-# Configuration & constants
+# Paths
 # ---------------------------------------------------------------------------
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
-PROMPT_DIR = PROJECT_ROOT / "prompts"
-OUTPUT_PATH = DATA_DIR / "llm_results.csv"
+DATA_DIR     = PROJECT_ROOT / "data"
+PROMPT_DIR   = PROJECT_ROOT / "prompts"
+OUTPUT_PATH  = DATA_DIR / "llm_results.csv"
 
-STRATEGIES = {
-    "zero_shot": PROMPT_DIR / "zero_shot.txt",
-    "structured": PROMPT_DIR / "structured.txt",
-    "few_shot": PROMPT_DIR / "few_shot.txt",
-}
+STRATEGIES = ["zero_shot", "structured", "few_shot"]
 
-MODEL_NAME = "llama3-8b-8192"
+MODEL_NAME  = "llama3-8b-8192"
 MAX_RETRIES = 3
-RETRY_DELAY = 10  # seconds
+RETRY_DELAY = 12  # seconds – keeps within Groq free-tier RPM
+
 
 # ---------------------------------------------------------------------------
-# Helper utilities
+# Helpers
 # ---------------------------------------------------------------------------
-
 def _load_api_key() -> str:
-    """Load ``GROQ_API_KEY`` from a ``.env`` file or the environment.
-
-    Returns the API key as a string. Raises ``RuntimeError`` if the key is missing.
-    """
-    load_dotenv()  # loads .env in the current working directory
+    load_dotenv()
     key = os.getenv("GROQ_API_KEY")
     if not key:
-        raise RuntimeError("GROQ_API_KEY not found – set it in a .env file or the environment")
+        raise RuntimeError("GROQ_API_KEY not found in .env or environment")
     return key
 
-def _read_prompt(path: Path) -> str:
-    """Return the raw prompt text from *path* (UTF‑8)."""
+
+def _read_prompt(strategy: str) -> str:
+    path = PROMPT_DIR / f"{strategy}.txt"
     return path.read_text(encoding="utf-8").strip()
 
+
+def _build_user_message(prompt_template: str, profile: dict, cards_csv: str) -> str:
+    """Inject profile JSON and card catalogue CSV into the prompt template."""
+    profile_json = json.dumps(profile, indent=2)
+    msg = prompt_template
+    msg = msg.replace("{profile}", profile_json)
+    msg = msg.replace("{cards_csv}", cards_csv)
+    return msg
+
+
 def _extract_card_ids(text: str) -> List[str]:
-    """Extract credit‑card IDs (e.g. ``CC001``) from free‑form LLM output.
+    """Extract CC-format card IDs from any response format."""
+    ids = re.findall(r"CC\d{3}", text, re.IGNORECASE)
+    seen, deduped = set(), []
+    for i in ids:
+        v = i.upper()
+        if v not in seen:
+            deduped.append(v)
+            seen.add(v)
+    ids_out = deduped[:3]
+    while len(ids_out) < 3:
+        ids_out.append("")
+    return ids_out
 
-    The function looks for all ``CC`` followed by three digits.  If fewer than
-    three IDs are found, the missing entries are returned as empty strings.
-    """
-    ids = re.findall(r"CC\d{3}", text, flags=re.IGNORECASE)
-    # Normalise to upper‑case and ensure exactly three entries
-    ids = [i.upper() for i in ids][:3]
-    while len(ids) < 3:
-        ids.append("")
-    return ids
 
-def _call_groq(client: Groq, system_prompt: str, user_input: str) -> Tuple[str, float]:
-    """Send a request to Groq and return the raw response text + latency.
-
-    Implements simple retry logic for HTTP 429.
-    """
+def _call_groq(client: Groq, user_message: str) -> Tuple[str, float]:
     for attempt in range(1, MAX_RETRIES + 1):
-        start = time.time()
+        t0 = time.time()
         try:
-            response = client.chat.completions.create(
+            resp = client.chat.completions.create(
                 model=MODEL_NAME,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_input},
-                ],
+                messages=[{"role": "user", "content": user_message}],
                 temperature=0.2,
-                max_tokens=500,
+                max_tokens=600,
             )
-            latency = time.time() - start
-            return response.choices[0].message.content.strip(), latency
+            return resp.choices[0].message.content.strip(), round(time.time() - t0, 3)
         except Exception as exc:
-            # Groq SDK surfaces HTTP errors via ``exc.status_code`` if present
             status = getattr(exc, "status_code", None)
             if status == 429 and attempt < MAX_RETRIES:
                 time.sleep(RETRY_DELAY)
-                continue
-            raise  # re‑raise other errors or after final attempt
-    # Should never reach here
-    raise RuntimeError("Failed to get a successful response from Groq after retries")
+            else:
+                raise
+    raise RuntimeError("Groq call failed after max retries")
+
 
 # ---------------------------------------------------------------------------
-# Main evaluation logic
+# Main
 # ---------------------------------------------------------------------------
-
 def evaluate(dry_run: bool = False) -> None:
-    """Run the LLM evaluation and write results to ``data/llm_results.csv``.
+    client    = Groq(api_key=_load_api_key())
+    profiles  = pd.read_csv(DATA_DIR / "profiles.csv")
+    cards_csv = pd.read_csv(DATA_DIR / "cards.csv").to_csv(index=False)
 
-    Parameters
-    ----------
-    dry_run: bool, default=False
-        If ``True`` only the first three profiles are processed.
-    """
-    api_key = _load_api_key()
-    client = Groq(api_key=api_key)
-
-    profiles_df = pd.read_csv(DATA_DIR / "profiles.csv")
     if dry_run:
-        profiles_df = profiles_df.head(3)
+        profiles = profiles.head(3)
+        print("DRY RUN: processing first 3 profiles only")
 
-    # Load prompts once
-    prompts = {name: _read_prompt(path) for name, path in STRATEGIES.items()}
-
+    prompts = {s: _read_prompt(s) for s in STRATEGIES}
     results: List[Dict] = []
 
-    for _, profile in tqdm(profiles_df.iterrows(), total=len(profiles_df), desc="Profiles"):
-        profile_json = json.dumps(profile.to_dict(), indent=2)
-        for strat_name, prompt_text in prompts.items():
-            raw_response, latency = _call_groq(client, prompt_text, profile_json)
-            rec_ids = _extract_card_ids(raw_response)
-            results.append({
-                "profile_id": profile["profile_id"],
-                "strategy": strat_name,
-                "recommended_card_1": rec_ids[0],
-                "recommended_card_2": rec_ids[1],
-                "recommended_card_3": rec_ids[2],
-                "raw_response": raw_response,
-                "latency_seconds": round(latency, 3),
-            })
+    total = len(profiles) * len(STRATEGIES)
+    with tqdm(total=total, desc="LLM eval") as pbar:
+        for _, profile_row in profiles.iterrows():
+            profile_dict = profile_row.to_dict()
+            for strategy in STRATEGIES:
+                user_msg = _build_user_message(
+                    prompts[strategy], profile_dict, cards_csv
+                )
+                raw, latency = _call_groq(client, user_msg)
+                rec_ids = _extract_card_ids(raw)
+                results.append({
+                    "profile_id":         profile_dict["profile_id"],
+                    "strategy":           strategy,
+                    "recommended_card_1": rec_ids[0],
+                    "recommended_card_2": rec_ids[1],
+                    "recommended_card_3": rec_ids[2],
+                    "raw_response":       raw,
+                    "latency_seconds":    latency,
+                })
+                pbar.update(1)
+                time.sleep(1)  # polite pacing on free tier
 
-    # Write CSV – ensure deterministic column order
     out_df = pd.DataFrame(results)
     out_df.to_csv(OUTPUT_PATH, index=False)
-    print(f"✅ LLM evaluation complete – results saved to {OUTPUT_PATH}")
+    print(f"Done. {len(out_df)} rows saved to {OUTPUT_PATH}")
 
-# ---------------------------------------------------------------------------
-# CLI entry point
-# ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    import argparse
-
-    parser = argparse.ArgumentParser(description="Run LLM credit‑card recommendation evaluation using Groq")
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Process only the first three profiles (useful for testing)",
-    )
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dry-run", action="store_true",
+                        help="Process only the first 3 profiles for testing")
     args = parser.parse_args()
     evaluate(dry_run=args.dry_run)

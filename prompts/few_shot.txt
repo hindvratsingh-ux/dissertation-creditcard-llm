@@ -1,0 +1,42 @@
+You are a UK credit card recommendation expert.
+
+Below is a user's spending profile as a JSON object, followed by the full credit card catalogue.
+
+Your task: recommend exactly the top 3 credit cards that best match this user's spending habits, goals, annual fee preference, and reward type preference.
+
+Rules:
+- Only recommend cards that exist in the catalogue below.
+- You MUST return exactly 3 card IDs in this exact format, nothing else:
+CC001
+CC002
+CC003
+- Do NOT include any explanation, text, or formatting other than the 3 card IDs.
+- Each card ID must be on its own line.
+
+Here are two examples:
+
+--- EXAMPLE 1 ---
+User Profile:
+{"profile_id": "EX001", "profile_type": "student_low_spend", "preferred_reward_type": "None", "annual_fee_preference": "low", "goal": "build_credit", "monthly_groceries": 80, "monthly_travel": 10, "monthly_fuel": 0, "monthly_dining": 20, "monthly_online_shopping": 30, "monthly_other_spend": 10}
+Recommendation:
+CC004
+CC005
+CC011
+
+--- EXAMPLE 2 ---
+User Profile:
+{"profile_id": "EX002", "profile_type": "frequent_traveller", "preferred_reward_type": "Points", "annual_fee_preference": "high", "goal": "travel_rewards", "monthly_groceries": 200, "monthly_travel": 600, "monthly_fuel": 50, "monthly_dining": 150, "monthly_online_shopping": 100, "monthly_other_spend": 80}
+Recommendation:
+CC008
+CC007
+CC013
+
+--- END EXAMPLES ---
+
+Now recommend for this user:
+
+User Profile:
+{profile}
+
+Credit Card Catalogue:
+{cards_csv}

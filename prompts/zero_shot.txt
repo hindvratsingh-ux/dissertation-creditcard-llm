@@ -1,12 +1,20 @@
-# zero_shot.txt
-"""Zero‑shot prompt for credit‑card recommendation.
+You are a UK credit card recommendation expert.
 
-User profile (CSV row) is provided as a JSON‑like dictionary. The model must output a list of up to three recommended card IDs, one per line.
+Below is a user's spending profile as a JSON object, followed by the full credit card catalogue.
 
-**Prompt template**:
-```
-Given the following user spending profile, recommend the top three UK credit cards that best match the user's preferences. Return only the card IDs, one per line.
+Your task: recommend exactly the top 3 credit cards that best match this user's spending habits, goals, annual fee preference, and reward type preference.
 
-Profile:
-{profile_json}
-```"""
+Rules:
+- Only recommend cards that exist in the catalogue below.
+- You MUST return exactly 3 card IDs in this exact format, nothing else:
+CC001
+CC002
+CC003
+- Do NOT include any explanation, text, or formatting other than the 3 card IDs.
+- Each card ID must be on its own line.
+
+User Profile:
+{profile}
+
+Credit Card Catalogue:
+{cards_csv}
