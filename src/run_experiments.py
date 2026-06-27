@@ -25,7 +25,7 @@ load_dotenv()
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-DEFAULT_MODEL = os.getenv("LLM_MODEL", "llama3-8b-8192")
+DEFAULT_MODEL = os.getenv("LLM_MODEL", "llama-3.1-8b-instant")
 API_KEY = os.getenv("GROQ_API_KEY")
 
 PROMPT_FILES = {

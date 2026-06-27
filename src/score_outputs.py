@@ -28,13 +28,17 @@ SCORED_OUT_PATH   = RESULTS_DIR / "scored_results.csv"
 def load_ground_truth() -> dict:
     df = pd.read_csv(GROUND_TRUTH_PATH)
     gt = {}
+    col1 = "expected_rank_1_card_id" if "expected_rank_1_card_id" in df.columns else "rank_1_card_id"
+    col2 = "expected_rank_2_card_id" if "expected_rank_2_card_id" in df.columns else "rank_2_card_id"
+    col3 = "expected_rank_3_card_id" if "expected_rank_3_card_id" in df.columns else "rank_3_card_id"
     for _, row in df.iterrows():
         gt[row["profile_id"]] = [
-            str(row["expected_rank_1_card_id"]).upper().strip(),
-            str(row["expected_rank_2_card_id"]).upper().strip(),
-            str(row["expected_rank_3_card_id"]).upper().strip(),
+            str(row[col1]).upper().strip(),
+            str(row[col2]).upper().strip(),
+            str(row[col3]).upper().strip(),
         ]
     return gt
+
 
 
 def extract_card_ids(text: str) -> list:

@@ -1,81 +1,301 @@
-profile_id,expected_rank_1_card_id,expected_rank_2_card_id,expected_rank_3_card_id,expected_best_card_id,baseline_method,reasoning_summary,annual_fee_fit_score,reward_fit_score,goal_fit_score,overall_fit_score,reviewed_by,notes
-P001,CC009,CC003,CC006,CC009,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,32.445,1.000,16.723,,
-P002,CC009,CC003,CC012,CC009,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,33.990,1.000,17.495,,
-P003,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,11.940,0.000,6.270,,
-P004,CC003,CC012,CC010,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,27.105,0.000,13.853,,
-P005,CC003,CC012,CC009,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,23.905,0.000,12.253,,
-P006,CC003,CC012,CC010,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,26.295,0.000,13.448,,
-P007,CC009,CC003,CC012,CC009,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,28.075,1.000,14.537,,
-P008,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,34.370,0.000,17.185,,
-P009,CC003,CC009,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,27.480,0.000,14.040,,
-P010,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,32.405,0.000,16.203,,
-P011,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,37.185,0.000,18.893,,
-P012,CC003,CC012,CC010,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,10.055,0.000,5.327,,
-P013,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,31.295,0.000,15.648,,
-P014,CC010,CC003,CC007,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,48.605,1.000,24.503,,
-P015,CC003,CC012,CC009,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,26.840,0.000,13.720,,
-P016,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,11.755,0.000,6.178,,
-P017,CC003,CC012,CC009,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,26.510,0.000,13.555,,
-P018,CC003,CC009,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,33.390,0.000,16.995,,
-P019,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,35.510,0.000,18.055,,
-P020,CC010,CC003,CC007,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,49.275,1.000,24.838,,
-P021,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,44.320,0.000,22.160,,
-P022,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,11.930,0.000,6.265,,
-P023,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,35.795,0.000,17.898,,
-P024,CC003,CC009,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,29.730,0.000,15.165,,
-P025,CC010,CC003,CC007,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,48.860,1.000,24.630,,
-P026,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,42.310,0.000,21.155,,
-P027,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,34.000,0.000,17.300,,
-P028,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,26.665,0.000,13.633,,
-P029,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,12.915,0.000,6.758,,
-P030,CC010,CC003,CC007,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,46.425,1.000,23.413,,
-P031,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,37.580,0.000,18.790,,
-P032,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,32.995,0.000,16.798,,
-P033,CC003,CC009,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,26.010,0.000,13.305,,
-P034,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,40.410,1.000,20.405,,
-P035,CC003,CC012,CC009,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,9.980,0.000,5.290,,
-P036,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,34.815,0.000,17.707,,
-P037,CC003,CC012,CC009,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,30.215,0.000,15.408,,
-P038,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,33.860,0.000,17.230,,
-P039,CC003,CC012,CC010,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,12.190,0.000,6.395,,
-P040,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,32.235,1.000,16.318,,
-P041,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,39.455,0.000,20.027,,
-P042,CC009,CC003,CC012,CC009,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,33.535,1.000,17.268,,
-P043,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,33.155,0.000,16.578,,
-P044,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,38.965,0.000,19.783,,
-P045,CC003,CC009,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,25.905,0.000,13.253,,
-P046,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,37.420,0.000,19.010,,
-P047,CC003,CC012,CC010,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,11.075,0.000,5.838,,
-P048,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,26.315,0.000,13.457,,
-P049,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,39.885,0.000,19.943,,
-P050,CC003,CC012,CC010,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,10.465,0.000,5.532,,
-P051,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,38.355,1.000,19.377,,
-P052,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,12.065,0.000,6.333,,
-P053,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,31.960,1.000,16.180,,
-P054,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,39.425,0.000,20.013,,
-P055,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,39.565,1.000,19.983,,
-P056,CC010,CC003,CC007,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,51.345,1.000,25.872,,
-P057,CC010,CC003,CC007,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,43.790,1.000,22.095,,
-P058,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,30.830,0.000,15.715,,
-P059,CC003,CC012,CC010,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,27.070,0.000,13.835,,
-P060,CC003,CC012,CC009,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,23.190,0.000,11.895,,
-P061,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,32.115,0.000,16.358,,
-P062,CC009,CC003,CC012,CC009,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,29.580,1.000,15.290,,
-P063,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,33.920,0.000,17.260,,
-P064,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,33.290,0.000,16.945,,
-P065,CC010,CC003,CC007,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,48.010,1.000,24.205,,
-P066,CC003,CC009,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,28.705,0.000,14.652,,
-P067,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,34.705,0.000,17.352,,
-P068,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,40.465,1.000,20.433,,
-P069,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,26.895,0.000,13.748,,
-P070,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,39.390,0.000,19.995,,
-P071,CC003,CC012,CC010,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,25.220,0.000,12.910,,
-P072,CC003,CC009,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,30.765,0.000,15.683,,
-P073,CC003,CC012,CC010,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,11.385,0.000,5.992,,
-P074,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,35.780,0.000,17.890,,
-P075,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,42.665,0.000,21.633,,
-P076,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,30.920,0.000,15.760,,
-P077,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,30.350,0.000,15.175,,
-P078,CC010,CC003,CC012,CC010,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",0.000,34.830,1.000,17.615,,
-P079,CC003,CC010,CC012,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,37.335,0.000,18.968,,
-P080,CC003,CC012,CC010,CC003,rule_based_reward_fee_goal,"Top cards selected by weighted reward, fee tolerance and goal match.",1.000,25.820,0.000,13.210,,
+profile_id,rank_1_card_id,rank_2_card_id,rank_3_card_id,cosine_scores,baseline_method
+P0001,CC015,CC016,CC018,"[0.7871, 0.7595, 0.7513]",content_based_cosine_similarity_v1
+P0002,CC018,CC015,CC016,"[0.8153, 0.7669, 0.7637]",content_based_cosine_similarity_v1
+P0003,CC016,CC018,CC015,"[0.7524, 0.7314, 0.7255]",content_based_cosine_similarity_v1
+P0004,CC018,CC016,CC015,"[0.8239, 0.8055, 0.8015]",content_based_cosine_similarity_v1
+P0005,CC018,CC016,CC015,"[0.8515, 0.7945, 0.7891]",content_based_cosine_similarity_v1
+P0006,CC015,CC018,CC006,"[0.8274, 0.786, 0.7843]",content_based_cosine_similarity_v1
+P0007,CC018,CC015,CC016,"[0.8154, 0.8032, 0.7546]",content_based_cosine_similarity_v1
+P0008,CC015,CC018,CC006,"[0.8415, 0.8003, 0.7987]",content_based_cosine_similarity_v1
+P0009,CC015,CC018,CC006,"[0.8435, 0.8025, 0.8001]",content_based_cosine_similarity_v1
+P0010,CC018,CC015,CC016,"[0.8454, 0.7883, 0.7635]",content_based_cosine_similarity_v1
+P0011,CC018,CC015,CC016,"[0.8505, 0.8262, 0.7974]",content_based_cosine_similarity_v1
+P0012,CC015,CC006,CC016,"[0.8298, 0.7948, 0.7798]",content_based_cosine_similarity_v1
+P0013,CC018,CC015,CC016,"[0.843, 0.8069, 0.7791]",content_based_cosine_similarity_v1
+P0014,CC015,CC018,CC016,"[0.8367, 0.8081, 0.7944]",content_based_cosine_similarity_v1
+P0015,CC016,CC018,CC015,"[0.7847, 0.7819, 0.776]",content_based_cosine_similarity_v1
+P0016,CC018,CC016,CC015,"[0.8193, 0.7904, 0.7814]",content_based_cosine_similarity_v1
+P0017,CC015,CC006,CC016,"[0.8144, 0.7881, 0.7707]",content_based_cosine_similarity_v1
+P0018,CC015,CC016,CC018,"[0.7993, 0.7577, 0.7574]",content_based_cosine_similarity_v1
+P0019,CC015,CC018,CC016,"[0.814, 0.8011, 0.7602]",content_based_cosine_similarity_v1
+P0020,CC015,CC006,CC018,"[0.8117, 0.7849, 0.7366]",content_based_cosine_similarity_v1
+P0021,CC015,CC006,CC018,"[0.8442, 0.8142, 0.7857]",content_based_cosine_similarity_v1
+P0022,CC018,CC015,CC016,"[0.8387, 0.7917, 0.768]",content_based_cosine_similarity_v1
+P0023,CC015,CC006,CC016,"[0.7948, 0.7634, 0.757]",content_based_cosine_similarity_v1
+P0024,CC018,CC015,CC016,"[0.8499, 0.8371, 0.8079]",content_based_cosine_similarity_v1
+P0025,CC015,CC006,CC016,"[0.8137, 0.787, 0.7441]",content_based_cosine_similarity_v1
+P0026,CC015,CC018,CC016,"[0.8324, 0.828, 0.7845]",content_based_cosine_similarity_v1
+P0027,CC018,CC015,CC016,"[0.8356, 0.7864, 0.763]",content_based_cosine_similarity_v1
+P0028,CC015,CC018,CC016,"[0.7656, 0.7572, 0.7464]",content_based_cosine_similarity_v1
+P0029,CC015,CC018,CC016,"[0.8019, 0.7847, 0.7827]",content_based_cosine_similarity_v1
+P0030,CC016,CC018,CC015,"[0.8064, 0.7993, 0.7957]",content_based_cosine_similarity_v1
+P0031,CC018,CC015,CC016,"[0.8365, 0.8128, 0.7994]",content_based_cosine_similarity_v1
+P0032,CC015,CC018,CC006,"[0.7855, 0.7379, 0.7345]",content_based_cosine_similarity_v1
+P0033,CC018,CC015,CC016,"[0.8376, 0.7902, 0.7612]",content_based_cosine_similarity_v1
+P0034,CC015,CC006,CC016,"[0.7798, 0.7685, 0.6988]",content_based_cosine_similarity_v1
+P0035,CC015,CC016,CC018,"[0.7806, 0.7486, 0.7476]",content_based_cosine_similarity_v1
+P0036,CC018,CC016,CC015,"[0.8185, 0.7973, 0.7831]",content_based_cosine_similarity_v1
+P0037,CC016,CC015,CC018,"[0.7864, 0.7799, 0.7717]",content_based_cosine_similarity_v1
+P0038,CC018,CC016,CC015,"[0.8277, 0.8159, 0.7954]",content_based_cosine_similarity_v1
+P0039,CC015,CC016,CC018,"[0.868, 0.8447, 0.8384]",content_based_cosine_similarity_v1
+P0040,CC015,CC018,CC016,"[0.8942, 0.8305, 0.8139]",content_based_cosine_similarity_v1
+P0041,CC015,CC018,CC016,"[0.8935, 0.844, 0.8114]",content_based_cosine_similarity_v1
+P0042,CC015,CC016,CC018,"[0.8825, 0.8472, 0.8273]",content_based_cosine_similarity_v1
+P0043,CC015,CC018,CC016,"[0.8687, 0.7871, 0.7809]",content_based_cosine_similarity_v1
+P0044,CC015,CC018,CC016,"[0.8982, 0.8869, 0.8539]",content_based_cosine_similarity_v1
+P0045,CC015,CC018,CC016,"[0.8478, 0.7736, 0.7613]",content_based_cosine_similarity_v1
+P0046,CC015,CC018,CC016,"[0.9171, 0.8879, 0.8624]",content_based_cosine_similarity_v1
+P0047,CC015,CC018,CC016,"[0.8933, 0.8448, 0.8137]",content_based_cosine_similarity_v1
+P0048,CC018,CC015,CC016,"[0.856, 0.8549, 0.8462]",content_based_cosine_similarity_v1
+P0049,CC015,CC018,CC016,"[0.8854, 0.8163, 0.814]",content_based_cosine_similarity_v1
+P0050,CC015,CC018,CC016,"[0.8572, 0.7911, 0.7866]",content_based_cosine_similarity_v1
+P0051,CC015,CC016,CC018,"[0.8783, 0.8177, 0.817]",content_based_cosine_similarity_v1
+P0052,CC015,CC018,CC016,"[0.8889, 0.8694, 0.862]",content_based_cosine_similarity_v1
+P0053,CC015,CC018,CC016,"[0.8898, 0.8717, 0.8294]",content_based_cosine_similarity_v1
+P0054,CC015,CC018,CC016,"[0.9052, 0.8642, 0.8602]",content_based_cosine_similarity_v1
+P0055,CC015,CC016,CC018,"[0.8932, 0.8519, 0.8479]",content_based_cosine_similarity_v1
+P0056,CC015,CC018,CC016,"[0.9211, 0.8706, 0.8396]",content_based_cosine_similarity_v1
+P0057,CC015,CC018,CC016,"[0.8965, 0.8522, 0.836]",content_based_cosine_similarity_v1
+P0058,CC015,CC018,CC016,"[0.8965, 0.8721, 0.8591]",content_based_cosine_similarity_v1
+P0059,CC015,CC016,CC018,"[0.8706, 0.8281, 0.8114]",content_based_cosine_similarity_v1
+P0060,CC015,CC018,CC016,"[0.8643, 0.8243, 0.8204]",content_based_cosine_similarity_v1
+P0061,CC015,CC018,CC016,"[0.9145, 0.8736, 0.8395]",content_based_cosine_similarity_v1
+P0062,CC015,CC018,CC016,"[0.8868, 0.8287, 0.7851]",content_based_cosine_similarity_v1
+P0063,CC015,CC018,CC016,"[0.8844, 0.8745, 0.8526]",content_based_cosine_similarity_v1
+P0064,CC015,CC018,CC016,"[0.8795, 0.8152, 0.808]",content_based_cosine_similarity_v1
+P0065,CC015,CC016,CC018,"[0.8415, 0.8098, 0.7875]",content_based_cosine_similarity_v1
+P0066,CC015,CC018,CC016,"[0.9023, 0.8583, 0.8551]",content_based_cosine_similarity_v1
+P0067,CC015,CC018,CC016,"[0.8744, 0.8543, 0.8288]",content_based_cosine_similarity_v1
+P0068,CC015,CC016,CC018,"[0.9042, 0.8779, 0.8752]",content_based_cosine_similarity_v1
+P0069,CC015,CC016,CC018,"[0.8846, 0.8466, 0.8169]",content_based_cosine_similarity_v1
+P0070,CC015,CC018,CC016,"[0.867, 0.8068, 0.7888]",content_based_cosine_similarity_v1
+P0071,CC015,CC016,CC018,"[0.8596, 0.8196, 0.7954]",content_based_cosine_similarity_v1
+P0072,CC018,CC015,CC016,"[0.8902, 0.883, 0.871]",content_based_cosine_similarity_v1
+P0073,CC015,CC016,CC018,"[0.8835, 0.8117, 0.7923]",content_based_cosine_similarity_v1
+P0074,CC015,CC018,CC016,"[0.9061, 0.8587, 0.845]",content_based_cosine_similarity_v1
+P0075,CC015,CC018,CC016,"[0.9034, 0.8625, 0.8584]",content_based_cosine_similarity_v1
+P0076,CC015,CC018,CC016,"[0.8924, 0.8574, 0.837]",content_based_cosine_similarity_v1
+P0077,CC018,CC016,CC015,"[0.9407, 0.8149, 0.8142]",content_based_cosine_similarity_v1
+P0078,CC018,CC008,CC016,"[0.8788, 0.8249, 0.7428]",content_based_cosine_similarity_v1
+P0079,CC018,CC008,CC016,"[0.8969, 0.8566, 0.76]",content_based_cosine_similarity_v1
+P0080,CC018,CC008,CC012,"[0.8708, 0.837, 0.7431]",content_based_cosine_similarity_v1
+P0081,CC018,CC008,CC015,"[0.8598, 0.8488, 0.7111]",content_based_cosine_similarity_v1
+P0082,CC018,CC008,CC016,"[0.8936, 0.854, 0.7514]",content_based_cosine_similarity_v1
+P0083,CC018,CC008,CC012,"[0.8618, 0.8214, 0.7223]",content_based_cosine_similarity_v1
+P0084,CC018,CC008,CC016,"[0.8464, 0.8328, 0.6913]",content_based_cosine_similarity_v1
+P0085,CC018,CC008,CC016,"[0.8919, 0.822, 0.7486]",content_based_cosine_similarity_v1
+P0086,CC018,CC008,CC012,"[0.8597, 0.8275, 0.7409]",content_based_cosine_similarity_v1
+P0087,CC018,CC008,CC015,"[0.9055, 0.8283, 0.7781]",content_based_cosine_similarity_v1
+P0088,CC018,CC008,CC015,"[0.8632, 0.8393, 0.7117]",content_based_cosine_similarity_v1
+P0089,CC018,CC008,CC015,"[0.9391, 0.8227, 0.8073]",content_based_cosine_similarity_v1
+P0090,CC018,CC008,CC015,"[0.9052, 0.8647, 0.7593]",content_based_cosine_similarity_v1
+P0091,CC018,CC008,CC016,"[0.8741, 0.8484, 0.7262]",content_based_cosine_similarity_v1
+P0092,CC018,CC008,CC015,"[0.9364, 0.8211, 0.803]",content_based_cosine_similarity_v1
+P0093,CC018,CC008,CC015,"[0.9363, 0.8186, 0.8087]",content_based_cosine_similarity_v1
+P0094,CC018,CC015,CC008,"[0.9403, 0.7991, 0.7959]",content_based_cosine_similarity_v1
+P0095,CC018,CC008,CC015,"[0.9083, 0.835, 0.7634]",content_based_cosine_similarity_v1
+P0096,CC018,CC008,CC015,"[0.9011, 0.8532, 0.7526]",content_based_cosine_similarity_v1
+P0097,CC018,CC008,CC016,"[0.8673, 0.8422, 0.7295]",content_based_cosine_similarity_v1
+P0098,CC018,CC008,CC015,"[0.9044, 0.8553, 0.7569]",content_based_cosine_similarity_v1
+P0099,CC008,CC018,CC012,"[0.8233, 0.8163, 0.6868]",content_based_cosine_similarity_v1
+P0100,CC018,CC008,CC015,"[0.9276, 0.836, 0.8015]",content_based_cosine_similarity_v1
+P0101,CC018,CC008,CC015,"[0.9255, 0.8455, 0.7879]",content_based_cosine_similarity_v1
+P0102,CC018,CC008,CC015,"[0.9313, 0.8472, 0.796]",content_based_cosine_similarity_v1
+P0103,CC018,CC008,CC015,"[0.8989, 0.8423, 0.7667]",content_based_cosine_similarity_v1
+P0104,CC018,CC008,CC016,"[0.8715, 0.8234, 0.7202]",content_based_cosine_similarity_v1
+P0105,CC018,CC008,CC015,"[0.882, 0.8556, 0.7306]",content_based_cosine_similarity_v1
+P0106,CC018,CC016,CC012,"[0.9218, 0.8111, 0.8084]",content_based_cosine_similarity_v1
+P0107,CC018,CC008,CC015,"[0.9342, 0.8117, 0.798]",content_based_cosine_similarity_v1
+P0108,CC018,CC008,CC012,"[0.8492, 0.801, 0.7393]",content_based_cosine_similarity_v1
+P0109,CC018,CC015,CC008,"[0.9444, 0.8166, 0.8106]",content_based_cosine_similarity_v1
+P0110,CC018,CC008,CC015,"[0.9043, 0.8415, 0.7538]",content_based_cosine_similarity_v1
+P0111,CC018,CC008,CC015,"[0.8749, 0.8475, 0.7233]",content_based_cosine_similarity_v1
+P0112,CC018,CC008,CC016,"[0.9025, 0.829, 0.7724]",content_based_cosine_similarity_v1
+P0113,CC018,CC008,CC015,"[0.8783, 0.859, 0.7341]",content_based_cosine_similarity_v1
+P0114,CC018,CC008,CC016,"[0.9172, 0.8431, 0.7862]",content_based_cosine_similarity_v1
+P0115,CC018,CC016,CC015,"[0.9142, 0.856, 0.8436]",content_based_cosine_similarity_v1
+P0116,CC018,CC015,CC016,"[0.924, 0.8842, 0.8619]",content_based_cosine_similarity_v1
+P0117,CC018,CC015,CC016,"[0.9473, 0.9121, 0.88]",content_based_cosine_similarity_v1
+P0118,CC018,CC016,CC015,"[0.9163, 0.8693, 0.8452]",content_based_cosine_similarity_v1
+P0119,CC018,CC015,CC016,"[0.954, 0.9101, 0.8885]",content_based_cosine_similarity_v1
+P0120,CC018,CC016,CC015,"[0.9392, 0.8832, 0.8768]",content_based_cosine_similarity_v1
+P0121,CC018,CC015,CC016,"[0.9377, 0.9101, 0.8822]",content_based_cosine_similarity_v1
+P0122,CC018,CC015,CC016,"[0.9411, 0.9148, 0.858]",content_based_cosine_similarity_v1
+P0123,CC018,CC015,CC016,"[0.9477, 0.9069, 0.8743]",content_based_cosine_similarity_v1
+P0124,CC018,CC016,CC015,"[0.9192, 0.8672, 0.8668]",content_based_cosine_similarity_v1
+P0125,CC018,CC015,CC016,"[0.9586, 0.8736, 0.8415]",content_based_cosine_similarity_v1
+P0126,CC018,CC015,CC016,"[0.8865, 0.8735, 0.8346]",content_based_cosine_similarity_v1
+P0127,CC018,CC015,CC016,"[0.9291, 0.904, 0.8758]",content_based_cosine_similarity_v1
+P0128,CC018,CC015,CC016,"[0.9447, 0.9066, 0.889]",content_based_cosine_similarity_v1
+P0129,CC018,CC015,CC016,"[0.9611, 0.8902, 0.8531]",content_based_cosine_similarity_v1
+P0130,CC018,CC015,CC016,"[0.9164, 0.8993, 0.8552]",content_based_cosine_similarity_v1
+P0131,CC018,CC015,CC016,"[0.9406, 0.902, 0.893]",content_based_cosine_similarity_v1
+P0132,CC018,CC015,CC016,"[0.9183, 0.8878, 0.857]",content_based_cosine_similarity_v1
+P0133,CC015,CC018,CC016,"[0.8998, 0.8894, 0.856]",content_based_cosine_similarity_v1
+P0134,CC018,CC015,CC016,"[0.9028, 0.8847, 0.8642]",content_based_cosine_similarity_v1
+P0135,CC018,CC015,CC016,"[0.9405, 0.879, 0.8489]",content_based_cosine_similarity_v1
+P0136,CC018,CC015,CC016,"[0.9448, 0.8563, 0.836]",content_based_cosine_similarity_v1
+P0137,CC018,CC015,CC016,"[0.9702, 0.9038, 0.8706]",content_based_cosine_similarity_v1
+P0138,CC018,CC015,CC016,"[0.9049, 0.9021, 0.8735]",content_based_cosine_similarity_v1
+P0139,CC018,CC016,CC015,"[0.915, 0.8615, 0.8539]",content_based_cosine_similarity_v1
+P0140,CC018,CC016,CC012,"[0.9298, 0.8976, 0.8829]",content_based_cosine_similarity_v1
+P0141,CC018,CC015,CC016,"[0.9395, 0.8991, 0.8445]",content_based_cosine_similarity_v1
+P0142,CC015,CC018,CC016,"[0.916, 0.9098, 0.8512]",content_based_cosine_similarity_v1
+P0143,CC018,CC016,CC015,"[0.9105, 0.8834, 0.8775]",content_based_cosine_similarity_v1
+P0144,CC018,CC015,CC016,"[0.9052, 0.8942, 0.8722]",content_based_cosine_similarity_v1
+P0145,CC018,CC015,CC016,"[0.9397, 0.8549, 0.8485]",content_based_cosine_similarity_v1
+P0146,CC018,CC016,CC015,"[0.909, 0.8565, 0.8476]",content_based_cosine_similarity_v1
+P0147,CC018,CC015,CC016,"[0.9506, 0.9063, 0.8829]",content_based_cosine_similarity_v1
+P0148,CC018,CC015,CC016,"[0.8956, 0.8861, 0.8556]",content_based_cosine_similarity_v1
+P0149,CC018,CC015,CC016,"[0.892, 0.8882, 0.8649]",content_based_cosine_similarity_v1
+P0150,CC018,CC015,CC016,"[0.9566, 0.8806, 0.8745]",content_based_cosine_similarity_v1
+P0151,CC018,CC015,CC016,"[0.9346, 0.9016, 0.8979]",content_based_cosine_similarity_v1
+P0152,CC018,CC015,CC016,"[0.9033, 0.8758, 0.8511]",content_based_cosine_similarity_v1
+P0153,CC002,CC003,CC001,"[0.9486, 0.9355, 0.9348]",content_based_cosine_similarity_v1
+P0154,CC015,CC006,CC003,"[0.9071, 0.8997, 0.8914]",content_based_cosine_similarity_v1
+P0155,CC003,CC002,CC001,"[0.9356, 0.935, 0.9215]",content_based_cosine_similarity_v1
+P0156,CC015,CC006,CC003,"[0.9202, 0.9099, 0.901]",content_based_cosine_similarity_v1
+P0157,CC003,CC002,CC006,"[0.9033, 0.884, 0.8839]",content_based_cosine_similarity_v1
+P0158,CC003,CC002,CC017,"[0.9258, 0.9141, 0.9059]",content_based_cosine_similarity_v1
+P0159,CC016,CC003,CC015,"[0.9094, 0.9053, 0.9011]",content_based_cosine_similarity_v1
+P0160,CC003,CC006,CC015,"[0.9303, 0.9165, 0.914]",content_based_cosine_similarity_v1
+P0161,CC003,CC017,CC006,"[0.9315, 0.9195, 0.9186]",content_based_cosine_similarity_v1
+P0162,CC015,CC016,CC006,"[0.9225, 0.9029, 0.9029]",content_based_cosine_similarity_v1
+P0163,CC003,CC002,CC006,"[0.9249, 0.9111, 0.9045]",content_based_cosine_similarity_v1
+P0164,CC003,CC002,CC001,"[0.9302, 0.9298, 0.9165]",content_based_cosine_similarity_v1
+P0165,CC018,CC016,CC015,"[0.9373, 0.9293, 0.9232]",content_based_cosine_similarity_v1
+P0166,CC003,CC002,CC001,"[0.9227, 0.9161, 0.9039]",content_based_cosine_similarity_v1
+P0167,CC003,CC002,CC017,"[0.9193, 0.907, 0.9052]",content_based_cosine_similarity_v1
+P0168,CC003,CC002,CC001,"[0.9338, 0.9287, 0.9148]",content_based_cosine_similarity_v1
+P0169,CC015,CC006,CC018,"[0.9424, 0.9254, 0.9228]",content_based_cosine_similarity_v1
+P0170,CC016,CC015,CC018,"[0.9278, 0.9199, 0.8913]",content_based_cosine_similarity_v1
+P0171,CC018,CC015,CC016,"[0.9423, 0.9303, 0.9248]",content_based_cosine_similarity_v1
+P0172,CC003,CC015,CC006,"[0.8875, 0.8825, 0.881]",content_based_cosine_similarity_v1
+P0173,CC003,CC002,CC001,"[0.9338, 0.9323, 0.9184]",content_based_cosine_similarity_v1
+P0174,CC003,CC002,CC017,"[0.9072, 0.895, 0.8943]",content_based_cosine_similarity_v1
+P0175,CC003,CC002,CC016,"[0.9262, 0.9165, 0.9065]",content_based_cosine_similarity_v1
+P0176,CC003,CC002,CC017,"[0.9364, 0.9319, 0.926]",content_based_cosine_similarity_v1
+P0177,CC003,CC016,CC015,"[0.9207, 0.9131, 0.9076]",content_based_cosine_similarity_v1
+P0178,CC003,CC002,CC001,"[0.9306, 0.9282, 0.9158]",content_based_cosine_similarity_v1
+P0179,CC003,CC016,CC002,"[0.917, 0.9048, 0.9041]",content_based_cosine_similarity_v1
+P0180,CC018,CC015,CC016,"[0.9562, 0.951, 0.9275]",content_based_cosine_similarity_v1
+P0181,CC003,CC002,CC006,"[0.9187, 0.9048, 0.897]",content_based_cosine_similarity_v1
+P0182,CC016,CC018,CC015,"[0.9386, 0.9084, 0.9062]",content_based_cosine_similarity_v1
+P0183,CC016,CC015,CC018,"[0.9356, 0.92, 0.9168]",content_based_cosine_similarity_v1
+P0184,CC003,CC002,CC016,"[0.8986, 0.8876, 0.879]",content_based_cosine_similarity_v1
+P0185,CC003,CC002,CC017,"[0.9333, 0.9249, 0.9163]",content_based_cosine_similarity_v1
+P0186,CC016,CC015,CC018,"[0.9163, 0.9133, 0.9089]",content_based_cosine_similarity_v1
+P0187,CC016,CC015,CC018,"[0.9263, 0.9161, 0.9114]",content_based_cosine_similarity_v1
+P0188,CC003,CC017,CC002,"[0.9154, 0.9076, 0.9075]",content_based_cosine_similarity_v1
+P0189,CC016,CC003,CC015,"[0.9219, 0.8981, 0.8942]",content_based_cosine_similarity_v1
+P0190,CC012,CC016,CC015,"[0.7699, 0.7522, 0.6257]",content_based_cosine_similarity_v1
+P0191,CC012,CC016,CC018,"[0.7933, 0.7912, 0.6902]",content_based_cosine_similarity_v1
+P0192,CC016,CC012,CC018,"[0.8229, 0.8214, 0.7338]",content_based_cosine_similarity_v1
+P0193,CC012,CC016,CC015,"[0.7378, 0.7259, 0.6024]",content_based_cosine_similarity_v1
+P0194,CC012,CC016,CC018,"[0.7835, 0.7658, 0.635]",content_based_cosine_similarity_v1
+P0195,CC012,CC016,CC003,"[0.7142, 0.6946, 0.5664]",content_based_cosine_similarity_v1
+P0196,CC012,CC016,CC015,"[0.7342, 0.7224, 0.6005]",content_based_cosine_similarity_v1
+P0197,CC016,CC012,CC018,"[0.7882, 0.787, 0.6864]",content_based_cosine_similarity_v1
+P0198,CC012,CC016,CC003,"[0.7637, 0.7406, 0.6097]",content_based_cosine_similarity_v1
+P0199,CC016,CC012,CC015,"[0.7777, 0.7733, 0.6818]",content_based_cosine_similarity_v1
+P0200,CC012,CC016,CC015,"[0.7791, 0.7715, 0.6534]",content_based_cosine_similarity_v1
+P0201,CC012,CC016,CC015,"[0.7528, 0.7523, 0.6492]",content_based_cosine_similarity_v1
+P0202,CC012,CC016,CC015,"[0.757, 0.7465, 0.6269]",content_based_cosine_similarity_v1
+P0203,CC012,CC016,CC015,"[0.7553, 0.7442, 0.6203]",content_based_cosine_similarity_v1
+P0204,CC012,CC016,CC015,"[0.7438, 0.727, 0.5973]",content_based_cosine_similarity_v1
+P0205,CC012,CC016,CC003,"[0.7762, 0.7571, 0.6266]",content_based_cosine_similarity_v1
+P0206,CC012,CC016,CC015,"[0.8059, 0.7901, 0.6631]",content_based_cosine_similarity_v1
+P0207,CC012,CC016,CC015,"[0.7638, 0.7487, 0.6271]",content_based_cosine_similarity_v1
+P0208,CC012,CC016,CC018,"[0.8008, 0.7861, 0.6711]",content_based_cosine_similarity_v1
+P0209,CC016,CC012,CC018,"[0.8311, 0.8294, 0.7527]",content_based_cosine_similarity_v1
+P0210,CC012,CC016,CC015,"[0.792, 0.7865, 0.6761]",content_based_cosine_similarity_v1
+P0211,CC012,CC016,CC003,"[0.7792, 0.7639, 0.6416]",content_based_cosine_similarity_v1
+P0212,CC012,CC016,CC015,"[0.7995, 0.799, 0.7048]",content_based_cosine_similarity_v1
+P0213,CC012,CC016,CC015,"[0.7942, 0.7814, 0.6621]",content_based_cosine_similarity_v1
+P0214,CC012,CC016,CC015,"[0.7619, 0.7523, 0.6345]",content_based_cosine_similarity_v1
+P0215,CC012,CC016,CC015,"[0.7937, 0.789, 0.6819]",content_based_cosine_similarity_v1
+P0216,CC016,CC012,CC018,"[0.8332, 0.8239, 0.7478]",content_based_cosine_similarity_v1
+P0217,CC012,CC016,CC018,"[0.801, 0.7839, 0.6621]",content_based_cosine_similarity_v1
+P0218,CC012,CC016,CC015,"[0.7842, 0.7823, 0.6759]",content_based_cosine_similarity_v1
+P0219,CC012,CC016,CC015,"[0.7518, 0.7349, 0.6041]",content_based_cosine_similarity_v1
+P0220,CC012,CC016,CC018,"[0.8154, 0.8131, 0.7288]",content_based_cosine_similarity_v1
+P0221,CC012,CC016,CC003,"[0.7456, 0.724, 0.5973]",content_based_cosine_similarity_v1
+P0222,CC012,CC016,CC018,"[0.757, 0.7413, 0.6194]",content_based_cosine_similarity_v1
+P0223,CC012,CC016,CC015,"[0.7997, 0.787, 0.6631]",content_based_cosine_similarity_v1
+P0224,CC012,CC016,CC018,"[0.7632, 0.7492, 0.6245]",content_based_cosine_similarity_v1
+P0225,CC016,CC012,CC015,"[0.7957, 0.7841, 0.7082]",content_based_cosine_similarity_v1
+P0226,CC012,CC016,CC015,"[0.7669, 0.7488, 0.6217]",content_based_cosine_similarity_v1
+P0227,CC012,CC016,CC015,"[0.8882, 0.8824, 0.8202]",content_based_cosine_similarity_v1
+P0228,CC016,CC012,CC015,"[0.8697, 0.8625, 0.8181]",content_based_cosine_similarity_v1
+P0229,CC016,CC012,CC015,"[0.8148, 0.8011, 0.7845]",content_based_cosine_similarity_v1
+P0230,CC012,CC016,CC015,"[0.8809, 0.8758, 0.8168]",content_based_cosine_similarity_v1
+P0231,CC016,CC012,CC015,"[0.8763, 0.8598, 0.8418]",content_based_cosine_similarity_v1
+P0232,CC016,CC012,CC015,"[0.8628, 0.8537, 0.8272]",content_based_cosine_similarity_v1
+P0233,CC016,CC012,CC015,"[0.8591, 0.8393, 0.836]",content_based_cosine_similarity_v1
+P0234,CC016,CC015,CC012,"[0.8624, 0.8606, 0.8301]",content_based_cosine_similarity_v1
+P0235,CC016,CC012,CC015,"[0.8858, 0.8706, 0.8541]",content_based_cosine_similarity_v1
+P0236,CC016,CC012,CC015,"[0.8284, 0.8253, 0.7887]",content_based_cosine_similarity_v1
+P0237,CC016,CC012,CC015,"[0.9011, 0.8902, 0.8698]",content_based_cosine_similarity_v1
+P0238,CC016,CC012,CC015,"[0.8595, 0.8591, 0.8119]",content_based_cosine_similarity_v1
+P0239,CC016,CC015,CC012,"[0.8346, 0.8319, 0.8064]",content_based_cosine_similarity_v1
+P0240,CC016,CC012,CC015,"[0.8429, 0.8342, 0.8033]",content_based_cosine_similarity_v1
+P0241,CC016,CC015,CC012,"[0.8553, 0.8455, 0.832]",content_based_cosine_similarity_v1
+P0242,CC016,CC012,CC015,"[0.8258, 0.8154, 0.7852]",content_based_cosine_similarity_v1
+P0243,CC016,CC012,CC015,"[0.849, 0.8472, 0.789]",content_based_cosine_similarity_v1
+P0244,CC016,CC012,CC015,"[0.9076, 0.8999, 0.8688]",content_based_cosine_similarity_v1
+P0245,CC016,CC012,CC015,"[0.8866, 0.873, 0.8407]",content_based_cosine_similarity_v1
+P0246,CC016,CC015,CC012,"[0.8763, 0.8692, 0.8554]",content_based_cosine_similarity_v1
+P0247,CC016,CC012,CC015,"[0.8107, 0.8061, 0.7717]",content_based_cosine_similarity_v1
+P0248,CC016,CC012,CC015,"[0.8932, 0.8852, 0.8489]",content_based_cosine_similarity_v1
+P0249,CC015,CC016,CC012,"[0.8813, 0.8599, 0.8144]",content_based_cosine_similarity_v1
+P0250,CC016,CC012,CC015,"[0.8665, 0.8506, 0.8425]",content_based_cosine_similarity_v1
+P0251,CC016,CC012,CC015,"[0.8486, 0.8421, 0.8181]",content_based_cosine_similarity_v1
+P0252,CC016,CC012,CC015,"[0.9065, 0.889, 0.8711]",content_based_cosine_similarity_v1
+P0253,CC016,CC012,CC015,"[0.897, 0.8842, 0.8575]",content_based_cosine_similarity_v1
+P0254,CC016,CC012,CC015,"[0.8556, 0.8547, 0.799]",content_based_cosine_similarity_v1
+P0255,CC016,CC012,CC015,"[0.8971, 0.8819, 0.8782]",content_based_cosine_similarity_v1
+P0256,CC016,CC012,CC015,"[0.8635, 0.859, 0.8216]",content_based_cosine_similarity_v1
+P0257,CC016,CC012,CC015,"[0.8526, 0.8487, 0.8123]",content_based_cosine_similarity_v1
+P0258,CC016,CC012,CC015,"[0.892, 0.8861, 0.8467]",content_based_cosine_similarity_v1
+P0259,CC016,CC012,CC015,"[0.8272, 0.8243, 0.7786]",content_based_cosine_similarity_v1
+P0260,CC016,CC012,CC015,"[0.9043, 0.8996, 0.8492]",content_based_cosine_similarity_v1
+P0261,CC012,CC016,CC015,"[0.8845, 0.8758, 0.8118]",content_based_cosine_similarity_v1
+P0262,CC016,CC012,CC015,"[0.8694, 0.8669, 0.8201]",content_based_cosine_similarity_v1
+P0263,CC016,CC015,CC012,"[0.8687, 0.8503, 0.8487]",content_based_cosine_similarity_v1
+P0264,CC018,CC015,CC016,"[0.9384, 0.8723, 0.8564]",content_based_cosine_similarity_v1
+P0265,CC018,CC015,CC016,"[0.9131, 0.8665, 0.7993]",content_based_cosine_similarity_v1
+P0266,CC018,CC015,CC016,"[0.8762, 0.8229, 0.7756]",content_based_cosine_similarity_v1
+P0267,CC018,CC015,CC016,"[0.901, 0.8609, 0.7888]",content_based_cosine_similarity_v1
+P0268,CC018,CC015,CC016,"[0.8902, 0.8354, 0.8032]",content_based_cosine_similarity_v1
+P0269,CC018,CC015,CC008,"[0.8645, 0.8225, 0.7574]",content_based_cosine_similarity_v1
+P0270,CC018,CC015,CC016,"[0.799, 0.7641, 0.7088]",content_based_cosine_similarity_v1
+P0271,CC018,CC015,CC016,"[0.8431, 0.7954, 0.7342]",content_based_cosine_similarity_v1
+P0272,CC018,CC015,CC016,"[0.9079, 0.8781, 0.8228]",content_based_cosine_similarity_v1
+P0273,CC018,CC015,CC016,"[0.8937, 0.8234, 0.7965]",content_based_cosine_similarity_v1
+P0274,CC018,CC015,CC016,"[0.8763, 0.85, 0.78]",content_based_cosine_similarity_v1
+P0275,CC018,CC015,CC016,"[0.9168, 0.8817, 0.7993]",content_based_cosine_similarity_v1
+P0276,CC018,CC015,CC016,"[0.8459, 0.8109, 0.7626]",content_based_cosine_similarity_v1
+P0277,CC018,CC015,CC016,"[0.8461, 0.8012, 0.7443]",content_based_cosine_similarity_v1
+P0278,CC018,CC015,CC016,"[0.8661, 0.8286, 0.7745]",content_based_cosine_similarity_v1
+P0279,CC018,CC015,CC016,"[0.883, 0.8361, 0.7776]",content_based_cosine_similarity_v1
+P0280,CC018,CC015,CC016,"[0.8934, 0.8383, 0.7839]",content_based_cosine_similarity_v1
+P0281,CC018,CC015,CC016,"[0.8773, 0.8208, 0.7673]",content_based_cosine_similarity_v1
+P0282,CC018,CC015,CC016,"[0.7927, 0.7561, 0.7014]",content_based_cosine_similarity_v1
+P0283,CC018,CC015,CC016,"[0.9064, 0.8668, 0.7941]",content_based_cosine_similarity_v1
+P0284,CC018,CC015,CC016,"[0.9095, 0.8537, 0.8027]",content_based_cosine_similarity_v1
+P0285,CC018,CC015,CC016,"[0.9046, 0.8548, 0.8374]",content_based_cosine_similarity_v1
+P0286,CC018,CC015,CC016,"[0.8803, 0.8143, 0.803]",content_based_cosine_similarity_v1
+P0287,CC018,CC015,CC016,"[0.9155, 0.8745, 0.8076]",content_based_cosine_similarity_v1
+P0288,CC018,CC015,CC016,"[0.8976, 0.8303, 0.7955]",content_based_cosine_similarity_v1
+P0289,CC018,CC015,CC016,"[0.8872, 0.8336, 0.7914]",content_based_cosine_similarity_v1
+P0290,CC018,CC015,CC016,"[0.8701, 0.8245, 0.7693]",content_based_cosine_similarity_v1
+P0291,CC018,CC015,CC016,"[0.8587, 0.8096, 0.7638]",content_based_cosine_similarity_v1
+P0292,CC018,CC015,CC016,"[0.8548, 0.8143, 0.7688]",content_based_cosine_similarity_v1
+P0293,CC018,CC015,CC016,"[0.8753, 0.8315, 0.8034]",content_based_cosine_similarity_v1
+P0294,CC018,CC015,CC016,"[0.9197, 0.86, 0.8198]",content_based_cosine_similarity_v1
+P0295,CC018,CC015,CC016,"[0.9414, 0.8722, 0.8541]",content_based_cosine_similarity_v1
+P0296,CC018,CC015,CC016,"[0.8337, 0.8014, 0.7466]",content_based_cosine_similarity_v1
+P0297,CC018,CC015,CC016,"[0.8711, 0.8047, 0.7847]",content_based_cosine_similarity_v1
+P0298,CC018,CC015,CC016,"[0.9343, 0.8588, 0.8206]",content_based_cosine_similarity_v1
+P0299,CC018,CC015,CC016,"[0.8835, 0.8391, 0.7874]",content_based_cosine_similarity_v1
+P0300,CC018,CC015,CC016,"[0.8982, 0.8495, 0.7957]",content_based_cosine_similarity_v1

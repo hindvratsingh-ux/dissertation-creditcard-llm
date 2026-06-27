@@ -1,81 +1,301 @@
 profile_id,profile_type,age_group,monthly_income,monthly_groceries,monthly_travel,monthly_fuel,monthly_dining,monthly_online_shopping,monthly_other_spend,annual_fee_preference,goal,travel_interest,spending_style,preferred_reward_type,needs_low_cost,plans_large_purchase_amount,notes
-P0001,student_low_spend,18-25,1314,103,94,67,111,207,58,low,build_credit,low,frugal,Cashback,True,0,
-P0002,student_low_spend,18-25,1954,113,86,97,149,172,87,low,build_credit,low,frugal,Cashback,True,0,
-P0003,student_low_spend,18-25,1632,104,3,55,107,209,82,low,build_credit,low,frugal,Cashback,True,0,
-P0004,student_low_spend,18-25,1816,103,71,62,149,257,64,low,build_credit,low,frugal,Cashback,True,0,
-P0005,student_low_spend,18-25,1659,175,35,50,100,258,71,low,build_credit,low,frugal,Cashback,True,0,
-P0006,student_low_spend,18-25,1484,119,27,98,123,176,55,low,build_credit,low,frugal,Cashback,True,0,
-P0007,student_low_spend,18-25,1589,112,45,72,113,161,96,low,build_credit,low,frugal,Cashback,True,0,
-P0008,student_low_spend,18-25,1670,168,15,74,90,291,68,low,build_credit,low,frugal,Cashback,True,0,
-P0009,student_low_spend,18-25,1843,179,46,86,104,167,52,low,build_credit,low,frugal,Cashback,True,0,
-P0010,student_low_spend,18-25,1877,129,98,68,90,209,56,low,build_credit,low,frugal,Cashback,True,0,
-P0011,family_grocery_heavy,30-45,3778,542,158,231,293,191,147,medium,max_cashback,medium,balanced,Cashback,False,0,
-P0012,family_grocery_heavy,30-45,3727,507,185,184,379,168,177,medium,max_cashback,medium,balanced,Cashback,False,0,
-P0013,family_grocery_heavy,30-45,4300,487,168,243,262,191,159,medium,max_cashback,medium,balanced,Cashback,False,0,
-P0014,family_grocery_heavy,30-45,3777,538,181,238,342,206,187,medium,max_cashback,medium,balanced,Cashback,False,0,
-P0015,family_grocery_heavy,30-45,3664,793,199,157,258,158,140,medium,max_cashback,medium,balanced,Cashback,False,0,
-P0016,family_grocery_heavy,30-45,3821,537,108,177,345,230,127,medium,max_cashback,medium,balanced,Cashback,False,0,
-P0017,family_grocery_heavy,30-45,4342,655,150,232,317,186,133,medium,max_cashback,medium,balanced,Cashback,False,0,
-P0018,family_grocery_heavy,30-45,3285,526,195,221,337,217,195,medium,max_cashback,medium,balanced,Cashback,False,0,
-P0019,family_grocery_heavy,30-45,4197,619,174,201,292,206,117,medium,max_cashback,medium,balanced,Cashback,False,0,
-P0020,family_grocery_heavy,30-45,4043,652,111,246,212,178,119,medium,max_cashback,medium,balanced,Cashback,False,0,
-P0021,traveller_frequent,25-40,3785,190,748,134,402,216,149,high,earn_travel_points,high,travel_focused,Travel,False,0,
-P0022,traveller_frequent,25-40,3281,269,670,112,498,341,101,high,earn_travel_points,high,travel_focused,Travel,False,0,
-P0023,traveller_frequent,25-40,3893,179,749,148,442,268,198,high,earn_travel_points,high,travel_focused,Travel,False,0,
-P0024,traveller_frequent,25-40,3812,237,457,117,361,240,158,high,earn_travel_points,high,travel_focused,Travel,False,0,
-P0025,traveller_frequent,25-40,2506,217,656,102,379,227,180,high,earn_travel_points,high,travel_focused,Travel,False,0,
-P0026,traveller_frequent,25-40,3111,279,711,105,289,295,197,high,earn_travel_points,high,travel_focused,Travel,False,0,
-P0027,traveller_frequent,25-40,2830,288,798,147,485,200,176,high,earn_travel_points,high,travel_focused,Travel,False,0,
-P0028,traveller_frequent,25-40,3163,275,409,94,487,292,139,high,earn_travel_points,high,travel_focused,Travel,False,0,
-P0029,traveller_frequent,25-40,2990,164,523,90,271,324,108,high,earn_travel_points,high,travel_focused,Travel,False,0,
-P0030,traveller_frequent,25-40,4057,286,792,96,282,321,170,high,earn_travel_points,high,travel_focused,Travel,False,0,
-P0031,balanced_cashback,35-50,4176,317,335,177,516,496,204,medium,max_overall_rewards,medium,balanced,Cashback,False,0,
-P0032,balanced_cashback,35-50,5708,443,386,125,459,352,245,medium,max_overall_rewards,medium,balanced,Cashback,False,0,
-P0033,balanced_cashback,35-50,5294,480,332,157,361,313,207,medium,max_overall_rewards,medium,balanced,Cashback,False,0,
-P0034,balanced_cashback,35-50,3762,336,205,175,583,308,300,medium,max_overall_rewards,medium,balanced,Cashback,False,0,
-P0035,balanced_cashback,35-50,4402,251,218,180,330,308,167,medium,max_overall_rewards,medium,balanced,Cashback,False,0,
-P0036,balanced_cashback,35-50,3628,470,284,109,563,310,221,medium,max_overall_rewards,medium,balanced,Cashback,False,0,
-P0037,balanced_cashback,35-50,5488,304,338,116,592,397,271,medium,max_overall_rewards,medium,balanced,Cashback,False,0,
-P0038,balanced_cashback,35-50,4495,450,321,152,397,274,174,medium,max_overall_rewards,medium,balanced,Cashback,False,0,
-P0039,balanced_cashback,35-50,5265,340,308,152,539,471,163,medium,max_overall_rewards,medium,balanced,Cashback,False,0,
-P0040,balanced_cashback,35-50,3903,265,303,143,355,313,199,medium,max_overall_rewards,medium,balanced,Cashback,False,0,
-P0041,large_purchase_planner,40-55,4779,574,264,137,358,246,1085,high,large_purchase_rewards,low,large_spender,Cashback,False,1909,
-P0042,large_purchase_planner,40-55,5894,427,169,176,456,340,900,high,large_purchase_rewards,low,large_spender,Cashback,False,1909,
-P0043,large_purchase_planner,40-55,4207,576,153,131,487,392,1042,high,large_purchase_rewards,low,large_spender,Cashback,False,1909,
-P0044,large_purchase_planner,40-55,4681,508,274,181,304,302,860,high,large_purchase_rewards,low,large_spender,Cashback,False,1909,
-P0045,large_purchase_planner,40-55,4674,494,150,169,317,400,1265,high,large_purchase_rewards,low,large_spender,Cashback,False,1909,
-P0046,large_purchase_planner,40-55,5168,516,292,182,289,248,1103,high,large_purchase_rewards,low,large_spender,Cashback,False,1909,
-P0047,large_purchase_planner,40-55,4891,329,298,189,265,391,1121,high,large_purchase_rewards,low,large_spender,Cashback,False,1909,
-P0048,large_purchase_planner,40-55,4234,325,299,181,378,335,961,high,large_purchase_rewards,low,large_spender,Cashback,False,1909,
-P0049,large_purchase_planner,40-55,4232,560,170,143,267,352,869,high,large_purchase_rewards,low,large_spender,Cashback,False,1909,
-P0050,large_purchase_planner,40-55,6765,420,253,135,491,345,1052,high,large_purchase_rewards,low,large_spender,Cashback,False,1909,
-P0051,online_shopper,25-35,3685,160,90,86,299,889,166,low,online_shopping_rewards,low,online_focused,Online,True,0,
-P0052,online_shopper,25-35,3147,216,106,102,230,722,133,low,online_shopping_rewards,low,online_focused,Online,True,0,
-P0053,online_shopper,25-35,3310,183,118,89,230,984,109,low,online_shopping_rewards,low,online_focused,Online,True,0,
-P0054,online_shopper,25-35,2519,267,92,64,287,709,164,low,online_shopping_rewards,low,online_focused,Online,True,0,
-P0055,online_shopper,25-35,3043,183,124,116,167,725,147,low,online_shopping_rewards,low,online_focused,Online,True,0,
-P0056,online_shopper,25-35,3083,190,136,113,289,960,138,low,online_shopping_rewards,low,online_focused,Online,True,0,
-P0057,online_shopper,25-35,3752,285,81,102,291,753,184,low,online_shopping_rewards,low,online_focused,Online,True,0,
-P0058,online_shopper,25-35,2712,184,113,67,177,980,170,low,online_shopping_rewards,low,online_focused,Online,True,0,
-P0059,online_shopper,25-35,2818,219,116,98,203,967,143,low,online_shopping_rewards,low,online_focused,Online,True,0,
-P0060,online_shopper,25-35,2916,217,144,91,214,626,111,low,online_shopping_rewards,low,online_focused,Online,True,0,
-P0061,fuel_commuter,30-45,4299,308,117,322,150,285,198,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,
-P0062,fuel_commuter,30-45,3267,363,116,382,263,341,190,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,
-P0063,fuel_commuter,30-45,3875,343,100,357,169,376,119,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,
-P0064,fuel_commuter,30-45,4117,209,123,598,291,237,155,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,
-P0065,fuel_commuter,30-45,3261,210,119,486,160,291,126,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,
-P0066,fuel_commuter,30-45,4396,263,142,352,240,399,171,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,
-P0067,fuel_commuter,30-45,4810,304,139,379,210,241,122,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,
-P0068,fuel_commuter,30-45,4805,305,101,391,235,400,152,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,
-P0069,fuel_commuter,30-45,4642,371,147,427,218,240,200,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,
-P0070,fuel_commuter,30-45,4436,227,124,319,270,256,125,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,
-P0071,dining_heavy,35-50,5172,317,209,119,716,257,156,medium,dining_rewards,low,dining_focused,Dining,False,0,
-P0072,dining_heavy,35-50,4851,249,222,122,742,217,221,medium,dining_rewards,low,dining_focused,Dining,False,0,
-P0073,dining_heavy,35-50,4219,364,250,131,947,337,234,medium,dining_rewards,low,dining_focused,Dining,False,0,
-P0074,dining_heavy,35-50,5423,207,149,113,691,348,217,medium,dining_rewards,low,dining_focused,Dining,False,0,
-P0075,dining_heavy,35-50,3578,227,231,124,973,280,261,medium,dining_rewards,low,dining_focused,Dining,False,0,
-P0076,dining_heavy,35-50,4741,330,149,129,895,248,215,medium,dining_rewards,low,dining_focused,Dining,False,0,
-P0077,dining_heavy,35-50,3590,381,231,80,866,337,200,medium,dining_rewards,low,dining_focused,Dining,False,0,
-P0078,dining_heavy,35-50,4245,310,137,122,919,280,181,medium,dining_rewards,low,dining_focused,Dining,False,0,
-P0079,dining_heavy,35-50,4974,276,249,119,941,304,233,medium,dining_rewards,low,dining_focused,Dining,False,0,
-P0080,dining_heavy,35-50,4324,378,195,150,665,249,257,medium,dining_rewards,low,dining_focused,Dining,False,0,
+P0001,student_low_spend,18-25,1227,94,21,0,45,68,38,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0002,student_low_spend,18-25,1277,93,63,0,67,94,32,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0003,student_low_spend,18-25,915,91,33,0,62,117,31,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0004,student_low_spend,18-25,1187,105,65,0,44,97,67,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0005,student_low_spend,18-25,1042,80,68,0,74,94,51,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0006,student_low_spend,18-25,1042,99,33,0,36,51,54,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0007,student_low_spend,18-25,949,125,74,0,68,73,32,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0008,student_low_spend,18-25,1273,138,54,0,54,50,65,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0009,student_low_spend,18-25,1050,160,59,0,66,64,75,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0010,student_low_spend,18-25,935,85,62,0,79,77,35,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0011,student_low_spend,18-25,1337,109,75,0,54,75,59,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0012,student_low_spend,18-25,1225,126,30,0,52,66,72,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0013,student_low_spend,18-25,1036,89,58,0,64,71,40,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0014,student_low_spend,18-25,1136,128,37,0,73,81,79,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0015,student_low_spend,18-25,1297,87,34,0,50,91,47,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0016,student_low_spend,18-25,933,107,78,0,43,103,55,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0017,student_low_spend,18-25,1352,138,29,0,38,71,77,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0018,student_low_spend,18-25,1187,148,36,0,67,91,53,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0019,student_low_spend,18-25,1012,97,52,0,35,46,37,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0020,student_low_spend,18-25,978,160,30,0,68,48,54,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0021,student_low_spend,18-25,1095,156,49,0,65,41,73,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0022,student_low_spend,18-25,1269,94,63,0,79,83,37,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0023,student_low_spend,18-25,1050,135,30,0,30,73,62,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0024,student_low_spend,18-25,1290,102,52,0,70,78,70,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0025,student_low_spend,18-25,1159,157,32,0,53,60,64,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0026,student_low_spend,18-25,1388,147,78,0,68,81,61,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0027,student_low_spend,18-25,909,94,79,0,49,70,33,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0028,student_low_spend,18-25,1023,152,80,0,35,102,34,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0029,student_low_spend,18-25,1400,148,69,0,38,100,65,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0030,student_low_spend,18-25,984,113,53,0,43,109,78,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0031,student_low_spend,18-25,1273,105,65,0,55,87,58,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0032,student_low_spend,18-25,1360,146,48,0,45,68,34,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0033,student_low_spend,18-25,1073,82,57,0,67,68,30,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0034,student_low_spend,18-25,936,160,23,0,34,44,51,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0035,student_low_spend,18-25,936,145,35,0,72,102,43,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0036,student_low_spend,18-25,1176,96,66,0,45,100,56,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0037,student_low_spend,18-25,997,92,26,0,52,94,56,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0038,student_low_spend,18-25,1139,86,63,0,33,91,76,low,build_credit,low,frugal,Cashback,True,0,"Student or recent school leaver, part-time income, no vehicle."
+P0039,family_grocery_heavy,30-45,4589,435,131,164,168,257,157,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0040,family_grocery_heavy,30-45,3774,596,123,175,238,183,211,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0041,family_grocery_heavy,30-45,3508,606,203,250,260,145,106,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0042,family_grocery_heavy,30-45,5414,387,111,258,180,162,152,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0043,family_grocery_heavy,30-45,5189,626,127,250,222,135,121,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0044,family_grocery_heavy,30-45,4752,381,149,173,236,193,154,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0045,family_grocery_heavy,30-45,5476,629,119,164,195,175,107,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0046,family_grocery_heavy,30-45,5420,411,195,180,134,132,174,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0047,family_grocery_heavy,30-45,5152,637,217,249,255,160,107,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0048,family_grocery_heavy,30-45,5280,421,208,163,137,272,108,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0049,family_grocery_heavy,30-45,4163,586,115,260,265,183,174,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0050,family_grocery_heavy,30-45,3362,697,110,193,269,264,166,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0051,family_grocery_heavy,30-45,4495,513,126,225,200,181,133,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0052,family_grocery_heavy,30-45,4821,447,185,222,196,237,140,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0053,family_grocery_heavy,30-45,3497,384,158,219,264,145,109,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0054,family_grocery_heavy,30-45,5402,489,164,173,153,209,212,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0055,family_grocery_heavy,30-45,3481,505,147,176,160,232,206,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0056,family_grocery_heavy,30-45,5425,534,178,243,255,122,185,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0057,family_grocery_heavy,30-45,5471,533,219,224,146,154,133,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0058,family_grocery_heavy,30-45,3672,434,195,210,159,189,136,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0059,family_grocery_heavy,30-45,4062,555,126,227,187,249,162,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0060,family_grocery_heavy,30-45,4228,406,111,221,228,190,105,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0061,family_grocery_heavy,30-45,3214,550,198,156,187,161,194,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0062,family_grocery_heavy,30-45,5009,662,190,194,263,122,114,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0063,family_grocery_heavy,30-45,3508,456,169,144,214,269,170,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0064,family_grocery_heavy,30-45,3806,600,116,145,198,213,215,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0065,family_grocery_heavy,30-45,3363,563,126,227,183,290,113,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0066,family_grocery_heavy,30-45,4648,666,213,251,224,278,195,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0067,family_grocery_heavy,30-45,3833,501,210,160,165,225,103,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0068,family_grocery_heavy,30-45,3934,550,200,259,225,291,210,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0069,family_grocery_heavy,30-45,4216,516,120,240,147,217,211,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0070,family_grocery_heavy,30-45,3358,620,128,165,237,209,139,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0071,family_grocery_heavy,30-45,4132,494,103,224,169,222,142,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0072,family_grocery_heavy,30-45,4341,415,198,175,209,284,165,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0073,family_grocery_heavy,30-45,4837,654,142,260,127,149,212,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0074,family_grocery_heavy,30-45,4269,471,174,173,129,147,176,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0075,family_grocery_heavy,30-45,4979,556,193,240,200,231,177,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0076,family_grocery_heavy,30-45,5294,439,149,255,267,168,132,medium,max_cashback,medium,balanced,Cashback,False,0,"Family household with children, primary spender on groceries and fuel."
+P0077,traveller_frequent,25-40,3681,271,400,146,320,273,230,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0078,traveller_frequent,25-40,3786,244,719,120,283,256,249,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0079,traveller_frequent,25-40,4766,264,567,131,371,321,152,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0080,traveller_frequent,25-40,4285,267,740,128,309,337,197,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0081,traveller_frequent,25-40,5163,300,826,80,375,253,173,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0082,traveller_frequent,25-40,5260,242,638,136,446,352,174,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0083,traveller_frequent,25-40,5593,281,806,101,263,252,251,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0084,traveller_frequent,25-40,4872,183,819,110,378,237,170,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0085,traveller_frequent,25-40,4103,166,423,111,463,336,138,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0086,traveller_frequent,25-40,5365,266,853,160,319,358,218,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0087,traveller_frequent,25-40,5524,262,524,98,222,207,228,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0088,traveller_frequent,25-40,4396,205,811,146,457,192,183,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0089,traveller_frequent,25-40,3997,276,468,139,382,293,249,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0090,traveller_frequent,25-40,5247,300,628,100,463,295,186,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0091,traveller_frequent,25-40,4512,230,792,146,468,340,181,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0092,traveller_frequent,25-40,4624,272,439,116,340,249,205,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0093,traveller_frequent,25-40,4809,298,441,97,297,239,218,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0094,traveller_frequent,25-40,4125,214,432,133,428,264,258,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0095,traveller_frequent,25-40,5408,266,431,106,435,279,125,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0096,traveller_frequent,25-40,5858,257,644,80,400,256,219,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0097,traveller_frequent,25-40,5216,297,782,149,332,304,176,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0098,traveller_frequent,25-40,4617,271,648,83,419,266,223,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0099,traveller_frequent,25-40,4176,279,870,96,233,280,126,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0100,traveller_frequent,25-40,3843,269,469,139,313,192,186,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0101,traveller_frequent,25-40,5052,243,508,138,387,266,217,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0102,traveller_frequent,25-40,4639,267,529,90,460,184,258,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0103,traveller_frequent,25-40,3713,249,514,88,240,187,183,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0104,traveller_frequent,25-40,4316,165,718,99,342,212,241,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0105,traveller_frequent,25-40,3968,215,638,112,408,222,149,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0106,traveller_frequent,25-40,4170,239,455,154,233,259,216,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0107,traveller_frequent,25-40,5124,210,438,155,344,206,197,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0108,traveller_frequent,25-40,5959,190,807,152,241,268,256,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0109,traveller_frequent,25-40,5254,254,435,144,394,183,227,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0110,traveller_frequent,25-40,5507,187,621,126,455,219,231,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0111,traveller_frequent,25-40,4221,293,894,114,467,299,231,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0112,traveller_frequent,25-40,5926,228,565,111,264,251,235,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0113,traveller_frequent,25-40,4498,278,691,158,414,266,127,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0114,traveller_frequent,25-40,5524,243,493,142,328,270,186,high,earn_travel_points,high,travel_focused,Travel,False,0,"Frequent domestic and international traveller, values air miles and lounge access."
+P0115,balanced_cashback,30-50,4194,311,292,189,230,282,122,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0116,balanced_cashback,30-50,4916,288,161,130,344,244,245,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0117,balanced_cashback,30-50,3784,416,261,182,342,265,234,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0118,balanced_cashback,30-50,2870,263,215,128,263,317,182,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0119,balanced_cashback,30-50,4054,409,288,147,281,281,255,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0120,balanced_cashback,30-50,4208,348,280,142,250,319,236,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0121,balanced_cashback,30-50,3909,318,204,129,190,189,200,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0122,balanced_cashback,30-50,3289,430,277,197,336,187,169,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0123,balanced_cashback,30-50,3686,429,263,135,345,290,254,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0124,balanced_cashback,30-50,3959,265,189,137,218,232,165,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0125,balanced_cashback,30-50,4038,243,276,116,230,151,133,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0126,balanced_cashback,30-50,3996,418,172,181,352,265,146,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0127,balanced_cashback,30-50,2850,386,212,160,282,252,207,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0128,balanced_cashback,30-50,3555,253,204,161,189,156,222,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0129,balanced_cashback,30-50,4814,258,287,180,335,153,158,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0130,balanced_cashback,30-50,3411,447,284,138,181,203,150,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0131,balanced_cashback,30-50,4504,395,292,179,217,273,217,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0132,balanced_cashback,30-50,4645,353,216,175,269,218,135,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0133,balanced_cashback,30-50,3206,435,193,180,214,207,140,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0134,balanced_cashback,30-50,3443,301,184,170,179,180,120,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0135,balanced_cashback,30-50,4473,355,316,176,280,214,128,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0136,balanced_cashback,30-50,3748,313,320,136,339,256,138,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0137,balanced_cashback,30-50,3756,307,300,175,329,190,228,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0138,balanced_cashback,30-50,3270,379,197,182,198,208,156,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0139,balanced_cashback,30-50,3092,255,182,139,312,285,193,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0140,balanced_cashback,30-50,4598,271,259,188,237,319,223,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0141,balanced_cashback,30-50,3915,368,278,163,272,160,130,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0142,balanced_cashback,30-50,4569,428,222,177,224,146,143,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0143,balanced_cashback,30-50,3737,412,287,175,165,312,188,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0144,balanced_cashback,30-50,2964,435,184,160,292,306,233,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0145,balanced_cashback,30-50,3939,286,289,155,322,265,143,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0146,balanced_cashback,30-50,4725,329,244,142,242,311,146,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0147,balanced_cashback,30-50,3458,324,245,188,286,213,222,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0148,balanced_cashback,30-50,2950,356,162,140,224,222,149,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0149,balanced_cashback,30-50,4455,371,140,184,298,258,225,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0150,balanced_cashback,30-50,3022,288,272,146,319,267,233,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0151,balanced_cashback,30-50,3011,292,208,170,193,213,232,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0152,balanced_cashback,30-50,4785,271,147,180,315,201,160,medium,max_overall_rewards,medium,balanced,Cashback,False,0,Average UK household seeking best overall cashback across all spending categories.
+P0153,large_purchase_planner,35-55,5272,267,281,172,223,257,1561,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0154,large_purchase_planner,35-55,4464,496,170,202,413,239,1210,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0155,large_purchase_planner,35-55,6935,409,270,210,269,306,1554,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0156,large_purchase_planner,35-55,5976,501,202,178,341,237,1092,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0157,large_purchase_planner,35-55,4780,520,174,128,270,397,1508,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0158,large_purchase_planner,35-55,7499,472,227,220,329,268,1540,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0159,large_purchase_planner,35-55,4010,404,216,195,348,368,1201,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0160,large_purchase_planner,35-55,4608,488,277,181,288,285,1265,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0161,large_purchase_planner,35-55,7124,453,256,161,422,248,1414,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0162,large_purchase_planner,35-55,4978,456,199,219,305,211,1025,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0163,large_purchase_planner,35-55,7050,502,237,169,369,402,1540,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0164,large_purchase_planner,35-55,6670,337,266,124,232,328,1304,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0165,large_purchase_planner,35-55,5359,311,252,132,334,316,715,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0166,large_purchase_planner,35-55,6959,333,244,203,239,219,1180,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0167,large_purchase_planner,35-55,7201,395,226,199,377,301,1365,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0168,large_purchase_planner,35-55,4328,428,276,168,281,360,1435,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0169,large_purchase_planner,35-55,7110,509,278,124,358,217,940,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0170,large_purchase_planner,35-55,6585,407,198,215,223,311,800,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0171,large_purchase_planner,35-55,7114,311,253,141,377,276,729,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0172,large_purchase_planner,35-55,4188,426,154,157,291,295,1141,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0173,large_purchase_planner,35-55,4596,385,275,172,344,374,1511,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0174,large_purchase_planner,35-55,4737,347,184,130,356,297,1334,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0175,large_purchase_planner,35-55,6798,383,267,194,236,259,1172,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0176,large_purchase_planner,35-55,6612,390,257,152,370,202,1523,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0177,large_purchase_planner,35-55,5905,407,279,140,218,313,1053,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0178,large_purchase_planner,35-55,6406,413,248,208,264,316,1565,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0179,large_purchase_planner,35-55,5237,361,238,181,227,260,1090,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0180,large_purchase_planner,35-55,6342,443,287,157,379,275,722,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0181,large_purchase_planner,35-55,7399,462,210,121,344,375,1496,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0182,large_purchase_planner,35-55,7050,285,295,215,327,413,993,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0183,large_purchase_planner,35-55,7177,377,295,165,256,362,894,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0184,large_purchase_planner,35-55,6543,388,175,200,224,360,1361,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0185,large_purchase_planner,35-55,4161,418,252,124,348,293,1449,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0186,large_purchase_planner,35-55,4538,306,215,161,391,306,879,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0187,large_purchase_planner,35-55,4822,327,278,166,335,328,979,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0188,large_purchase_planner,35-55,7401,344,205,181,406,275,1464,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0189,large_purchase_planner,35-55,5387,318,259,129,236,393,931,medium,large_purchase_rewards,low,large_spender,Cashback,False,800,Planning a significant one-off purchase; prioritises 0% interest period or purchase protection.
+P0190,online_shopper,22-35,3961,221,131,63,123,904,130,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0191,online_shopper,22-35,2228,187,128,47,216,688,166,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0192,online_shopper,22-35,3733,187,134,64,195,555,166,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0193,online_shopper,22-35,2678,240,63,79,183,968,158,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0194,online_shopper,22-35,2653,136,141,92,218,965,169,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0195,online_shopper,22-35,2818,224,74,48,111,984,84,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0196,online_shopper,22-35,2823,246,74,46,160,954,148,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0197,online_shopper,22-35,2477,219,118,63,238,714,155,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0198,online_shopper,22-35,3720,159,113,81,125,926,142,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0199,online_shopper,22-35,3460,224,95,42,194,611,136,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0200,online_shopper,22-35,3110,180,106,46,194,778,195,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0201,online_shopper,22-35,3520,211,67,65,170,597,95,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0202,online_shopper,22-35,3936,236,71,82,154,828,161,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0203,online_shopper,22-35,3422,125,66,90,185,624,96,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0204,online_shopper,22-35,3811,172,68,93,153,800,107,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0205,online_shopper,22-35,3865,179,102,89,137,903,195,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0206,online_shopper,22-35,3420,120,95,94,137,566,149,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0207,online_shopper,22-35,2713,164,74,82,106,567,81,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0208,online_shopper,22-35,2933,180,135,60,104,589,113,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0209,online_shopper,22-35,2307,152,154,66,234,558,175,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0210,online_shopper,22-35,2330,241,117,89,192,762,155,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0211,online_shopper,22-35,2423,235,124,54,111,872,180,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0212,online_shopper,22-35,3975,253,98,69,107,531,141,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0213,online_shopper,22-35,3935,222,114,83,127,751,171,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0214,online_shopper,22-35,3108,138,70,60,137,533,96,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0215,online_shopper,22-35,2763,260,151,60,197,805,147,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0216,online_shopper,22-35,2803,236,124,78,210,550,181,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0217,online_shopper,22-35,3637,149,143,81,155,720,137,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0218,online_shopper,22-35,2667,225,103,92,216,704,133,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0219,online_shopper,22-35,3694,144,100,67,180,840,112,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0220,online_shopper,22-35,2966,159,147,99,221,534,91,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0221,online_shopper,22-35,3903,141,71,67,124,881,174,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0222,online_shopper,22-35,2963,153,131,43,184,843,95,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0223,online_shopper,22-35,3041,210,145,100,208,944,197,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0224,online_shopper,22-35,3676,133,96,78,179,680,93,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0225,online_shopper,22-35,3383,249,87,49,223,614,188,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0226,online_shopper,22-35,2421,209,131,63,129,890,115,low,online_shopping_rewards,low,online_focused,Online,True,0,"Heavy online shopper, primarily uses card for e-commerce and subscription services."
+P0227,fuel_commuter,28-48,3526,309,151,598,106,275,198,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0228,fuel_commuter,28-48,3695,207,103,419,179,206,124,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0229,fuel_commuter,28-48,2625,246,98,569,202,137,98,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0230,fuel_commuter,28-48,2725,223,175,551,155,216,133,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0231,fuel_commuter,28-48,4458,287,100,469,179,203,179,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0232,fuel_commuter,28-48,2947,213,99,360,112,140,114,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0233,fuel_commuter,28-48,4414,369,134,528,213,226,114,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0234,fuel_commuter,28-48,3482,393,145,338,188,230,94,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0235,fuel_commuter,28-48,3760,373,166,583,224,254,165,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0236,fuel_commuter,28-48,3863,211,108,482,114,121,106,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0237,fuel_commuter,28-48,3834,254,178,350,165,194,121,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0238,fuel_commuter,28-48,3091,201,143,500,144,153,128,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0239,fuel_commuter,28-48,4781,380,109,536,190,138,130,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0240,fuel_commuter,28-48,2773,311,82,515,119,200,153,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0241,fuel_commuter,28-48,4358,346,131,493,174,149,131,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0242,fuel_commuter,28-48,2685,283,101,596,217,212,91,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0243,fuel_commuter,28-48,4388,227,111,503,202,254,90,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0244,fuel_commuter,28-48,4221,279,175,453,156,205,179,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0245,fuel_commuter,28-48,3288,219,145,338,235,250,104,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0246,fuel_commuter,28-48,4031,289,173,355,160,146,98,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0247,fuel_commuter,28-48,3648,250,102,588,139,139,102,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0248,fuel_commuter,28-48,4623,318,176,568,214,264,162,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0249,fuel_commuter,28-48,3923,360,120,357,212,137,140,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0250,fuel_commuter,28-48,4411,361,118,420,114,210,144,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0251,fuel_commuter,28-48,2903,279,139,511,109,134,127,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0252,fuel_commuter,28-48,3775,219,162,326,229,218,139,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0253,fuel_commuter,28-48,2768,315,153,376,182,274,140,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0254,fuel_commuter,28-48,4653,238,87,510,126,207,171,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0255,fuel_commuter,28-48,2945,329,162,368,110,183,170,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0256,fuel_commuter,28-48,4393,312,147,547,140,213,127,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0257,fuel_commuter,28-48,3758,299,132,453,113,205,88,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0258,fuel_commuter,28-48,3950,224,151,477,172,184,172,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0259,fuel_commuter,28-48,3215,285,90,578,136,209,119,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0260,fuel_commuter,28-48,4205,233,156,323,179,263,128,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0261,fuel_commuter,28-48,3945,232,165,549,123,228,145,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0262,fuel_commuter,28-48,4082,204,126,438,146,174,123,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0263,fuel_commuter,28-48,4591,249,108,350,139,139,117,low,fuel_rewards,low,fuel_commuter,Fuel,True,0,Car-dependent commuter with high monthly fuel expenditure; seeks fuel cashback.
+P0264,dining_heavy,28-50,3614,309,258,147,519,329,206,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0265,dining_heavy,28-50,3736,332,216,99,583,206,162,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0266,dining_heavy,28-50,4992,191,225,126,846,220,233,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0267,dining_heavy,28-50,4367,372,234,109,773,221,199,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0268,dining_heavy,28-50,5121,229,214,153,725,278,192,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0269,dining_heavy,28-50,4764,308,255,133,994,201,171,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0270,dining_heavy,28-50,3766,244,133,141,947,255,146,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0271,dining_heavy,28-50,5313,211,192,90,890,201,189,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0272,dining_heavy,28-50,5040,311,157,135,546,216,235,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0273,dining_heavy,28-50,4631,186,226,86,702,288,215,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0274,dining_heavy,28-50,4165,278,140,127,614,167,201,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0275,dining_heavy,28-50,3605,362,205,98,570,169,193,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0276,dining_heavy,28-50,5135,358,155,140,729,317,121,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0277,dining_heavy,28-50,3524,184,185,107,927,198,260,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0278,dining_heavy,28-50,5361,288,148,116,621,237,151,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0279,dining_heavy,28-50,3395,241,227,159,734,176,148,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0280,dining_heavy,28-50,5247,332,257,82,823,291,181,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0281,dining_heavy,28-50,3788,254,229,80,814,250,181,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0282,dining_heavy,28-50,4906,227,141,147,999,252,137,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0283,dining_heavy,28-50,5354,319,249,144,783,165,219,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0284,dining_heavy,28-50,5125,191,219,127,629,164,211,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0285,dining_heavy,28-50,3476,268,181,160,553,308,205,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0286,dining_heavy,28-50,3746,191,210,149,673,324,164,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0287,dining_heavy,28-50,5103,358,242,160,593,194,136,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0288,dining_heavy,28-50,5074,189,195,105,522,211,130,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0289,dining_heavy,28-50,4492,259,251,130,917,299,241,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0290,dining_heavy,28-50,4237,189,168,116,682,172,204,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0291,dining_heavy,28-50,4319,211,214,135,955,262,232,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0292,dining_heavy,28-50,4783,266,167,143,854,287,214,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0293,dining_heavy,28-50,5326,248,141,134,540,270,166,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0294,dining_heavy,28-50,5434,255,202,93,540,243,195,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0295,dining_heavy,28-50,4455,294,274,134,585,336,233,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0296,dining_heavy,28-50,4639,294,130,125,814,271,190,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0297,dining_heavy,28-50,3434,199,223,126,762,333,160,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0298,dining_heavy,28-50,3327,216,275,136,517,192,137,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0299,dining_heavy,28-50,4166,379,213,126,696,305,128,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
+P0300,dining_heavy,28-50,3828,353,235,127,690,273,139,medium,dining_rewards,medium,dining_focused,Dining,False,0,Urban professional with high dining and entertainment expenditure.
