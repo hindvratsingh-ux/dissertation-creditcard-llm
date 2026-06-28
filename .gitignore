@@ -20,3 +20,22 @@ results/temp/
 
 # Local experiment junk
 *.log
+
+# LaTeX build artifacts
+*.aux
+*.lof
+*.lot
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.blg
+*.bbl
+
+# Submission archive
+*.zip
+
+# Charts generated at root level (should live in results/figures/)
+accuracy_hist.png
+overlap_boxplot.png
