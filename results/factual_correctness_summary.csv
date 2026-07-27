@@ -1,0 +1,4 @@
+strategy,n_responses,n_with_checkable_claims,total_claims_checked,total_correct,total_incorrect,total_uncertain,pct_responses_no_errors
+few_shot,300,0,0,0,0,0,1.0
+structured,300,300,1715,1247,346,122,0.7367
+zero_shot,300,0,0,0,0,0,1.0
