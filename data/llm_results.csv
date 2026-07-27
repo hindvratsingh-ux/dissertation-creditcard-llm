@@ -3299,3 +3299,102 @@ P0300,structured,CC012,CC006,CC017,"{
 P0300,few_shot,CC012,CC015,CC016,"CC012
 CC015
 CC016",0.193
+P0005,few_shot,CC011,CC004,CC017,"CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal to build credit.
+CC004 - No annual fee and no rewards complexity, designed specifically for building credit history.
+CC017 - Low fee and cashback rewards on dining, matching the frugal spending style and cashback preference.",0.276
+P0006,zero_shot,CC016,CC017,CC015,"CC016 - Offers a low annual fee and a high cashback rate on grocery, fuel, and online shopping, making it suitable for the user's frugal spending style and low annual fee preference.
+CC017 - Provides a low annual fee and a decent cashback rate on groceries and dining, aligning with the user's spending habits and low annual fee preference.
+CC015 - Offers a high cashback rate on groceries and online shopping, making it a good fit for the user's spending style and preferred reward type, despite having a higher annual fee.",0.262
+P0006,few_shot,CC019,CC011,CC017,"CC019 - No annual fee, simple entry-level card suited to a low, irregular spender, matching the student_low_spend profile.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal of building credit.
+CC017 - No annual fee and cashback rewards on groceries and dining, suitable for a student with a frugal spending style.",0.219
+P0007,zero_shot,CC016,CC015,CC017,"CC016 - This card fits the user's profile due to its low annual fee and high cashback rates on various categories, including grocery, fuel, dining, travel, and online shopping.
+CC015 - This card is suitable for the user because it offers a high cashback rate on groceries and other categories, aligning with their spending style and goals.
+CC017 - This card matches the user's profile due to its low annual fee and cashback rates on groceries and dining, which are relevant to their spending habits.",0.351
+P0007,few_shot,CC011,CC004,CC019,"CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal to build credit.
+CC004 - No annual fee and no rewards complexity, designed specifically for building credit history.
+CC019 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal to build credit.",0.216
+P0008,zero_shot,CC016,CC017,CC015,"CC016 - This card fits the user's profile due to its low annual fee and high cashback rates on various categories, including grocery, fuel, and online shopping.
+CC017 - This card matches the user's spending style and goals with its low annual fee and competitive cashback rates on grocery and dining purchases.
+CC015 - This card is recommended due to its low annual fee and high cashback rates on grocery, fuel, and dining purchases, which align with the user's spending habits.",0.29
+P0008,few_shot,CC019,CC011,CC017,"CC019 - No annual fee and no rewards complexity, designed specifically for building credit history and low-income students.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal of building credit.
+CC017 - Low annual fee and cashback rewards on groceries and dining, suitable for a student with a frugal spending style.",0.298
+P0009,zero_shot,CC015,CC016,CC017,"CC015 - This card fits the user's profile due to its low annual fee and high cashback rates on grocery, fuel, dining, travel, and online shopping purchases.
+CC016 - This card is suitable for the user because it offers a low annual fee and competitive cashback rates on various categories, including grocery, fuel, dining, travel, and online shopping.
+CC017 - This card matches the user's profile as it has a low annual fee and offers cashback rates on grocery, dining, and other categories, making it a suitable option for a student with low spend.",0.287
+P0009,few_shot,CC011,CC004,CC017,"CC011 - Student-focused card with no fee, matching the student_low_spend profile type and low-income/no-vehicle situation.
+CC004 - No annual fee and designed for building credit history, aligning with the build_credit goal and low-income profile.
+CC017 - No annual fee and cashback rewards on groceries and dining, matching the student_low_spend profile type and frugal spending style.",0.228
+P0010,zero_shot,CC016,CC015,CC017,"CC016 - Best matches this user's spending habits with a cashback rate of 3.0% on groceries, 4.0% on fuel, and 2.0% on dining.
+CC015 - Offers a high cashback rate of 5.0% on groceries, making it suitable for this user's grocery spending.
+CC017 - Provides a cashback rate of 2.0% on dining, which aligns with this user's dining expenses.",0.318
+P0010,few_shot,CC019,CC011,CC017,"CC019 - No annual fee and no rewards complexity, designed specifically for building credit history and low-income students.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal of building credit.
+CC017 - No annual fee and a relatively high cashback rate on dining, matching the user's spending style and cashback preference.",0.279
+P0011,zero_shot,CC016,CC017,CC015,"CC016 - This card fits the user's profile due to its low annual fee and high cashback rates on various categories, including grocery, fuel, and online shopping.
+CC017 - This card suits the user's needs with its low annual fee and competitive cashback rates on grocery and dining, aligning with their spending habits.
+CC015 - This card matches the user's profile with its low annual fee and high cashback rates on grocery, fuel, and dining, making it suitable for their frugal spending style.",0.317
+P0011,few_shot,CC019,CC011,CC017,"CC019 - No annual fee and no rewards complexity, designed specifically for building credit history, matching the student_low_spend profile and build_credit goal.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and student_low_spend type.
+CC017 - Low annual fee and cashback rewards on groceries and dining, aligning with the low-income and frugal spending style.",0.488
+P0012,zero_shot,CC015,CC016,CC017,"CC015 - This card fits the user's profile due to its high cashback rate on grocery purchases, which aligns with their frequent grocery shopping.
+CC016 - This card is recommended because it offers a high cashback rate on grocery purchases and a low annual fee, which suits the user's frugal spending style and low-income budget.
+CC017 - This card is suitable for the user due to its low annual fee and cashback rates on grocery and dining purchases, which align with their spending habits.",0.303
+P0012,few_shot,CC019,CC011,CC017,"CC019 - No annual fee and no rewards complexity, designed specifically for building credit history and students.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal to build credit.
+CC017 - No annual fee, simple entry-level card suited to a low, irregular spender with a cashback reward.",0.263
+P0013,zero_shot,CC016,CC015,CC017,"CC016 - This card fits the user's profile due to its low annual fee and high cashback rates on various categories, including grocery, fuel, and online shopping.
+CC015 - This card suits the user's spending style and goals due to its low annual fee and high cashback rates on grocery, fuel, dining, and online shopping.
+CC017 - This card matches the user's profile due to its low annual fee and relatively high cashback rates on grocery and dining, making it suitable for a student or recent school leaver with a part-time income.",0.338
+P0013,few_shot,CC019,CC005,CC011,"CC019 - No annual fee and no rewards complexity, designed specifically for building credit history and low-income spenders.
+CC005 - No annual fee, simple entry-level card suited to a low, irregular spender with frugal spending style.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal of building credit.",0.226
+P0014,zero_shot,CC016,CC015,CC017,"CC016 - This card offers a high cashback rate on groceries (3.0%) and other categories, making it suitable for the user's spending style and goals.
+CC015 - With a high cashback rate on groceries (5.0%) and other categories, this card aligns with the user's spending habits and preferences.
+CC017 - This card offers a decent cashback rate on groceries (1.0%) and dining (2.0%), making it a suitable option for the user's spending habits and goals.",0.321
+P0014,few_shot,CC019,CC011,CC004,"CC019 - No annual fee, student-focused card with no rewards complexity, matching the student_low_spend profile.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and student_low_spend profile type.
+CC004 - No annual fee and no rewards complexity, designed specifically for building credit history, aligning with the build_credit goal.",0.299
+P0015,zero_shot,CC015,CC017,CC011,"CC015 - This card fits the user due to its low annual fee and high cashback rate on grocery spending, which aligns with the user's frugal spending style and preference for cashback rewards.
+CC017 - This card is suitable for the user as it offers a low annual fee and a decent cashback rate on grocery and dining spending, matching the user's low-income profile and spending habits.
+CC011 - This card is recommended for the user as it has no annual fee, aligning with the user's preference for low fees, and is a student credit card, matching the user's profile type.",0.337
+P0015,few_shot,CC019,CC011,CC017,"CC019 - No annual fee, designed specifically for students or recent school leavers with low income and no vehicle.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal of building credit.
+CC017 - No annual fee, simple entry-level card suited to a low, irregular spender with cashback rewards.",0.31
+P0016,zero_shot,CC016,CC017,CC015,"CC016 - Offers a low annual fee and a high cashback rate on grocery, fuel, and online shopping, making it suitable for the user's frugal spending style and low annual fee preference.
+CC017 - Provides a low annual fee and a decent cashback rate on grocery and dining, aligning with the user's low annual fee preference and spending habits.
+CC015 - Offers a high cashback rate on grocery, fuel, and dining, making it a suitable choice for the user's spending style and preferred reward type, despite having a higher annual fee.",0.31
+P0016,few_shot,CC019,CC011,CC017,"CC019 - No annual fee, student-focused card with no rewards complexity, matching the student_low_spend profile and low annual fee preference.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal of building credit.
+CC017 - No annual fee, simple cashback card suited to a low, irregular spender with a focus on cashback rewards.",0.275
+P0017,zero_shot,CC016,CC017,CC015,"CC016 - Offers a low annual fee and a high cashback rate on grocery, fuel, and online shopping, making it suitable for a student with a frugal spending style.
+CC017 - Provides a low annual fee and a decent cashback rate on grocery and dining, fitting the user's low annual fee preference and spending habits.
+CC015 - Offers a high cashback rate on grocery, fuel, dining, and online shopping, aligning with the user's spending style and goals of building credit.",0.305
+P0017,few_shot,CC019,CC011,CC017,"CC019 - No annual fee and no rewards complexity, designed specifically for building credit history and low-income spenders.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal of building credit.
+CC017 - No annual fee and cashback on groceries and dining, aligning with the user's spending habits and cashback preference.",0.266
+P0018,zero_shot,CC015,CC017,CC011,"CC015 - This card fits the user due to its low fee and high cashback rate on grocery purchases, which aligns with the user's frugal spending style and preference for cashback rewards.
+CC017 - This card suits the user because it offers a low fee and a decent cashback rate on grocery and dining purchases, which matches the user's spending habits and goals.
+CC011 - This card is recommended because it has no annual fee, which aligns with the user's preference for low fees, and it is a student credit card, which matches the user's profile type.",0.284
+P0018,few_shot,CC011,CC004,CC019,"CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and build_credit goal.
+CC004 - No annual fee and no rewards complexity, designed specifically for building credit history.
+CC019 - Student-focused card with no fee, matching the low-income/no-vehicle profile and build_credit goal.",0.172
+P0019,zero_shot,CC015,CC017,CC011,"CC015 - This card fits the user's profile due to its low annual fee and high cashback rate on grocery spend, which aligns with the user's frugal spending style and preference for cashback rewards.
+CC017 - This card is suitable for the user due to its low annual fee and decent cashback rates on grocery and dining spend, which matches the user's low-spend profile and preference for cashback rewards.
+CC011 - This card is recommended for the user as it has no annual fee, which aligns with the user's preference for low annual fees and is a suitable option for a student or recent school leaver with part-time income.",0.426
+P0019,few_shot,CC011,CC004,CC019,"CC011 - Student-focused card with no fee, matching the low-income/student profile and goal of building credit.
+CC004 - No annual fee and no rewards complexity, designed specifically for building credit history.
+CC019 - Student-focused card with no fee, matching the low-income/student profile and goal of building credit.",0.193
+P0020,zero_shot,CC016,CC017,CC015,"CC016 - This card offers a high cashback rate on groceries and other categories, making it suitable for the user's spending style and goals.
+CC017 - This card provides a decent cashback rate on groceries and dining, aligning with the user's spending habits and preferred reward type.
+CC015 - This card offers a high cashback rate on groceries and other categories, making it a good fit for the user's spending style and goals, despite having a higher annual fee.",0.271
+P0020,few_shot,CC011,CC004,CC019,"CC011 - Student-focused card with no fee, matching the low-income/student profile and goal to build credit.
+CC004 - No annual fee and designed specifically for building credit history, aligning with the user's goal.
+CC019 - Student-focused card with no fee, matching the low-income/student profile and goal to build credit.",0.291
+P0021,zero_shot,CC016,CC017,CC015,"CC016 - This card offers a low annual fee and a high cashback rate on grocery and online shopping, making it suitable for a student with a frugal spending style.
+CC017 - This card offers a low annual fee and a high cashback rate on dining, making it suitable for a student with a low income and a preference for cashback rewards.
+CC015 - This card offers a low annual fee and a high cashback rate on grocery, making it suitable for a student with a low income and a preference for cashback rewards.",0.271
+P0021,few_shot,CC019,CC011,CC017,"CC019 - No annual fee, student-focused card with no rewards complexity, matching the student_low_spend profile and low annual fee preference.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal to build credit.
+CC017 - No annual fee, simple entry-level card suited to a low, irregular spender with a cashback reward type.",0.264

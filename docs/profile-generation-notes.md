@@ -8,4 +8,29 @@ An earlier version of this script (`generate_profiles.py`, 500 rows drawn from a
 
 Profiles are built from **8 fixed archetypes**, each representing a distinct UK credit-card consumer type (student, family, frequent traveller, balanced cashback user, large-purchase planner, online shopper, fuel commuter, dining-heavy user). Spending ranges per archetype are calibrated against the **ONS Living Costs and Food Survey 2022-23** (see `docs/data-justification.md` for the full justification and figures used).
 
-- 300 profiles total, distributed 38/38/38/38/37/37/37/37 
+- 300 profiles total, distributed 38/38/38/38/37/37/37/37 across the 8 archetypes (so they sum to exactly 300).
+- Deterministic via `random.seed(42)` — the same file is reproduced on every run.
+- Profile IDs are zero-padded: `P0001` … `P0300`, assigned in archetype order, so profile ID ranges map directly to archetypes:
+
+| Profile ID range | Archetype |
+|---|---|
+| P0001–P0038 | student_low_spend |
+| P0039–P0076 | family_grocery_heavy |
+| P0077–P0114 | traveller_frequent |
+| P0115–P0152 | balanced_cashback |
+| P0153–P0189 | large_purchase_planner |
+| P0190–P0226 | online_shopper |
+| P0227–P0263 | fuel_commuter |
+| P0264–P0300 | dining_heavy |
+
+## Key fields
+
+- `profile_type` — the archetype key (see table above).
+- `age_group`, `monthly_income` — demographic context per archetype.
+- `monthly_groceries`, `monthly_travel`, `monthly_fuel`, `monthly_dining`, `monthly_online_shopping`, `monthly_other_spend` — simulated monthly spend in GBP, ONS-calibrated per archetype.
+- `annual_fee_preference` — categorical (low/medium/high).
+- `goal` — the user's primary reason for wanting a card (e.g. `build_credit`, `max_cashback`, `earn_travel_points`).
+- `travel_interest`, `spending_style`, `preferred_reward_type`, `needs_low_cost` — additional preferences used when constructing prompts and the baseline profile vector.
+- `plans_large_purchase_amount` — non-zero only for the `large_purchase_planner` archetype; used to evaluate 0%-purchase-period relevance.
+
+`data/profiles.csv` feeds both the cosine-similarity baseline (`src/baseline.py`) and the LLM prompting experiments (`src/llm_eval.py`).
