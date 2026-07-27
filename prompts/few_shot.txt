@@ -5,13 +5,11 @@ Below is a user's spending profile as a JSON object, followed by the full credit
 Your task: recommend exactly the top 3 credit cards that best match this user's spending habits, goals, annual fee preference, and reward type preference.
 
 Rules:
-- Only recommend cards that exist in the catalogue below.
-- You MUST return exactly 3 card IDs in this exact format, nothing else:
-CC001
-CC002
-CC003
-- Do NOT include any explanation, text, or formatting other than the 3 card IDs.
-- Each card ID must be on its own line.
+- Only recommend cards that exist in the catalogue below. Do NOT invent card IDs.
+- Return exactly 3 lines, one per recommended card, ranked best first.
+- Each line MUST use this exact format:
+CC001 - <one short sentence explaining why this card fits this user, citing the specific attribute (fee, reward rate, or offer) that justifies it>
+- Do not include any text before the first line or after the third line. No headings, no extra commentary.
 
 Here are two examples:
 
@@ -19,17 +17,17 @@ Here are two examples:
 User Profile:
 {"profile_id": "EX001", "profile_type": "student_low_spend", "preferred_reward_type": "None", "annual_fee_preference": "low", "goal": "build_credit", "monthly_groceries": 80, "monthly_travel": 10, "monthly_fuel": 0, "monthly_dining": 20, "monthly_online_shopping": 30, "monthly_other_spend": 10}
 Recommendation:
-CC004
-CC005
-CC011
+CC004 - No annual fee and no rewards complexity, designed specifically for building credit history.
+CC005 - No annual fee, simple entry-level card suited to a low, irregular spender.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile.
 
 --- EXAMPLE 2 ---
 User Profile:
 {"profile_id": "EX002", "profile_type": "frequent_traveller", "preferred_reward_type": "Points", "annual_fee_preference": "high", "goal": "travel_rewards", "monthly_groceries": 200, "monthly_travel": 600, "monthly_fuel": 50, "monthly_dining": 150, "monthly_online_shopping": 100, "monthly_other_spend": 80}
 Recommendation:
-CC008
-CC007
-CC013
+CC008 - Highest travel reward rate (1 point per £1 on travel) and points transfer to airlines, matching the high travel spend and points preference.
+CC007 - Avios earned on BA spend directly rewards frequent flying, aligned with travel_rewards goal.
+CC013 - Travel-focused points card with free travel insurance, complementing heavy travel spend.
 
 --- END EXAMPLES ---
 
