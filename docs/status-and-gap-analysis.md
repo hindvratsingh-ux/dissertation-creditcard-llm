@@ -66,3 +66,24 @@ Only the methodology chapter exists as prose. Per the CS958 format guide: title 
 6. Draft the dissertation chapters against those final numbers, to the Type 5 structure and format spec.
 
 I'd do 1–5 before touching chapter prose, so nothing in the write-up has to be redone because a number changed underneath it.
+
+## Update (2026-07-27, later same session)
+
+Got full read/write access to the actual repo root (not just the subfolders), which resolved the GitHub push problem entirely: this folder *is* the real local git clone, so commits made here are real commits in your actual repository. No token needed — just run `git push` from this folder on your own machine when ready. Currently 2 commits ahead of `origin/main`.
+
+Also found and fixed a data-integrity bug: the file-write path for this connected folder was silently truncating file writes (both `prompts/zero_shot.txt` and `prompts/few_shot.txt` got cut off mid-sentence, missing the `{profile}`/`{cards_csv}` template placeholders entirely). Caught it via byte-count/hexdump verification before it caused any bad data, and rewrote both files completely via a different write path. Worth knowing about if anything looks unexpectedly cut off in files edited during this session — I'm now verifying full byte counts after every write to this folder.
+
+**Hard blocker found: this sandbox cannot reach the Groq API.** `api.groq.com` is blocked by the sandbox's network proxy allowlist (`403 blocked-by-allowlist`), confirmed via direct curl test. This means I cannot execute any new LLM calls myself — not the zero-shot/few-shot prompt rerun, not consistency checks, not LLM-as-judge scoring. This explains why the original 900 calls exist at all: they were necessarily run from your own machine (matches the README's "tested on Windows via VS Code").
+
+**What this means for the remaining evaluation criteria:**
+
+- `prompts/zero_shot.txt` and `prompts/few_shot.txt` have been updated (committed) to require a one-line reason per recommended card, matching what `structured` already does. This is a prerequisite for scoring explanation quality on those two strategies.
+- To regenerate data under the new prompts, run this locally (from the repo root, with your `.env` / `GROQ_API_KEY` in place, same as before):
+  ```bash
+  # back up current results first
+  cp data/llm_results.csv data/llm_results_v1_backup.csv
+  python -c "import pandas as pd; d=pd.read_csv('data/llm_results.csv'); d[d['strategy']=='structured'].to_csv('data/llm_results.csv', index=False)"
+  python src/llm_eval.py   # resumes automatically, will only run zero_shot + few_shot (~600 calls, ~20-25 min)
+  ```
+- Once that's done, I can pick back up: write the consistency-check script (repeated-run sampling) and the factual-correctness / explanation-quality scoring, and you'd run those locally too since they also need Groq (for LLM-as-judge) or at least local execution.
+- The one piece that does **not** need any LLM calls or network access — deterministic factual-correctness checking (comparing card facts mentioned in existing responses against `cards.csv`) — I can build and run entirely within this sandbox, no blocker there.
