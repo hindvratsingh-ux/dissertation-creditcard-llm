@@ -20,3 +20,13 @@ results/temp/
 
 # Local experiment junk
 *.log
+
+# LaTeX build artifacts (regenerated on every compile)
+*.aux
+*.lof
+*.lot
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
