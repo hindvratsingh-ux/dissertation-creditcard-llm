@@ -1,0 +1,63 @@
+% ============================================================
+% Title page
+% ============================================================
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+
+{\LARGE \textbf{Evaluating Large Language Models for Personalised Credit Card Recommendation from User Spending Profiles}}
+
+\vspace{2cm}
+
+{\Large Hindvrat Singh Rao}
+
+\vspace{1cm}
+
+{\large A dissertation submitted in partial fulfilment of the requirements\\ for the degree of MSc Advanced Computer Science with Artificial Intelligence}
+
+\vspace{2cm}
+
+{\large Department of Computer and Information Sciences\\ University of Strathclyde}
+
+\vspace{2cm}
+
+{\large \today}
+
+\vfill
+\end{titlepage}
+
+% ============================================================
+% Declaration
+% ============================================================
+\chapter*{Declaration}
+\addcontentsline{toc}{chapter}{Declaration}
+
+This dissertation is submitted in partial fulfilment of the requirements for the degree of MSc Advanced Computer Science with Artificial Intelligence at the University of Strathclyde.
+
+I declare that this dissertation embodies the results of my own work and that it has been composed by myself. Where appropriate, I have made acknowledgement of the work of others.
+
+\vspace{2cm}
+\noindent \textit{[NOTE TO SELF: verify this declaration's exact wording against the current CS958 / Department of Computer and Information Sciences submission template before final submission --- the wording above is a standard good-faith declaration but the Department may require specific mandated phrasing.]}
+
+\vspace{2cm}
+\noindent Signed: \rule{5cm}{0.4pt} \hfill Date: \rule{4cm}{0.4pt}
+
+% ============================================================
+% Abstract
+% ============================================================
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+This dissertation evaluates whether a free-tier, open-weight Large Language Model (Meta's Llama 3.1, 8B parameters, accessed via the Groq API) can generate personalised UK credit-card recommendations competitive with a conventional content-based recommender, and how prompting strategy affects recommendation quality, factual reliability, explanation quality, and consistency. Using a fixed catalogue of 20 real UK credit cards and 300 synthetic user profiles --- spanning eight consumer archetypes with spending distributions calibrated against the ONS \textit{Living Costs and Food Survey 2022--23} --- three prompting strategies (zero-shot, structured, few-shot) were evaluated across 900 LLM inference calls, scored against a content-based cosine-similarity baseline using a four-criteria evaluation framework: recommendation-baseline overlap, deterministic factual correctness, LLM-as-judge explanation quality, and repeated-run consistency.
+
+Prompting strategy was found to have a large, statistically significant effect on recommendation quality (Kruskal-Wallis $H=60.70$, $p=6.6\times10^{-14}$), but in a direction contrary to common expectations from the general prompt-engineering literature: zero-shot prompting significantly outperformed both structured and few-shot prompting on overlap with the baseline (mean overlap 0.687 vs.\ 0.517 and 0.539 respectively) and top-1 exact-match accuracy (0.307 vs.\ 0.077 and 0.023). However, structured prompting produced the most factually reliable responses (73.7\% of responses entirely free of checkable factual errors, against 55.0\% for zero-shot and 24.0\% for few-shot), demonstrating that recommendation accuracy and factual trustworthiness are distinct properties that a single-metric evaluation would fail to distinguish. No single prompting strategy dominates across all evaluated criteria.
+
+These findings suggest that prompting-strategy choice for LLM-based recommendation should be validated empirically against the specific task and model rather than assumed from general NLP benchmarks, and that recommendation-quality and factual-reliability metrics should be reported and optimised for separately in applications where the reliability of the model's stated reasoning matters.
+
+% ============================================================
+% Acknowledgements
+% ============================================================
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+I would like to thank my dissertation supervisor for their guidance and feedback throughout this project, particularly in shaping the baseline methodology and the scale of the experimental dataset. \textit{[NOTE TO SELF: personalise this section --- add your supervisor's name and any other acknowledgements before submission.]}

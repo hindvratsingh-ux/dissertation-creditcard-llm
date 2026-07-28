@@ -1,0 +1,102 @@
+\appendix
+
+\chapter{Repository and Code}
+
+The full source code, data, prompts, and generated results for this dissertation are available at:
+
+\begin{center}
+\url{https://github.com/hindvratsingh-ux/dissertation-creditcard-llm}
+\end{center}
+
+The repository includes: \texttt{src/build\_profiles.py} (synthetic profile generation), \texttt{src/baseline.py} (cosine-similarity baseline), \texttt{src/llm\_eval.py} (the 900-call LLM experiment), \texttt{src/score\_outputs.py} and \texttt{src/analyze\_results.py} (recommendation-quality scoring and statistical testing), \texttt{src/factual\_correctness.py} (deterministic factual-claim checking), \texttt{src/llm\_judge.py} (LLM-as-judge explanation-quality scoring), \texttt{src/consistency\_check.py} (repeated-run stability scoring), and \texttt{src/generate\_plots.py} (figures). \texttt{docs/status-and-gap-analysis.md} in the repository documents the full development history and methodological corrections made over the course of the project.
+
+\chapter{Prompt Templates}
+
+\section{Zero-Shot Prompt}
+\begin{verbatim}
+You are a UK credit card recommendation expert.
+
+Below is a user's spending profile as a JSON object, followed by
+the full credit card catalogue.
+
+Your task: recommend exactly the top 3 credit cards that best match
+this user's spending habits, goals, annual fee preference, and
+reward type preference.
+
+Rules:
+- Only recommend cards that exist in the catalogue below. Do NOT
+  invent card IDs.
+- Return exactly 3 lines, one per recommended card, ranked best
+  first.
+- Each line MUST use this exact format:
+CC001 - <one short sentence explaining why this card fits this
+user, citing the specific attribute (fee, reward rate, or offer)
+that justifies it>
+- Do not include any text before the first line or after the
+  third line. No headings, no extra commentary.
+
+User Profile:
+{profile}
+
+Credit Card Catalogue:
+{cards_csv}
+\end{verbatim}
+
+\section{Few-Shot Prompt (worked examples only; rules and format identical to zero-shot above)}
+\begin{verbatim}
+--- EXAMPLE 1 ---
+User Profile:
+{"profile_id": "EX001", "profile_type": "student_low_spend",
+ "preferred_reward_type": "None", "annual_fee_preference": "low",
+ "goal": "build_credit", ...}
+Recommendation:
+CC004 - No annual fee and no rewards complexity, designed
+specifically for building credit history.
+CC005 - No annual fee, simple entry-level card suited to a low,
+irregular spender.
+CC011 - Student-focused card with no fee, matching the low-income/
+no-vehicle profile.
+
+--- EXAMPLE 2 ---
+User Profile:
+{"profile_id": "EX002", "profile_type": "frequent_traveller",
+ "preferred_reward_type": "Points", "annual_fee_preference": "high",
+ "goal": "travel_rewards", ...}
+Recommendation:
+CC008 - Highest travel reward rate (1 point per £1 on travel) and
+points transfer to airlines, matching the high travel spend and
+points preference.
+CC007 - Avios earned on BA spend directly rewards frequent flying,
+aligned with travel_rewards goal.
+CC013 - Travel-focused points card with free travel insurance,
+complementing heavy travel spend.
+\end{verbatim}
+
+\section{Structured Prompt}
+The structured condition uses the same rules as zero-shot above, but specifies a JSON output schema with fields for card ID, card name, a one-sentence reason, and any relevant warnings, for each of the three ranked recommendations. See \texttt{prompts/structured.txt} in the repository for the full text.
+
+\section{LLM-as-Judge Prompt}
+See \texttt{prompts/judge\_explanation\_quality.txt} in the repository for the full explanation-quality scoring rubric given to the judge model (Section~3.4.3).
+
+\chapter{Credit Card Catalogue (Extract)}
+
+Table~\ref{tab:cards-extract} shows the first five entries of the 20-card catalogue used throughout this study (full catalogue in \texttt{data/cards.csv}).
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Credit card catalogue extract}
+\label{tab:cards-extract}
+\begin{tabular}{lllcc}
+\toprule
+ID & Card Name & Issuer & Annual Fee (£) & Reward Type \\
+\midrule
+CC001 & American Express Platinum Cashback Everyday & American Express & 0  & Cashback \\
+CC002 & American Express Platinum Cashback          & American Express & 25 & Cashback \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\chapter{CSV Schema Reference}
+
+Full column-level documentation for \texttt{data/cards.csv}, \texttt{data/profiles.csv}, \texttt{data/ground\_truth.csv}, and \texttt{data/llm\_results.csv} is maintained in \texttt{docs/schema-notes.md} in the repository, and is not reproduced in full here for brevity.

@@ -4,7 +4,9 @@
 
 Real credit card spending data is not publicly available. Banks and financial institutions are subject to strict data protection regulations under the UK General Data Protection Regulation (UK GDPR) and the Financial Services and Markets Act 2000, which prohibit the sharing of individual transaction or behavioural data without explicit consent. No authorised public dataset exists that contains both individual spending patterns across categories (groceries, fuel, travel, dining, online shopping) and corresponding credit card product preferences.
 
-This situation is consistent with the wider literature on financial product recommendation. Studies such as Ghiye et al. (2023) and the customer-specific recommendation work by Lindqvist and Svensson (2024) similarly acknowledge the unavailability of real consumer-level financial behavioural data and adopt simulated or anonymised datasets.
+This situation is consistent with the wider literature on financial product recommendation, where individual-level real spending data is not publicly available and simulated or anonymised profiles are the standard methodological choice (Met, 2024).
+
+*(Editorial note, 2026-07-29: an earlier version of this paragraph cited "Ghiye et al. (2023)" and "Lindqvist and Svensson (2024)" — these could not be verified as real, locatable sources via search and have been removed rather than left in an unverifiable state. Do not reintroduce them into the dissertation without independently locating and checking the actual papers first.)*
 
 Synthetic profiles are therefore the appropriate and standard methodological choice for this research context.
 
