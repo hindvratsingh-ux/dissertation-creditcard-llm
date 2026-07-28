@@ -1,90 +1,61 @@
-# Dissertation Credit‑Card Recommendation
+# Dissertation: Credit-Card Recommendation via LLMs
 
 **Title:** Evaluating Large Language Models for Personalised Credit Card Recommendation from User Spending Profiles
 
 ## Project Overview
-This repository contains a reproducible research pipeline for a dissertation that investigates how different prompting strategies for Large Language Models (LLMs) affect personalised credit‑card recommendations.
 
-- **Dataset:** Synthetic UK user spending profiles (80) and a curated list of real UK credit‑card products (≈20).
-- **Baseline:** A rule‑based recommender that scores cards against each profile using reward‑fit, fee‑fit and goal‑fit criteria.
-- **LLM Experiments:** Three prompt styles – zero‑shot, structured, and few‑shot – are applied to the same data.
-- **Evaluation:** Automated overlap with the baseline, factual correctness checks, and a manual rubric for explanation quality.
-- **Prototype (secondary):** A minimal Streamlit demo that shows the best‑performing approach for a single profile.
+This repository is the research pipeline for an MSc dissertation (Type 5, Experimental) investigating how different LLM prompting strategies affect personalised credit-card recommendation quality, compared against a content-based baseline.
 
-All scripts are pure Python, use CSV files, and run on Windows via VS Code.
+- **Dataset:** 300 synthetic UK user profiles across 8 consumer archetypes, spending distributions calibrated against the ONS *Living Costs and Food Survey 2022–23*. A curated catalogue of 20 real UK credit cards.
+- **Baseline:** A content-based recommender using cosine similarity between profile and card feature vectors (Lops, de Gemmis and Semeraro, 2011; Pazzani and Billsus, 2007).
+- **LLM Experiments:** Meta Llama 3.1 8B via the Groq API (free tier), evaluated under three prompting strategies — zero-shot, structured (JSON schema), and few-shot — across all 300 profiles (900 calls total).
+- **Evaluation:** Four criteria per the dissertation methodology — recommendation quality (overlap/top-1 accuracy vs. baseline), factual correctness (deterministic claim-checking against the card catalogue), explanation quality (LLM-as-judge, in progress), and consistency (repeated-run stability on a stratified subsample).
+
+All scripts are pure Python and run against local CSV files.
 
 ## Repository Structure
+
 ```
-├─ data/                 # CSV data files
-│   ├─ cards.csv
-│   ├─ profiles.csv
-│   └─ ground_truth.csv
-├─ docs/                 # Documentation & methodology notes
-│   ├─ schema-notes.md
-│   ├─ card-sourcing-notes.md
-│   ├─ profile-generation-notes.md
-│   ├─ baseline-method.md
-│   ├─ prompt-design-notes.md
-│   └─ scoring-method.md
-├─ prompts/              # LLM prompt templates
-│   ├─ zero_shot.txt
-│   ├─ structured.txt
-│   └─ few_shot.txt
-├─ src/                  # Core Python scripts
-│   ├─ build_profiles.py
-│   ├─ baseline.py
-│   ├─ run_experiments.py
-│   └─ score_outputs.py
-├─ results/              # Experiment outputs & README
-├─ notebooks/            # Optional Jupyter notebooks for exploration
-├─ prototype/            # Minimal proof‑of‑concept UI (Streamlit)
-└─ README.md
+├─ data/                    # profiles.csv, cards.csv, ground_truth.csv, llm_results.csv
+├─ docs/                    # methodology & data-justification notes, status/gap analysis
+├─ prompts/                 # zero_shot.txt, structured.txt, few_shot.txt
+├─ src/
+│   ├─ build_profiles.py         # generates data/profiles.csv (300 rows, 8 archetypes)
+│   ├─ baseline.py                # cosine-similarity baseline -> data/ground_truth.csv
+│   ├─ llm_eval.py                 # runs the 900 Groq calls -> data/llm_results.csv (resumable)
+│   ├─ score_outputs.py            # recommendation-quality scoring -> results/scored_results.csv
+│   ├─ analyze_results.py          # per-archetype breakdown, Kruskal-Wallis + Wilcoxon tests
+│   ├─ factual_correctness.py      # deterministic factual-claim checker -> results/factual_correctness*.csv
+│   ├─ consistency_check.py        # repeated-run Jaccard-stability scoring (stratified sample)
+│   └─ generate_plots.py           # figures for results/
+├─ results/                 # scored/aggregated outputs, figures
+├─ notebooks/                # exploratory analysis
+├─ prototype/                # minimal Streamlit demo (secondary, not part of the evaluation)
+├─ archive/                  # superseded scripts/files, kept for provenance only
+└─ main.tex / main.pdf       # dissertation document (LaTeX)
 ```
 
-## Setup Instructions
-1. **Python version** – 3.9+ (tested on 3.11).
-2. **Create a virtual environment** (optional but recommended):
-   ```bash
-   python -m venv .venv
-   .venv\Scripts\activate  # Windows PowerShell
-   ```
-3. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. **Generate synthetic profiles** (will also create `profiles.csv`):
-   ```bash
-   python src/build_profiles.py
-   ```
-5. **Create the baseline ground truth**:
-   ```bash
-   python src/baseline.py --output data/ground_truth.csv
-   ```
-6. **Run the experiment in dry‑run mode** (no LLM API needed):
-   ```bash
-   python src/run_experiments.py --dry-run
-   ```
-   This writes a JSON log of the prompts that would be sent to an LLM under `results/prompt_log.json`.
-7. **Score the outputs** (using the dry‑run log as an example):
-   ```bash
-   python src/score_outputs.py --predictions results/prompt_log.json --ground-truth data/ground_truth.csv
-   ```
-8. **Prototype demo** (optional):
-   ```bash
-   streamlit run prototype/streamlit_app.py
-   ```
+## Pipeline (in order)
 
-## How to Verify the Pipeline
-- After step 4, inspect `data/profiles.csv` – you should see 80 rows with diverse spending patterns.
-- After step 5, `data/ground_truth.csv` contains three ranked card IDs per profile.
-- After step 6, `results/prompt_log.json` contains one entry per profile with the three prompt variants.
-- After step 7, `results/scored_results.csv` shows overlap scores and placeholder rubric columns.
+1. `python src/build_profiles.py` — generates `data/profiles.csv` (deterministic, seed=42).
+2. `python src/baseline.py` — generates `data/ground_truth.csv` from the cosine-similarity baseline.
+3. `python src/llm_eval.py` — runs the Groq LLM calls. Requires `GROQ_API_KEY` in `.env`. Resumable: safe to stop and restart, it skips any `(profile_id, strategy)` pair already present in `data/llm_results.csv`.
+4. `python src/score_outputs.py` — scores recommendation quality against the baseline.
+5. `python src/factual_correctness.py` — checks factual claims in LLM responses against `data/cards.csv`.
+6. `python src/consistency_check.py` — repeated-run stability check on a stratified subsample (requires `GROQ_API_KEY`).
+7. `python src/analyze_results.py` — per-archetype breakdown and statistical tests.
+8. `python src/generate_plots.py` — figures.
 
-## Next Steps for the Dissertation
-- Replace the dry‑run mode with calls to your chosen LLM provider (OpenAI, Anthropic, etc.).
-- Run the full experiment, collect the outputs, and complete the manual rubric scoring.
-- Write the analysis chapter comparing prompt strategies against the baseline.
+## Setup
 
----
+```bash
+python -m venv .venv
+.venv\Scripts\activate       # Windows
+pip install -r requirements.txt
+```
 
-*The repository is ready for a private, reproducible research workflow. Feel free to extend the prototype or add additional evaluation metrics as needed.*
+Create a `.env` file with `GROQ_API_KEY=<your key>` (get a free key at console.groq.com). Never commit `.env` — it is gitignored.
+
+## Status
+
+See `docs/status-and-gap-analysis.md` for the current state of the experiment and dissertation draft, and what's still outstanding.
