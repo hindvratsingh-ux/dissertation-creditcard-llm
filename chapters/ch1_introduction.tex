@@ -1,0 +1,33 @@
+\chapter{Introduction}
+\label{ch:introduction}
+
+\section{Background and Motivation}
+
+The UK credit card market offers consumers a bewildering range of products, each differentiated by annual fees, reward structures, welcome offers, and category-specific cashback or points rates. Choosing a suitable card requires matching a card's reward structure against an individual's actual spending pattern --- a task that is, in principle, well suited to automated recommendation. Traditional recommender systems address this kind of problem through collaborative or content-based filtering (Lops, de Gemmis and Semeraro, 2011; Pazzani and Billsus, 2007), and such systems are already used across banking and financial services to personalise product offers (Met, 2024).
+
+The recent emergence of general-purpose Large Language Models (LLMs) offers a different route to the same goal. Rather than encoding a user's preferences as a fixed feature vector and computing similarity against a catalogue, an LLM can be given a natural-language (or structured JSON) description of a user's spending profile and a description of the available products, and asked directly to reason about which products are the best fit. This is attractive because it requires no bespoke model training, can incorporate qualitative context a numeric feature vector would discard, and can, in principle, explain its reasoning in natural language. LLMs have already been explored extensively as recommendation engines in the wider literature (Wu et al., 2024; Zhao et al., 2024), and financial services specifically have begun exploring transformer-based personalisation.
+
+However, using an LLM as a recommender introduces a new set of questions that a similarity calculation does not: how the request is phrased (prompting strategy) can materially change the output, the model may state facts about a product that are simply wrong (hallucination), and the same input may not reliably produce the same output on repeated queries. These are not concerns for a deterministic, formula-based baseline, but they are central to whether an LLM-based recommender could be trusted in a real product.
+
+\section{Research Problem}
+
+This study investigates whether a free-tier, open-weight LLM (Meta's Llama 3.1, 8B-parameter variant, accessed via the Groq inference API) can generate personalised UK credit-card recommendations that are competitive with a conventional content-based baseline, and how the choice of prompting strategy affects the quality, consistency, and factual reliability of its output.
+
+\section{Research Questions}
+
+This dissertation addresses the following research questions:
+
+\begin{enumerate}
+    \item To what extent do LLM-generated top-3 credit-card recommendations overlap with those produced by a content-based cosine-similarity baseline, across 300 synthetic UK consumer profiles spanning eight distinct spending archetypes?
+    \item Does the prompting strategy used (zero-shot, structured, or few-shot) produce a statistically significant difference in recommendation quality?
+    \item How does prompting strategy affect the model's ability to produce accurate, checkable reasoning for its recommendations, and how factually reliable are the specific card details (fees, reward rates) the model cites?
+    \item How stable are the model's recommendations when the same profile and strategy are queried repeatedly?
+\end{enumerate}
+
+\section{Research Design Summary}
+
+The study follows a controlled experimental design (Type 5, per the Department's dissertation classification). A fixed catalogue of 20 real UK credit cards and 300 synthetic user profiles --- generated across eight consumer archetypes with spending distributions calibrated against the ONS \textit{Living Costs and Food Survey 2022--23} --- form the basis for all experiments. A content-based cosine-similarity recommender, grounded in established recommender-systems literature (Lops, de Gemmis and Semeraro, 2011; Pazzani and Billsus, 2007), provides the reference point against which all LLM outputs are evaluated. The same 300 profiles are passed to the LLM under three prompting conditions --- zero-shot, structured, and few-shot --- producing 900 LLM inference calls in total. Outputs are scored on recommendation overlap against the baseline, top-1 exact-match accuracy, factual correctness of stated card details (checked deterministically against the card catalogue), explanation quality (LLM-as-judge), and stability across repeated runs. Full methodological detail is given in Chapter~\ref{ch:methodology}.
+
+\section{Dissertation Structure}
+
+Chapter~\ref{ch:litreview} reviews the relevant literature across four areas: LLMs applied to recommendation tasks; prompt engineering strategies and their reported effect on task performance; content-based recommender systems as an evaluation baseline; and methods for evaluating LLM output quality, including LLM-as-judge approaches. Chapter~\ref{ch:methodology} details the methodology: dataset construction, baseline design, LLM experimental setup, and evaluation framework. Chapter~\ref{ch:analysis} presents the empirical results. Chapter~\ref{ch:discussion} discusses the findings in relation to the research questions and existing literature, and considers the study's limitations. Chapter~\ref{ch:conclusion} concludes with recommendations for future work.
