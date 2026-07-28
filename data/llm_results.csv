@@ -2708,3 +2708,594 @@ CC017 - Offers a cashback rate of 2.0% for dining and 1.0% for grocery, which ma
 P0206,few_shot,CC015,CC016,CC012,"CC015 - High online shopping cashback rate (1.0%) and low fee, matching the online_shopper profile and low fee preference.
 CC016 - High online shopping cashback rate (3.0%) and low fee, aligning with the online_shopper profile and low fee preference.
 CC012 - High online shopping cashback rate (4.0%) and low fee, complementing the online_shopper profile and low fee preference.",0.325
+P0001,zero_shot,CC015,CC017,CC011,"CC015 - This card fits the user due to its high cashback rate on groceries (5.0%) and online shopping (1.0%), aligning with their spending habits and preferred reward type.
+CC017 - This card suits the user because it offers a low annual fee and a decent cashback rate on groceries (1.0%) and dining (2.0%), matching their spending style and fee preference.
+CC011 - This card is recommended as it has a low annual fee and is suitable for students, aligning with the user's profile type and needs for a low-cost credit card.",0.579
+P0001,few_shot,CC011,CC004,CC019,"CC011 - Student-focused card with no fee, matching the low-income/student profile and goal of building credit.
+CC004 - No annual fee and no rewards complexity, designed specifically for building credit history.
+CC019 - Student-focused card with no fee, matching the student profile and goal of building credit.",0.239
+P0002,zero_shot,CC016,CC017,CC015,"CC016 - This card fits the user's profile due to its low annual fee and high cashback rates on various categories, including grocery, fuel, and online shopping.
+CC017 - This card is suitable for the user as it offers a low annual fee and decent cashback rates on grocery and dining purchases, aligning with their spending habits.
+CC015 - This card matches the user's profile due to its low annual fee and high cashback rates on grocery, fuel, and dining purchases, making it a good fit for their spending style.",0.279
+P0002,few_shot,CC019,CC011,CC004,"CC019 - No annual fee, student-focused card with no rewards complexity, matching the student_low_spend profile and low annual fee preference.
+CC011 - Student-focused card with no fee, matching the student_low_spend profile and low-income/no-vehicle profile.
+CC004 - No annual fee and no rewards complexity, designed specifically for building credit history, aligning with the build_credit goal.",0.372
+P0003,zero_shot,CC016,CC017,CC015,"CC016 - This card fits the user's profile due to its low annual fee and high cashback rates on various categories, including grocery, fuel, dining, travel, and online shopping.
+CC017 - This card is suitable for the user because it offers a low annual fee and a decent cashback rate on grocery and dining purchases, aligning with the user's spending habits.
+CC015 - This card matches the user's profile due to its low annual fee and high cashback rates on grocery, fuel, dining, travel, and online shopping, catering to the user's spending style and goals.",0.313
+P0003,few_shot,CC019,CC011,CC017,"CC019 - No annual fee, designed specifically for students with low income and no vehicle, matching the user's profile.
+CC011 - Student-focused card with no fee, aligning with the user's low-income profile and goal of building credit.
+CC017 - No annual fee, offering a simple cashback rate on groceries and dining, suitable for a frugal spender.",0.337
+P0004,zero_shot,CC016,CC017,CC015,"CC016 - Offers a low annual fee and a cashback rate of 3.0% on groceries, which suits the user's frugal spending style and low annual fee preference.
+CC017 - Provides a low annual fee and a cashback rate of 2.0% on dining, which aligns with the user's dining habits and low annual fee preference.
+CC015 - Offers a low annual fee and a cashback rate of 5.0% on groceries, which suits the user's grocery spending habits and low annual fee preference.",0.313
+P0004,few_shot,CC019,CC011,CC005,"CC019 - No annual fee, designed specifically for students with low income and no vehicle.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile.
+CC005 - No annual fee, simple entry-level card suited to a low, irregular spender.",0.228
+P0005,zero_shot,CC016,CC017,CC015,"CC016 - This card offers a low annual fee and a high cashback rate on groceries, fuel, and online shopping, making it suitable for the user's frugal spending style and low annual fee preference.
+CC017 - With a low annual fee and a competitive cashback rate on groceries and dining, this card aligns with the user's spending habits and annual fee preference.
+CC015 - Although it has a higher annual fee, this card offers a high cashback rate on groceries, fuel, and dining, making it a suitable option for the user's spending style and goals.",0.298
+P0207,zero_shot,CC016,CC015,CC012,"CC016 - Offers a competitive cashback rate of 3.0% on online shopping, aligning with the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5.0% on groceries, matching the user's significant monthly grocery spend.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, making it a suitable choice for the user's online-focused spending style.",0.327
+P0207,few_shot,CC015,CC016,CC017,"CC015 - High online shopping reward rate (1.0%) and low annual fee, matching the online_shopper profile and low fee preference.
+CC016 - High online shopping reward rate (3.0%) and low annual fee, aligning with the online_shopper profile and online_shopping_rewards goal.
+CC017 - Low annual fee and decent online shopping reward rate (0.5%), suited to a low-income online_shopper with no travel interest.",0.337
+P0208,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a suitable choice for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5.0% on groceries, which aligns with the user's monthly grocery spend, and also offers a decent online shopping rate of 1.0%.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, making it a suitable choice for the user's goal of online shopping rewards, and also provides a range of other high cashback rates on various categories.",0.29
+P0208,few_shot,CC015,CC016,CC017,"CC015 - High online shopping reward rate (1.0%) and cashback on other categories, matching the online_shopper profile and online_shopping_rewards goal.
+CC016 - High cashback rates across multiple categories, including online shopping, and no annual fee, aligning with the online_shopper profile and low annual fee preference.
+CC017 - No annual fee and a decent cashback rate on online shopping (2.0%), suiting the online_shopper profile and needs_low_cost requirement.",0.364
+P0209,zero_shot,CC016,CC015,CC017,"CC016 - Offers a high cashback rate of 3% on online shopping, making it a suitable choice for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5% on groceries, which aligns with the user's monthly grocery spend, and also offers a low annual fee.
+CC017 - Offers a cashback rate of 2% on dining, which aligns with the user's monthly dining spend, and has a low annual fee of 0.",0.353
+P0209,few_shot,CC015,CC016,CC017,"CC015 - High online shopping cashback rate (1.0%) and low fee, matching the user's online shopping focus and low fee preference.
+CC016 - Balanced cashback rates across various categories and no fee, suitable for a user with diverse spending habits and low fee preference.
+CC017 - Low fee and decent cashback rates on groceries and dining, aligning with the user's spending profile and low fee preference.",0.311
+P0210,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, aligning with the user's goal of online shopping rewards and spending style.
+CC015 - Provides a high cashback rate of 1.0% on online shopping and 5.0% on groceries, catering to the user's online-focused spending style and heavy online shopping habits.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, along with competitive rates on other categories, making it suitable for the user's online shopping habits and low annual fee preference.",0.335
+P0210,few_shot,CC015,CC016,CC012,"CC015 - High online shopping reward rate (1.0%) and low fee, matching the online_shopper profile and low annual fee preference.
+CC016 - High online shopping reward rate (3.0%) and low fee, aligning with the online_shopper profile and low annual fee preference.
+CC012 - High online shopping reward rate (4.0%) and low fee, matching the online_shopper profile and low annual fee preference.",0.341
+P0211,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, aligning with the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5.0% on groceries, which is a significant portion of the user's monthly spend, and a low annual fee.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, making it a suitable choice for the user's online-focused spending style.",0.285
+P0211,few_shot,CC015,CC016,CC012,"CC015 - High online shopping reward rate (1.0%) and low annual fee, matching the online_shopper profile and low fee preference.
+CC016 - Balanced cashback rates across various categories, including online shopping, and no annual fee, aligning with the online_shopper profile and low fee preference.
+CC012 - High online shopping reward rate (4.0%) and no annual fee, matching the online_shopper profile and low fee preference.",0.299
+P0212,zero_shot,CC016,CC015,CC017,"CC016 - Offers a high cashback rate of 3.0% on online shopping, aligning with the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5.0% on groceries, which is a significant portion of the user's monthly spend, and also offers a decent online shopping rate of 1.0%.
+CC017 - Offers a decent cashback rate of 2.0% on dining, which is a notable portion of the user's monthly spend, and also provides a base rate of 0.5% on all other purchases.",0.321
+P0212,few_shot,CC015,CC016,CC012,"CC015 - High online shopping reward rate (1.0%) and low annual fee, matching the online_shopper profile and low fee preference.
+CC016 - High online shopping reward rate (3.0%) and low annual fee, aligning with the online_shopper profile and low fee preference.
+CC012 - High online shopping reward rate (4.0%) and low annual fee, suiting the online_shopper profile and low fee preference.",0.29
+P0213,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3% on online shopping, making it a suitable choice for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5% on groceries, which aligns with the user's monthly grocery spend, and also offers a decent online shopping rate of 1%.
+CC012 - Offers a high cashback rate of 4% on online shopping, making it a suitable choice for the user's goal of online shopping rewards, and also provides a low annual fee.",0.336
+P0213,few_shot,CC015,CC016,CC017,"CC015 - High online shopping reward rate (1.0%) and low annual fee, matching the online_shopper profile and low fee preference.
+CC016 - High online shopping reward rate (3.0%) and low annual fee, aligning with the online_shopper profile and online_shopping_rewards goal.
+CC017 - No annual fee and a cashback rate on online shopping (0.5%), suiting the online_shopper profile and low fee preference.",0.372
+P0214,zero_shot,CC016,CC015,CC017,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a great fit for this user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5.0% on groceries and 4.0% on online shopping, aligning with the user's spending habits and online-focused spending style.
+CC017 - Offers a high cashback rate of 2.0% on dining and 1.0% on groceries, catering to the user's dining and grocery expenses.",0.294
+P0214,few_shot,CC016,CC015,CC017,"CC016 - High cashback rate on online shopping (3%) and low annual fee, matching the user's online shopping focus and low fee preference.
+CC015 - High cashback rate on online shopping (1%) and low annual fee, complementing the user's heavy online shopping habits.
+CC017 - No annual fee and cashback on online shopping (0.5%), designed for a low-income, online-focused spender.",0.311
+P0215,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a suitable choice for the user's online-focused spending style.
+CC015 - Provides a high cashback rate of 4.0% on online shopping, aligning with the user's goal of online shopping rewards.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, complementing the user's online-focused spending habits and low annual fee preference.",0.341
+P0215,few_shot,CC015,CC016,CC017,"CC015 - High online shopping reward rate (1.0%) and cashback on other categories, matching the heavy online shopper profile and low annual fee preference.
+CC016 - Balanced cashback rates across categories and no annual fee, aligning with the online-focused spending style and low annual fee preference.
+CC017 - No annual fee and decent cashback rates on groceries and dining, suited to the online shopper profile and low annual fee preference.",0.316
+P0216,zero_shot,CC016,CC015,CC011,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a suitable choice for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 4.0% on online shopping, aligning with the user's preferred reward type and spending style.
+CC011 - Has a low annual fee of £0, meeting the user's preference for a low-fee credit card, although it does not offer a high cashback rate on online shopping.",0.309
+P0216,few_shot,CC015,CC016,CC017,"CC015 - High online shopping reward rate (1.0%) and cashback on other categories, matching the online_shopper profile and online_shopping_rewards goal.
+CC016 - High cashback rates across multiple categories, including online shopping, and no annual fee, aligning with the low fee preference and online_shopper profile.
+CC017 - No annual fee, simple cashback card with decent rates on groceries and dining, suitable for a low-income online_shopper with minimal travel spend.",0.436
+P0217,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a great fit for the user's heavy online shopping habits.
+CC015 - Provides a high cashback rate of 4.0% on online shopping, aligning with the user's goal of online shopping rewards and spending style.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, matching the user's preferred reward type and spending habits.",0.238
+P0217,few_shot,CC015,CC016,CC012,"CC015 - High online shopping reward rate (1.0%) and low fee, matching the online_shopper profile and low fee preference.
+CC016 - High online shopping reward rate (3.0%) and low fee, complementing the heavy online spend and low fee preference.
+CC012 - High online shopping reward rate (4.0%) and low fee, aligning with the online_shopper profile and low fee preference.",0.245
+P0218,zero_shot,CC015,CC016,CC012,"CC015 - MBNA Everyday Plus Credit Card fits this user's spending habits due to its high online shopping cashback rate of 1.0%.
+CC016 - Santander All in One Credit Card is recommended because it offers a high cashback rate for online shopping, at 3.0%, aligning with the user's goal of online shopping rewards.
+CC012 - NatWest Reward Credit Card is suitable for this user as it offers a high cashback rate for online shopping, at 4.0%, and a low annual fee, meeting the user's preference for low fees.",0.424
+P0218,few_shot,CC015,CC016,CC017,"CC015 - High online shopping reward rate (1.0%) and cashback on various categories, matching the online_shopper profile and online_shopping_rewards goal.
+CC016 - Balanced cashback rates across categories, including online shopping, and no annual fee, suiting the online_shopper profile and low annual fee preference.
+CC017 - No annual fee, simple cashback rates, and a low fee on groceries, aligning with the online_shopper profile and needs_low_cost requirement.",0.351
+P0219,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a great fit for this user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 4.0% on online shopping, aligning with the user's spending style and preferred reward type.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, along with a low annual fee, making it a suitable choice for this user's needs.",0.286
+P0219,few_shot,CC015,CC016,CC017,"CC015 - High online shopping cashback rate (1.0%) and low fee, matching the user's online shopping focus and low fee preference.
+CC016 - Balanced cashback rates across categories, including online shopping, and no fee, aligning with the user's online shopping focus and low fee preference.
+CC017 - Low fee and decent cashback rates on groceries and dining, complementing the user's online shopping focus and low fee preference.",0.359
+P0220,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a suitable choice for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5.0% on groceries, which matches the user's monthly grocery spend, and a low annual fee.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, which aligns with the user's goal and spending style, and a low annual fee.",0.282
+P0220,few_shot,CC015,CC016,CC017,"CC015 - Highest online shopping reward rate (1.0%) and cashback on other categories, matching the heavy online shopping spend and cashback preference.
+CC016 - High cashback rate on online shopping (3.0%) and other categories, complementing the user's online-focused spending style.
+CC017 - No annual fee and decent cashback rates on groceries and dining, suiting the user's low-fee preference and moderate spend in these categories.",0.307
+P0221,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a great fit for this user's online-focused spending style and goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 4.0% on online shopping, aligning with the user's preferred reward type and spending habits.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, making it a suitable choice for this user's online-focused spending style and goal of online shopping rewards.",0.308
+P0221,few_shot,CC015,CC016,CC012,"CC015 - High online shopping cashback rate (1.0%) and low annual fee, matching the user's online shopping focus and low fee preference.
+CC016 - Balanced cashback rates across various categories, including online shopping (3.0%), and no annual fee.
+CC012 - High cashback rate on online shopping (4.0%) and a low annual fee, aligning with the user's online shopping goals and low fee preference.",0.322
+P0222,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a great fit for this user's heavy online shopping habits.
+CC015 - Provides a high cashback rate of 4.0% on online shopping, aligning with the user's goal of online shopping rewards and spending style.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, making it a suitable choice for this user's online-focused spending style and preference for online rewards.",0.319
+P0222,few_shot,CC015,CC016,CC012,"CC015 - High online shopping cashback rate (1.0%) and low annual fee, matching the online_shopper profile and low fee preference.
+CC016 - Balanced cashback rates across categories and low annual fee, suitable for a heavy online shopper with varied spending.
+CC012 - High online shopping cashback rate (4.0%) and low annual fee, aligning with the online_shopper profile and online_shopping_rewards goal.",0.338
+P0223,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a great fit for the user's heavy online shopping habits.
+CC015 - Provides a high cashback rate of 5.0% on groceries, which aligns with the user's monthly grocery spend, and also offers a decent online shopping rate of 1.0%.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, making it a suitable choice for the user's online shopping goals, and also provides a range of other high cashback rates on various categories.",0.28
+P0223,few_shot,CC015,CC016,CC017,"CC015 - High online shopping reward rate (1.0%) and cashback on various categories, matching the online_shopper profile and online_shopping_rewards goal.
+CC016 - Balanced cashback rates across categories, including online shopping, and no annual fee, suitable for a low-fee preference.
+CC017 - No annual fee and cashback on grocery and dining, complementing the online_shopper profile and low-fee preference.",0.32
+P0224,zero_shot,CC016,CC015,CC011,"CC016 - Offers a high cashback rate of 3% on online shopping, making it a great fit for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5% on groceries, which aligns with the user's monthly grocery spend, and also offers a decent rate of 1% on online shopping.
+CC011 - Although it's a student card, it has no annual fee, which aligns with the user's preference for low fees, and it's a basic card with no rewards, which suits the user's needs for low cost.",0.4
+P0224,few_shot,CC015,CC016,CC017,"CC015 - High online shopping reward rate (1.0%) and low fee, matching the user's online shopping focus and low fee preference.
+CC016 - High online shopping reward rate (3.0%) and low fee, aligning with the user's online shopping goals and low fee preference.
+CC017 - Low fee and decent online shopping reward rate (0.5%), suiting the user's low-cost needs and online shopping focus.",0.261
+P0225,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a suitable choice for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 4.0% on online shopping, aligning with the user's preferred reward type and spending style.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, making it a suitable choice for the user's goal of online shopping rewards and low annual fee preference.",0.246
+P0225,few_shot,CC016,CC015,CC017,"CC016 - High cashback rate on online shopping (3.0%) and overall balanced rewards structure, matching the user's online shopping focus and low annual fee preference.
+CC015 - High cashback rate on online shopping (1.0%) and overall high cashback rates on various categories, complementing the user's online shopping habits and low annual fee.
+CC017 - High cashback rate on dining (2.0%) and overall balanced rewards structure, matching the user's online shopping focus and low annual fee preference.",0.397
+P0226,zero_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a great fit for this user's heavy online shopping habits.
+CC015 - Provides a high cashback rate of 5.0% on groceries, which aligns with the user's monthly grocery spend, and also offers a decent rate of 1.0% on online shopping.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, which matches the user's goal of earning rewards on online shopping, and also provides a low annual fee.",0.315
+P0226,few_shot,CC015,CC016,CC012,"CC015 - High online shopping cashback rate (1.0%) and low fee, matching the heavy online shopping spend and low fee preference.
+CC016 - High online shopping cashback rate (3.0%) and low fee, matching the heavy online shopping spend and low fee preference.
+CC012 - High online shopping cashback rate (4.0%) and low fee, matching the heavy online shopping spend and low fee preference.",0.255
+P0227,zero_shot,CC012,CC015,CC016,"CC012 - This card offers a high 5% fuel cashback rate, aligning with the user's goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card provides a 3% fuel cashback rate, complementing the user's fuel-dependent spending style and high monthly fuel expenditure.
+CC016 - This card offers a 4% fuel cashback rate, matching the user's preference for fuel rewards and high monthly fuel expenditure.",0.349
+P0227,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4%) and low annual fee, complementing the fuel commuter profile and fuel_rewards goal.
+CC012 - High fuel cashback rate (5%) and low annual fee, aligning with the fuel commuter profile and fuel_rewards goal.",0.231
+P0228,zero_shot,CC012,CC016,CC015,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC016 - This card suits the user's needs with a moderate annual fee and a well-rounded cashback rate, offering 4.0% on fuel and 3.0% on online shopping.
+CC015 - This card is recommended due to its high cashback rates on fuel (3.0%) and grocery (5.0%), catering to the user's spending style as a fuel commuter with a moderate monthly grocery expenditure.",0.361
+P0228,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5% on fuel spend matches the user's high fuel expenditure and fuel_rewards goal.
+CC015 - Offers a high fuel cashback rate of 3% and a low annual fee, aligning with the user's needs and spending style.
+CC016 - Provides a moderate fuel cashback rate of 4% and a low annual fee, suitable for the user's fuel-dependent lifestyle.",0.347
+P0229,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card matches the user's needs with its low annual fee and high cashback rates for fuel (3.0%), grocery (5.0%), and dining (3.0%), catering to their spending style.
+CC016 - This card suits the user's profile with its low annual fee and high cashback rates for fuel (4.0%), grocery (3.0%), and online shopping (3.0%), aligning with their spending habits and fuel rewards goal.",0.297
+P0229,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4%) and low annual fee, aligning with the fuel commuter profile and fuel rewards goal.
+CC012 - High fuel cashback rate (5%) and low annual fee, complementing the fuel commuter profile and fuel rewards goal.",0.304
+P0230,zero_shot,CC012,CC016,CC015,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0% and low annual fee.
+CC016 - This card matches the user's goals and spending habits with its high fuel cashback rate of 4.0% and low annual fee.
+CC015 - This card is recommended due to its high fuel cashback rate of 3.0% and low annual fee, making it suitable for the user's fuel-dependent lifestyle.",0.316
+P0230,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and fuel rewards goal.
+CC016 - Fuel cashback rate (4%) and low annual fee, complementing the user's high fuel expenditure and fuel rewards goal.
+CC012 - Fuel cashback rate (5%) and low annual fee, aligning with the user's fuel commuter profile and fuel rewards goal.",0.3
+P0231,zero_shot,CC012,CC015,CC016,"CC012 - Offers a high fuel cashback rate of 5.0% that aligns with the user's goal of fuel rewards.
+CC015 - Provides a high fuel cashback rate of 3.0% and a low annual fee, meeting the user's needs for low cost and fuel rewards.
+CC016 - Offers a high fuel cashback rate of 4.0% and a low annual fee, making it a suitable option for the user's fuel-dependent spending habits.",0.252
+P0231,few_shot,CC015,CC012,CC016,"CC015 - High fuel cashback rate (3%) matches the user's goal of fuel rewards and spending style as a fuel commuter.
+CC012 - Offers a high fuel cashback rate (5%) and a low annual fee, aligning with the user's fuel_rewards goal and low annual fee preference.
+CC016 - Provides a balanced cashback rate across categories, including a 4% fuel rate, and a low annual fee, suiting the user's needs as a fuel commuter with a low annual fee preference.",0.36
+P0232,zero_shot,CC012,CC015,CC016,"CC012 - Offers a high 5.0% fuel cashback rate, making it a great fit for the user's goal of fuel rewards.
+CC015 - Provides a high 3.0% fuel cashback rate, along with other competitive rates for grocery, dining, and travel, making it suitable for the user's spending habits.
+CC016 - Offers a high 4.0% fuel cashback rate, along with other competitive rates for grocery, dining, and travel, making it a good match for the user's fuel-dependent commute.",0.249
+P0232,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3.0%) matches the user's goal of fuel rewards and spending style.
+CC016 - Fuel cashback rate of 4.0% complements the user's high monthly fuel expenditure and low-cost preference.
+CC012 - Fuel cashback rate of 5.0% and low annual fee align with the user's fuel_rewards goal and low-fee preference.",0.352
+P0233,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card is a good match for the user as it offers a high fuel cashback rate of 3.0% and a low annual fee, meeting their needs for low cost and fuel rewards.
+CC016 - This card is suitable for the user due to its high fuel cashback rate of 4.0% and a low annual fee, aligning with their goal of fuel rewards and low cost.",0.365
+P0233,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5% matches the user's goal of fuel rewards and high monthly fuel expenditure.
+CC015 - Offers a high fuel cashback rate of 3% and a low annual fee, aligning with the user's needs.
+CC016 - Provides a balanced cashback rate across various categories, including fuel, with a low annual fee, suitable for a car-dependent commuter.",0.294
+P0234,zero_shot,CC012,CC016,CC015,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC016 - This card suits the user's needs with its balanced cashback rates across various categories, including a 4.0% fuel rate, and a low annual fee.
+CC015 - This card is a good match for the user due to its high cashback rates on grocery, fuel, and dining, which align with their spending habits, and a low annual fee.",0.35
+P0234,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3.0%) and low annual fee, matching the fuel_commuter profile and fuel_rewards goal.
+CC016 - High fuel cashback rate (4.0%) and low annual fee, complementing the fuel_commuter profile and fuel_rewards goal.
+CC012 - High fuel cashback rate (5.0%) and low annual fee, aligning with the fuel_commuter profile and fuel_rewards goal.",0.277
+P0235,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card is suitable for the user as it offers a high cashback rate on fuel purchases of 3.0%, catering to their fuel-dependent commuting lifestyle.
+CC016 - This card is a good match for the user as it provides a moderate cashback rate on fuel purchases of 4.0%, complementing their fuel rewards goal and high monthly fuel expenditure.",0.269
+P0235,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4%) and low annual fee, complementing the user's high fuel expenditure and low fee preference.
+CC012 - High fuel cashback rate (5%) and low annual fee, aligning with the user's fuel commuter profile and fuel cashback preference.",0.298
+P0236,zero_shot,CC015,CC012,CC016,"CC015 - This card fits the user's profile due to its high fuel cashback rate of 3.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC012 - This card is recommended because it offers a high fuel cashback rate of 5.0%, matching the user's preference for fuel rewards and high monthly fuel expenditure.
+CC016 - This card is suitable for the user as it offers a high fuel cashback rate of 4.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.",0.323
+P0236,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5% on fuel spend, matching the user's high fuel expenditure and fuel_rewards goal.
+CC015 - High fuel cashback rate of 3% on fuel spend, complementing the user's fuel_commuter profile.
+CC016 - Fuel cashback rate of 4% on fuel spend, aligning with the user's fuel_rewards goal and high fuel expenditure.",0.318
+P0237,zero_shot,CC012,CC015,CC016,"CC012 - Offers a high fuel cashback rate of 5.0% that aligns with the user's goal of fuel rewards.
+CC015 - Provides a high fuel cashback rate of 3.0% and a low annual fee, meeting the user's needs for low cost and fuel rewards.
+CC016 - Offers a high fuel cashback rate of 4.0% and a low annual fee, making it a suitable option for the user's fuel-dependent spending habits.",0.25
+P0237,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and fuel rewards goal.
+CC016 - Fuel cashback rate (4%) and low annual fee, complementing the user's high fuel expenditure and fuel rewards goal.
+CC012 - Fuel cashback rate (5%) and low annual fee, aligning with the user's fuel commuter profile and fuel rewards goal.",0.336
+P0238,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card is suitable for the user as it offers a high cashback rate of 3.0% on fuel, along with competitive rates on other categories, and a low annual fee preference.
+CC016 - This card matches the user's profile as it provides a high cashback rate of 4.0% on fuel, along with competitive rates on other categories, and a low annual fee preference.",0.355
+P0238,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - High fuel cashback rate (4%) and low annual fee, complementing the user's high fuel expenditure and fuel rewards goal.
+CC012 - High fuel cashback rate (5%) and low annual fee, aligning with the user's fuel commuter profile and fuel rewards preference.",0.327
+P0239,zero_shot,CC012,CC015,CC016,"CC012 - The NatWest Reward Credit Card fits this user due to its high fuel cashback rate of 5.0%, aligning with the user's goal of fuel rewards.
+CC015 - The MBNA Everyday Plus Credit Card is recommended because it offers a high fuel cashback rate of 3.0%, catering to the user's fuel-dependent spending style.
+CC016 - The Santander All in One Credit Card is a suitable choice as it provides a high fuel cashback rate of 4.0%, matching the user's preference for fuel rewards.",0.413
+P0239,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5% matches the user's goal of fuel rewards and high monthly fuel expenditure.
+CC015 - Offers a high fuel cashback rate of 3% and a low annual fee, aligning with the user's fuel_rewards goal and low annual fee preference.
+CC016 - Provides a moderate fuel cashback rate of 4% and a low annual fee, complementing the user's fuel_rewards goal and low annual fee preference.",0.261
+P0240,zero_shot,CC012,CC016,CC015,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC016 - This card is a suitable choice for the user as it offers a high fuel cashback rate of 4.0%, along with a low annual fee, matching their preference for low fees and fuel rewards.
+CC015 - This card is recommended for the user due to its high fuel cashback rate of 3.0%, combined with a low annual fee, making it a suitable option for a car-dependent commuter with high monthly fuel expenditure.",0.284
+P0240,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3.0%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4.0%) and low annual fee, complementing high fuel spend and low fee preference.
+CC012 - High fuel cashback rate (5.0%) and low annual fee, aligning with fuel commuter profile and fuel cashback preference.",0.309
+P0241,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card is suitable for the user as it offers a high cashback rate of 3.0% on fuel purchases, in addition to other high rates on grocery, dining, and travel.
+CC016 - This card matches the user's profile with its high cashback rate of 4.0% on fuel purchases, along with other competitive rates on grocery, dining, and online shopping.",0.315
+P0241,few_shot,CC015,CC016,CC012,"CC015 - Highest fuel cashback rate (3.0%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4.0%) and low annual fee, complementing high fuel expenditure and low fee preference.
+CC012 - High fuel cashback rate (5.0%) and low annual fee, aligning with fuel commuter profile and fuel cashback preference.",0.26
+P0242,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards.
+CC015 - This card is recommended because it offers a high cashback rate of 3.0% on fuel, matching the user's spending style and fuel-dependent commute.
+CC016 - This card is suitable for the user due to its balanced cashback rates, including 4.0% on fuel, which caters to their high monthly fuel expenditure.",0.315
+P0242,few_shot,CC012,CC015,CC016,"CC012 - Highest fuel cashback rate (5.0%) and low annual fee, matching the fuel commuter profile and fuel rewards goal.
+CC015 - High fuel cashback rate (3.0%) and low annual fee, complementing the user's fuel-dependent spending style.
+CC016 - Fuel cashback rate (4.0%) and low annual fee, aligning with the user's high fuel expenditure and fuel rewards goal.",0.245
+P0243,zero_shot,CC012,CC015,CC018,"CC012 - This card offers a high 5.0% fuel cashback rate, aligning with the user's goal of fuel rewards.
+CC015 - This card provides a high 3.0% fuel cashback rate and a low annual fee, meeting the user's needs for low cost and fuel rewards.
+CC018 - This card offers a high 5.0% travel cashback rate, but its annual fee is higher than the user's preference, making it a compromise for the user's travel interest.",0.359
+P0243,few_shot,CC015,CC012,CC016,"CC015 - Highest fuel cashback rate (3.0%) matches the user's high fuel expenditure and fuel_rewards goal.
+CC012 - Fuel cashback rate of 5.0% and low annual fee align with the user's fuel_rewards goal and low annual fee preference.
+CC016 - Fuel cashback rate of 4.0% and low annual fee complement the user's fuel_rewards goal and low annual fee preference.",0.329
+P0244,zero_shot,CC012,CC016,CC015,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards.
+CC016 - This card is suitable for the user as it offers a high fuel cashback rate of 4.0% and a low annual fee, matching their preference for low fees.
+CC015 - This card is recommended for the user as it offers a high fuel cashback rate of 3.0% and a low annual fee, aligning with their spending style and fuel rewards goal.",0.265
+P0244,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5.0% matches the user's goal of fuel rewards and spending style as a fuel commuter.
+CC015 - Offers a high fuel cashback rate of 3.0% and a low annual fee, aligning with the user's needs for low-cost options and fuel rewards.
+CC016 - Provides a balanced cashback rate across various categories, including fuel, and has no annual fee, making it a suitable option for the user's spending habits.",0.334
+P0245,zero_shot,CC012,CC016,CC015,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards.
+CC016 - This card suits the user's spending habits with a high fuel cashback rate of 4.0% and a low annual fee, meeting their preference for low fees.
+CC015 - This card matches the user's profile with a high fuel cashback rate of 3.0% and a low annual fee, making it a suitable option for their fuel-dependent commute.",0.372
+P0245,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5.0% matches the user's fuel_rewards goal and fuel_commuter spending style.
+CC015 - Offers a high fuel cashback rate of 3.0% and a low annual fee, aligning with the user's needs_low_cost preference.
+CC016 - Provides a moderate fuel cashback rate of 4.0% and a low annual fee, making it a suitable option for a fuel_commuter with a low annual fee preference.",0.288
+P0246,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card is a good match as it offers a high fuel cashback rate of 3.0% and a low annual fee, meeting the user's needs for low cost and fuel rewards.
+CC016 - This card is recommended due to its high fuel cashback rate of 4.0% and a low annual fee, making it suitable for the user's fuel-dependent commuting lifestyle and preference for low fees.",0.298
+P0246,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the user's fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4%) and low annual fee, complementing the user's high fuel expenditure and fuel rewards goal.
+CC012 - Fuel cashback rate (5%) and low annual fee, aligning with the user's fuel commuter profile and fuel rewards preference.",0.321
+P0247,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with the user's goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card suits the user's needs with its low annual fee and high cashback rates for fuel (3.0%), grocery (5.0%), and online shopping (1.0%), catering to the user's spending style and preferences.
+CC016 - This card matches the user's requirements with its low annual fee and competitive cashback rates for fuel (4.0%), grocery (3.0%), and online shopping (3.0%), making it suitable for the user's spending habits and goals.",0.334
+P0247,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4%) and low annual fee, complementing the user's high fuel expenditure and low fee preference.
+CC012 - High fuel cashback rate (5%) and low annual fee, aligning with the user's fuel commuter profile and fuel rewards goal.",0.249
+P0248,zero_shot,CC015,CC012,CC016,"CC015 - This card fits the user's profile due to its high fuel cashback rate of 3.0%, aligning with their goal of fuel rewards.
+CC012 - This card matches the user's profile because it offers a high fuel cashback rate of 5.0%, meeting their fuel rewards goal.
+CC016 - This card suits the user's profile as it provides a moderate fuel cashback rate of 4.0%, along with a low annual fee, which aligns with their low annual fee preference.",0.366
+P0248,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5% on fuel spend matches the user's high fuel expenditure and fuel_rewards goal.
+CC015 - Fuel cashback rate of 3% on fuel spend and low annual fee align with the user's needs and spending style.
+CC016 - Fuel cashback rate of 4% on fuel spend and low annual fee make this card suitable for the user's high fuel expenditure and low-cost preference.",0.322
+P0249,zero_shot,CC012,CC015,CC016,"CC012 - Offers a high fuel cashback rate of 5.0% that matches the user's goal of fuel rewards.
+CC015 - Provides a high cashback rate of 3.0% on fuel purchases, aligning with the user's spending style and fuel-dependent commute.
+CC016 - Offers a well-rounded cashback rate of 4.0% on fuel purchases, making it a suitable choice for the user's high monthly fuel expenditure.",0.233
+P0249,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5.0% matches the user's goal of fuel rewards and spending style as a fuel commuter.
+CC015 - High fuel cashback rate of 3.0% and low annual fee align with the user's fuel-focused spending and low-cost preference.
+CC016 - Fuel cashback rate of 4.0% and low annual fee suit the user's high fuel expenditure and need for low-cost credit options.",0.354
+P0250,zero_shot,CC012,CC015,CC016,"CC012 - This card offers a high 5.0% fuel cashback rate, aligning with the user's goal of fuel rewards.
+CC015 - With a 3.0% fuel cashback rate and a low annual fee preference, this card is a suitable choice for the user.
+CC016 - This card offers a 4.0% fuel cashback rate, making it a good fit for the user's high monthly fuel expenditure and fuel rewards goal.",0.26
+P0250,few_shot,CC012,CC015,CC016,"CC012 - High fuel cashback rate (5.0%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC015 - High fuel cashback rate (3.0%) and low annual fee, complementing the fuel commuter profile and fuel rewards goal.
+CC016 - High fuel cashback rate (4.0%) and low annual fee, aligning with the fuel commuter profile and fuel rewards goal.",0.232
+P0251,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card suits the user's needs with its low annual fee and high cashback rates for fuel (3.0%), grocery (5.0%), and online shopping (1.0%), catering to their spending style and preferences.
+CC016 - This card matches the user's requirements with its low annual fee and high cashback rates for fuel (4.0%), grocery (3.0%), and online shopping (3.0%), aligning with their spending habits and fuel rewards goal.",0.39
+P0251,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5.0% matches the user's goal of fuel rewards and spending style as a fuel commuter.
+CC015 - Offers a high fuel cashback rate of 3.0% and a low annual fee, aligning with the user's needs for low cost and fuel rewards.
+CC016 - Provides a high fuel cashback rate of 4.0% and a low annual fee, matching the user's goal of fuel rewards and spending style as a fuel commuter.",0.339
+P0252,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card suits the user's needs with a low annual fee and a high fuel cashback rate of 3.0%, along with other relevant cashback rates for their spending habits.
+CC016 - This card is a suitable option for the user with a low annual fee and a high fuel cashback rate of 4.0%, as well as other relevant cashback rates for their spending habits.",0.331
+P0252,few_shot,CC012,CC015,CC016,"CC012 - High fuel cashback rate (5.0%) and low annual fee, matching the fuel commuter profile and fuel rewards goal.
+CC015 - High fuel cashback rate (3.0%) and low annual fee, complementing the user's high fuel expenditure.
+CC016 - Fuel cashback rate (4.0%) and low annual fee, aligning with the user's fuel commuter spending style and fuel rewards goal.",1.559
+P0253,zero_shot,CC012,CC015,CC016,"CC012 - Offers a high fuel cashback rate of 5.0% that matches the user's goal of fuel rewards.
+CC015 - Provides a high fuel cashback rate of 3.0% and a low annual fee, aligning with the user's needs.
+CC016 - Offers a moderate fuel cashback rate of 4.0% and a low annual fee, making it a suitable option for the user.",0.259
+P0253,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5% on fuel spend matches the user's high fuel expenditure and fuel_rewards goal.
+CC015 - High fuel cashback rate of 3% and low annual fee align with the user's fuel_rewards goal and low fee preference.
+CC016 - Fuel cashback rate of 4% and low annual fee complement the user's fuel_rewards goal and low fee preference.",0.295
+P0254,zero_shot,CC012,CC015,CC016,"CC012 - Offers a high fuel cashback rate of 5.0% that matches the user's goal of fuel rewards.
+CC015 - Provides a high fuel cashback rate of 3.0% and a low annual fee, meeting the user's low fee preference.
+CC016 - Offers a moderate fuel cashback rate of 4.0% and a low annual fee, aligning with the user's low fee preference.",0.305
+P0254,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4%) and low annual fee, complementing high fuel expenditure and fuel rewards goal.
+CC012 - High fuel cashback rate (5%) and low annual fee, aligning with fuel commuter profile and fuel rewards preference.",0.25
+P0255,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%.
+CC015 - This card is recommended because it offers a high cashback rate of 3.0% on fuel purchases.
+CC016 - This card is suitable for the user as it provides a high cashback rate of 4.0% on fuel purchases.",0.243
+P0255,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5.0% matches the user's high fuel spend and fuel_rewards goal.
+CC015 - Offers a high fuel cashback rate of 3.0% and a low annual fee, aligning with the user's needs.
+CC016 - Provides a moderate fuel cashback rate of 4.0% and a low annual fee, suitable for the user's fuel_commuter profile.",0.343
+P0256,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card is suitable for the user as it offers a high cashback rate of 3.0% on fuel purchases, matching their spending style and preferred reward type.
+CC016 - This card is a good match for the user as it provides a high cashback rate of 4.0% on fuel purchases, catering to their fuel rewards goal and high monthly fuel expenditure.",0.318
+P0256,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4%) and low annual fee, aligning with the fuel commuter profile and fuel rewards goal.
+CC012 - Fuel cashback rate (5%) and low annual fee, complementing the fuel commuter profile and fuel rewards goal.",0.294
+P0257,zero_shot,CC012,CC015,CC016,"CC012 - Offers high fuel cashback rate of 5.0% that aligns with the user's goal of fuel rewards and high monthly fuel expenditure.
+CC015 - Provides a high fuel cashback rate of 3.0% and a low annual fee, making it suitable for the user's spending style and fee preference.
+CC016 - Offers a high fuel cashback rate of 4.0% and a low annual fee, making it a good fit for the user's goal of fuel rewards and low-cost spending.",0.337
+P0257,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5.0% matches the user's high fuel expenditure and fuel_rewards goal.
+CC015 - Offers a high fuel cashback rate of 3.0% and a low annual fee, aligning with the user's needs.
+CC016 - Provides a balanced cashback rate across categories, including a 4.0% fuel rate, suitable for a fuel_commuter with varied spending.",0.317
+P0258,zero_shot,CC012,CC015,CC016,"CC012 - Offers a high fuel cashback rate of 5.0% that aligns with the user's goal of fuel rewards and spending style as a fuel commuter.
+CC015 - Provides a high cashback rate on fuel purchases of 3.0% and a low annual fee, making it suitable for the user's needs.
+CC016 - Offers a high cashback rate on fuel purchases of 4.0% and a low annual fee, making it a good fit for the user's fuel-dependent spending habits.",0.284
+P0258,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5.0% matches the user's goal of fuel rewards and spending style of a fuel commuter.
+CC015 - High fuel cashback rate of 3.0% and low annual fee align with the user's fuel-dependent commute and low-cost preference.
+CC016 - Fuel cashback rate of 4.0% and low annual fee suit the user's high fuel expenditure and need for low-cost credit options.",0.349
+P0259,zero_shot,CC012,CC015,CC016,"CC012 - Offers a high fuel cashback rate of 5.0% that aligns with the user's goal of fuel rewards and spending style as a fuel commuter.
+CC015 - Provides a competitive fuel cashback rate of 3.0% and a low annual fee, meeting the user's needs for low cost and fuel rewards.
+CC016 - Offers a balanced cashback rate across various categories, including a 4.0% fuel rate, making it a suitable option for the user's diverse spending habits.",0.254
+P0259,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4%) and low annual fee, complementing the high fuel spend and fuel rewards goal.
+CC012 - High fuel cashback rate (5%) and low annual fee, aligning with the fuel commuter profile and fuel rewards preference.",0.247
+P0260,zero_shot,CC012,CC015,CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards.
+CC015 - This card is recommended because it offers a high cashback rate of 3.0% on fuel, matching the user's spending style and fuel-dependent commute.
+CC016 - This card is suitable for the user as it provides a high cashback rate of 4.0% on fuel, along with a low annual fee, meeting their preference for low fees.",0.348
+P0260,few_shot,CC015,CC016,CC012,"CC015 - Highest fuel cashback rate (3.0%) and a low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate of 4.0% and a low annual fee, complementing the high fuel spend and low fee preference.
+CC012 - Fuel cashback rate of 5.0% and a low annual fee, aligning with the fuel commuter profile and fuel cashback preference.",0.268
+P0261,zero_shot,CC012,CC015,CC016,"CC012 - This card offers a high 5.0% fuel cashback rate, aligning with the user's goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card provides a high 3.0% fuel cashback rate, making it suitable for the user's fuel-dependent commuting style and high monthly fuel expenditure.
+CC016 - This card offers a high 4.0% fuel cashback rate, matching the user's preference for fuel rewards and high monthly fuel expenditure.",0.245
+P0261,few_shot,CC015,CC016,CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4%) and low annual fee, aligning with the fuel commuter profile and fuel rewards goal.
+CC012 - High fuel cashback rate (5%) and low annual fee, complementing the fuel commuter profile and fuel rewards goal.",0.379
+P0262,zero_shot,CC012,CC016,CC015,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0% and low annual fee.
+CC016 - This card is recommended because it offers a high fuel cashback rate of 4.0% and a low annual fee.
+CC015 - This card is suitable for the user as it provides a high fuel cashback rate of 3.0% and a low annual fee.",0.268
+P0262,few_shot,CC015,CC012,CC016,"CC015 - High fuel cashback rate (3.0%) matches the user's goal of fuel rewards and spending style as a fuel commuter.
+CC012 - Fuel cashback rate of 5.0% and low annual fee align with the user's fuel_rewards goal and low annual fee preference.
+CC016 - Fuel cashback rate of 4.0% and low annual fee suit the user's high fuel expenditure and low annual fee preference.",0.316
+P0263,zero_shot,CC015,CC012,CC016,"CC015 - This card fits this user due to its high fuel cashback rate of 3.0% and low annual fee of 0.
+CC012 - This card fits this user due to its high fuel cashback rate of 5.0% and low annual fee of 0.
+CC016 - This card fits this user due to its high fuel cashback rate of 4.0% and low annual fee of 0.",0.326
+P0263,few_shot,CC012,CC015,CC016,"CC012 - Fuel cashback rate of 5% matches the user's high fuel expenditure and fuel_rewards goal.
+CC015 - Offers a high fuel cashback rate of 3% and a low annual fee, aligning with the user's needs.
+CC016 - Provides a balanced cashback rate across categories, including a 4% fuel rate, and no annual fee.",0.277
+P0264,zero_shot,CC018,CC006,CC015,"CC018 - The Lloyds Cashback Credit Card is the best fit due to its high dining rewards rate of 4.0% and medium annual fee of 30, aligning with the user's goal of dining rewards and annual fee preference.
+CC006 - The Virgin Money Cashback Credit Card is a suitable option due to its high dining rewards rate of 2.0% and zero annual fee, matching the user's dining-heavy spending profile and preference for no annual fee.
+CC015 - The MBNA Everyday Plus Credit Card is a good choice due to its high dining rewards rate of 3.0% and zero annual fee, catering to the user's dining-focused spending style and preference for no annual fee.",0.295
+P0264,few_shot,CC016,CC015,CC012,"CC016 - High cashback rate on dining (2.0%) and other categories, matching the user's dining-heavy spending profile and medium annual fee preference.
+CC015 - High cashback rate on dining (3.0%) and other categories, complementing the user's dining-focused spending style and medium annual fee preference.
+CC012 - High cashback rate on dining (1.0%) and other categories, including travel (3.0%), aligning with the user's dining_rewards goal and medium annual fee preference.",0.345
+P0265,zero_shot,CC016,CC018,CC006,"CC016 - Offers a high cashback rate of 3.0% on groceries, which aligns with the user's high monthly grocery spend.
+CC018 - Provides a high cashback rate of 5.0% on travel, which matches the user's medium travel interest and high monthly travel spend.
+CC006 - Offers a high cashback rate of 4.0% on groceries, which suits the user's high monthly grocery spend and dining-focused spending style.",0.289
+P0265,few_shot,CC016,CC015,CC012,"CC016 - Offers a high cashback rate on dining (2.0%) and other categories, matching the user's dining-heavy spending profile and medium annual fee preference.
+CC015 - Provides a high cashback rate on dining (3.0%) and other categories, complementing the user's dining-focused spending style and medium annual fee preference.
+CC012 - Offers a high cashback rate on dining (1.0%) and travel (3.0%), aligning with the user's dining_rewards goal and medium annual fee preference.",0.295
+P0266,zero_shot,CC018,CC016,CC011,"CC018 - The Lloyds Cashback Credit Card fits this user due to its high dining rewards rate of 4.0%, aligning with their goal of dining rewards.
+CC016 - The Santander All in One Credit Card is suitable for this user as it offers a high cashback rate of 3.0% on groceries, matching their high monthly grocery expenditure.
+CC011 - The MBNA Everyday Plus Credit Card is recommended for this user because it provides a high cashback rate of 3.0% on dining, catering to their dining-focused spending style.",0.347
+P0266,few_shot,CC016,CC015,CC012,"CC016 - High cashback rate on dining (2.0%) matches the user's dining-heavy spending profile and dining_rewards goal.
+CC015 - High cashback rate on dining (3.0%) complements the user's high dining expenditure and dining_rewards goal.
+CC012 - High cashback rate on dining (1.0%) and travel (3.0%) rewards align with the user's dining-heavy spending and medium travel interest.",0.277
+P0267,zero_shot,CC016,CC018,CC011,"CC016 - Offers a high cashback rate of 3.0% on grocery spend, aligning with the user's high monthly grocery expenditure.
+CC018 - Provides a high cashback rate of 5.0% on travel, matching the user's medium travel interest and goal of dining rewards.
+CC011 - Offers a cashback rate of 1.0% on dining, which suits the user's dining-heavy spending profile and preferred reward type of Dining.",0.257
+P0267,few_shot,CC015,CC016,CC012,"CC015 - High dining reward rate (3.0%) on a card with no annual fee, matching the user's dining_rewards goal and dining_focused spending style.
+CC016 - High dining reward rate (2.0%) and cashback on other categories, suitable for a user with high dining expenditure and medium travel interest.
+CC012 - High dining reward rate (1.0%) and cashback on other categories, including travel, on a card with no annual fee, aligning with the user's dining_rewards goal and travel_interest.",0.421
+P0268,zero_shot,CC016,CC012,CC006,"CC016 - Offers a high cashback rate of 2.0% on dining, making it a suitable choice for the user's goal of dining rewards.
+CC012 - Provides a high cashback rate of 1.0% on dining and 3.0% on travel, aligning with the user's spending style and travel interest.
+CC006 - Offers a high cashback rate of 2.0% on dining, making it a suitable choice for the user's goal of dining rewards and medium annual fee preference.",0.274
+P0268,few_shot,CC016,CC015,CC012,"CC016 - High cashback rate on dining (2.0%) and other categories, matching the user's dining-heavy spending profile and medium annual fee preference.
+CC015 - High cashback rate on dining (3.0%) and other categories, complementing the user's dining-focused spending style and medium annual fee preference.
+CC012 - High cashback rate on dining (1.0%) and other categories, including travel (3.0%), aligning with the user's dining_rewards goal and medium annual fee preference.",0.389
+P0269,zero_shot,CC018,CC016,CC006,"CC018 - This card fits the user's high dining expenditure with a 4.0% dining reward rate, meeting their goal of dining rewards.
+CC016 - This card offers a well-rounded cashback rate with 2.0% on dining, suitable for the user's dining-heavy spending style.
+CC006 - This card provides a high 2.0% dining reward rate, matching the user's preferred reward type of Dining.",0.371
+P0269,few_shot,CC015,CC016,CC008,"CC015 - High cashback rate on dining (3.0%) and other categories, matching the user's dining-heavy spending style and medium annual fee preference.
+CC016 - Medium annual fee and cashback rates on dining (2.0%) and other categories, complementing the user's dining-heavy spending and medium fee preference.
+CC008 - High points rate on dining (2.0%) and other categories, aligned with the user's dining_rewards goal and medium annual fee preference.",0.363
+P0270,zero_shot,CC018,CC006,CC002,"CC018 - This card fits the user's high dining expenditure and dining rewards goal due to its 4.0% dining reward rate.
+CC006 - This card matches the user's dining-heavy spending profile and preferred reward type with its 2.0% dining reward rate.
+CC002 - This card aligns with the user's dining-heavy spending profile and medium annual fee preference with its 0.5% cashback rate on dining.",0.263
+P0270,few_shot,CC015,CC016,CC012,"CC015 - High dining cashback rate (3%) and a wide range of cashback categories, matching the user's dining_rewards goal and dining_focused spending style.
+CC016 - High cashback rate on dining (2%) and a medium annual fee, aligning with the user's medium annual fee preference and dining_rewards goal.
+CC012 - High cashback rate on dining (1%) and a wide range of cashback categories, including travel and online shopping, complementing the user's dining_rewards goal and medium travel interest.",0.418
+P0271,zero_shot,CC016,CC018,CC017,"CC016 - Offers a high cashback rate of 3.0% on groceries, which matches the user's high monthly grocery spend.
+CC018 - Provides a high cashback rate of 5.0% on travel, which aligns with the user's medium travel interest and high monthly travel spend.
+CC017 - Offers a high cashback rate of 2.0% on dining, which matches the user's goal of earning dining rewards and high monthly dining spend.",0.269
+P0271,few_shot,CC015,CC016,CC012,"CC015 - High cashback rate on dining (3%) and other categories, matching the user's dining-heavy spending style and medium annual fee preference.
+CC016 - Offers a balanced cashback rate across various categories, including dining (2%), and a medium annual fee, aligning with the user's preferences.
+CC012 - Offers a high cashback rate on dining (1%) and travel (3%), complementing the user's dining-heavy spending and medium annual fee preference.",0.331
+P0272,zero_shot,CC018,CC016,CC006,"CC018 - The Lloyds Cashback Credit Card is the best fit due to its high dining rewards rate of 4.0% and annual fee of £30, which aligns with the user's preference for a medium annual fee.
+CC016 - The Santander All in One Credit Card is a good match due to its high dining rewards rate of 2.0% and a wide range of cashback rates on various categories, including groceries, fuel, and online shopping.
+CC006 - The Virgin Money Cashback Credit Card is recommended due to its high dining rewards rate of 2.0% and a high grocery rewards rate of 4.0%, which caters to the user's dining-heavy spending habits and preferred reward type.",0.401
+P0272,few_shot,CC015,CC016,CC012,"CC015 - Highest dining reward rate (3.0%) and cashback on other categories, matching the high dining spend and cashback preference.
+CC016 - High cashback rates across multiple categories, including dining, and no annual fee, aligning with the dining_rewards goal.
+CC012 - High cashback rate on dining (1.0%) and other categories, including travel, with a medium annual fee, matching the user's medium fee preference.",0.323
+P0273,zero_shot,CC016,CC018,CC006,"CC016 - Offers a high cashback rate of 2.0% on dining, aligning with the user's goal of dining rewards.
+CC018 - Provides a high cashback rate of 4.0% on dining and 5.0% on travel, catering to the user's dining-focused spending style and travel interest.
+CC006 - Offers a high cashback rate of 2.0% on dining and 4.0% on groceries, matching the user's dining-heavy spending profile and preferred reward type of Dining.",0.31
+P0273,few_shot,CC015,CC016,CC012,"CC015 - Highest dining reward rate (3.0%) and cashback on other categories, matching the high dining spend and cashback preference.
+CC016 - High cashback rates across various categories, including dining, and no annual fee, aligning with the user's dining_rewards goal and medium annual fee preference.
+CC012 - High cashback rate on dining (1.0%) and other categories, including travel, with no annual fee, complementing the user's dining and travel spend.",0.566
+P0274,zero_shot,CC018,CC016,CC011,"CC018 - This card fits the user's spending habits due to its high dining rewards rate of 4.0% and annual fee of £30, which is within their medium fee preference.
+CC016 - This card matches the user's dining-focused spending style with a 2.0% dining rewards rate and a low annual fee of £0.
+CC011 - This card is recommended due to its £0 annual fee, which aligns with the user's medium fee preference, and its potential for low-cost spending.",0.284
+P0274,few_shot,CC015,CC016,CC008,"CC015 - High cashback rate on dining (3.0%) and other categories, matching the user's dining-focused spending style.
+CC016 - Balanced cashback rates across various categories, including dining (2.0%), and a medium annual fee.
+CC008 - High points rate on dining (2.0%) and other categories, and a high annual fee, aligning with the user's dining_rewards goal.",2.383
+P0275,zero_shot,CC018,CC016,CC006,"CC018 - This card offers a high dining reward rate of 4.0% and a travel reward rate of 5.0%, making it a good fit for the user's goal of dining rewards and medium travel interest.
+CC016 - This card offers a high dining reward rate of 2.0% and a well-rounded reward structure, making it a good fit for the user's dining-focused spending style and medium travel interest.
+CC006 - This card offers a high dining reward rate of 2.0% and a grocery reward rate of 4.0%, making it a good fit for the user's high dining expenditure and medium travel interest.",0.352
+P0275,few_shot,CC015,CC016,CC008,"CC015 - High dining reward rate (3.0%) on a card with a medium annual fee, matching the user's dining_rewards goal and medium fee preference.
+CC016 - High dining reward rate (2.0%) on a card with a medium annual fee, complementing the user's high dining expenditure.
+CC008 - High dining reward rate (2.0%) on a card with a high annual fee, offering a premium dining experience for a user with a medium fee preference.",0.293
+P0276,zero_shot,CC016,CC018,CC006,"CC016 - This card offers a high cashback rate on dining (2.0%) and aligns with the user's goal of dining rewards.
+CC018 - This card offers a high cashback rate on dining (4.0%) and travel (5.0%), matching the user's travel interest and dining-focused spending style.
+CC006 - This card offers a high cashback rate on dining (2.0%) and groceries (4.0%), catering to the user's high dining and grocery expenditure.",0.279
+P0276,few_shot,CC015,CC016,CC008,"CC015 - High cashback rate on dining (3.0%) and other categories, matching the user's dining-heavy spending style and medium annual fee preference.
+CC016 - Offers a balanced cashback rate across various categories, including dining (2.0%), and a medium annual fee.
+CC008 - High points rate on dining (2.0%) and other categories, complementing the user's dining_rewards goal and medium annual fee preference.",0.338
+P0277,zero_shot,CC016,CC018,CC006,"CC016 - This card fits the user's profile due to its medium annual fee and high cashback rates across various categories, including dining, travel, and online shopping.
+CC018 - This card is recommended due to its high cashback rate on dining and travel, aligning with the user's goal of earning dining rewards and medium travel interest.
+CC006 - This card is suitable for the user because it offers a high cashback rate on dining and groceries, meeting the user's preferred reward type of Dining and medium annual fee preference.",0.313
+P0277,few_shot,CC015,CC016,CC008,"CC015 - High dining cashback rate (3%) and a wide range of cashback categories, matching the user's dining-focused spending style and dining_rewards goal.
+CC016 - High cashback rate on dining (2%) and a medium annual fee, aligning with the user's medium annual fee preference and dining_rewards goal.
+CC008 - High dining reward rate (2 points per £1) and points transfer to airlines, complementing the user's dining-heavy spending and travel_interest.",2.407
+P0278,zero_shot,CC018,CC016,CC015,"CC018 - This card fits the user's profile due to its high dining reward rate of 4.0% and annual fee of £30, which is within their medium annual fee preference.
+CC016 - This card suits the user's spending habits with its high dining reward rate of 2.0% and a balanced cashback rate across various categories, including dining, travel, and online shopping.
+CC015 - This card matches the user's dining-focused spending style with high reward rates of 3.0% for dining and 5.0% for groceries, making it an ideal choice for their high dining expenditure.",0.393
+P0278,few_shot,CC016,CC015,CC008,"CC016 - High cashback rate on dining (2.0%) and other categories, matching the user's dining-heavy spending profile.
+CC015 - High cashback rate on dining (3.0%) and other categories, complementing the user's dining-focused spending style.
+CC008 - Medium annual fee and high points rate on dining (2.0%), aligned with the user's dining_rewards goal and medium annual fee preference.",0.326
+P0279,zero_shot,CC016,CC018,CC006,"CC016 - Offers a high cashback rate of 2.0% on dining, aligning with the user's goal of dining rewards and spending style of dining-focused.
+CC018 - Provides a high cashback rate of 4.0% on dining, matching the user's preferred reward type of Dining and aligning with their high dining expenditure.
+CC006 - Offers a high cashback rate of 2.0% on dining, aligning with the user's goal of dining rewards and spending style of dining-focused, while also having a medium annual fee.",0.288
+P0279,few_shot,CC015,CC016,CC008,"CC015 - High cashback rate on dining (3.0%) matches the user's dining-heavy spending profile and medium annual fee preference.
+CC016 - Offers a balanced cashback rate across various categories, including dining (2.0%), and a low foreign transaction fee.
+CC008 - High points rate on dining (2.0%) and travel (1.0%) aligns with the user's dining_rewards goal and medium annual fee preference.",0.337
+P0280,zero_shot,CC018,CC016,CC011,"CC018 - This card fits the user's profile due to its high dining reward rate of 4.0% and annual fee of £30, which is within the user's medium annual fee preference.
+CC016 - This card matches the user's profile due to its high dining reward rate of 2.0% and a balanced reward structure across various categories, including grocery, fuel, travel, and online shopping.
+CC011 - This card is recommended due to its lack of annual fee, which aligns with the user's preference for a low or no annual fee, and its potential for future use despite its current limitations.",0.369
+P0280,few_shot,CC015,CC016,CC008,"CC015 - High dining reward rate (3.0%) on a cashback card with a medium annual fee, matching the user's dining_rewards goal and medium fee preference.
+CC016 - High dining reward rate (2.0%) on a cashback card with a medium annual fee, complementing the user's high dining expenditure.
+CC008 - High dining reward rate (2.0%) on a points card with a high annual fee, offering flexibility in rewards redemption for a user with a medium fee preference.",0.431
+P0281,zero_shot,CC018,CC016,CC006,"CC018 - This card fits the user's high dining expenditure and dining rewards goal with a high dining rewards rate of 4.0%.
+CC016 - This card matches the user's dining-focused spending style with a high dining rewards rate of 2.0% and a medium annual fee.
+CC006 - This card suits the user's dining-heavy profile with a high dining rewards rate of 2.0% and a low annual fee.",0.362
+P0281,few_shot,CC015,CC016,CC012,"CC015 - High cashback rate on dining (3%) and other categories, matching the user's dining-heavy spending style and medium annual fee preference.
+CC016 - Medium annual fee and a cashback rate of 2% on dining, aligning with the user's dining_rewards goal and spending habits.
+CC012 - High cashback rate on dining (1%) and other categories, complementing the user's dining-heavy expenditure and medium annual fee preference.",0.36
+P0282,zero_shot,CC018,CC016,CC006,"CC018 - This card fits the user's high dining expenditure with a 4.0% cashback rate on dining, meeting their goal of dining rewards.
+CC016 - This card offers a well-rounded cashback rate of 2.0% on dining, aligning with the user's dining-focused spending style and medium annual fee preference.
+CC006 - This card provides a high cashback rate of 2.0% on dining, meeting the user's goal of dining rewards and catering to their high dining expenditure.",0.283
+P0282,few_shot,CC015,CC016,CC008,"CC015 - High dining reward rate (3.0%) on a card with a medium annual fee, matching the user's dining_rewards goal and medium fee preference.
+CC016 - High dining reward rate (2.0%) on a card with a medium annual fee, complementing the user's high dining expenditure.
+CC008 - High dining reward rate (2.0%) on a card with a high annual fee, offering points transfer and travel insurance for the user's frequent travel.",0.372
+P0283,zero_shot,CC016,CC012,CC008,"CC016 - Offers a high cashback rate of 3.0% on groceries, which matches the user's high grocery expenditure.
+CC012 - Provides a high cashback rate of 5.0% on fuel and 4.0% on online shopping, which aligns with the user's moderate travel and online shopping habits.
+CC008 - Offers a high cashback rate of 2.0% on groceries and dining, which suits the user's dining-focused spending style and medium annual fee preference.",0.262
+P0283,few_shot,CC015,CC016,CC012,"CC015 - High dining cashback rate (3.0%) and additional cashback on other categories, matching the user's dining-focused spending style.
+CC016 - Balanced cashback rates across categories, including a high rate on dining (2.0%), and no annual fee.
+CC012 - High cashback rate on dining (1.0%) and other categories, including travel (3.0%), with a medium annual fee.",0.327
+P0284,zero_shot,CC018,CC016,CC006,"CC018 - Lloyds Cashback Credit Card is recommended due to its high dining reward rate of 4.0% and annual fee of £30, which fits the user's preference for a medium annual fee.
+CC016 - Santander All in One Credit Card is recommended due to its high dining reward rate of 2.0% and diverse rewards across various spending categories, which aligns with the user's dining-focused spending style.
+CC006 - Virgin Money Cashback Credit Card is recommended due to its high dining reward rate of 2.0% and grocery reward rate of 4.0%, which caters to the user's high dining and grocery expenditure.",0.359
+P0284,few_shot,CC016,CC015,CC012,"CC016 - High cashback rate on dining (2.0%) and other spend categories, matching the user's dining-heavy profile and medium annual fee preference.
+CC015 - High cashback rate on dining (3.0%) and other spend categories, complementing the user's dining-focused spending style and medium annual fee preference.
+CC012 - High cashback rate on dining (1.0%) and other spend categories, including travel, which aligns with the user's medium travel interest and dining_rewards goal.",0.318
+P0285,zero_shot,CC016,CC018,CC012,"CC016 - This card fits the user's spending habits with a 2.0% dining rate and a medium annual fee of £0.
+CC018 - This card matches the user's goal of dining rewards with a 4.0% dining rate and a relatively low annual fee of £30.
+CC012 - This card suits the user's spending style with a 1.0% dining rate and a 4.0% online shopping rate, along with a £0 annual fee.",0.344
+P0285,few_shot,CC015,CC012,CC006,"CC015 - High dining cashback rate (3%) matches the user's goal of dining rewards and medium annual fee preference.
+CC012 - Offers a high cashback rate on dining (1%) and a medium annual fee, aligning with the user's dining-heavy spending profile and medium fee preference.
+CC006 - Offers a high cashback rate on dining (2%) and no annual fee, making it a suitable option for a user with a high dining spend and low fee preference.",0.379
+P0286,zero_shot,CC018,CC016,CC006,"CC018 - The Lloyds Cashback Credit Card is the best fit due to its high dining rewards rate of 4.0% and medium annual fee of 30, aligning with the user's goal of dining rewards and annual fee preference.
+CC016 - The Santander All in One Credit Card is a suitable option due to its high cashback rates across various categories, including dining, and a fee of 0, matching the user's dining-focused spending style and preference for low or no annual fee.
+CC006 - The Virgin Money Cashback Credit Card is a good choice because it offers high cashback rates for dining and grocery purchases, and a fee of 0, aligning with the user's dining-heavy spending profile and preference for low or no annual fee.",0.391
+P0286,few_shot,CC015,CC016,CC012,"CC015 - High dining reward rate (3.0%) on a card with no annual fee, matching the user's dining_rewards goal and medium annual fee preference.
+CC016 - High dining reward rate (2.0%) on a card with no annual fee, complementing the user's high dining expenditure and medium annual fee preference.
+CC012 - High dining reward rate (1.0%) on a card with no annual fee, aligned with the user's dining_rewards goal and medium annual fee preference.",0.286
+P0287,zero_shot,CC018,CC016,CC006,"CC018 - The Lloyds Cashback Credit Card is the best fit due to its high dining rewards rate of 4.0%, aligning with the user's goal of dining rewards and high monthly dining expenditure.
+CC016 - The Santander All in One Credit Card is a suitable option due to its high cashback rates across various categories, including dining, grocery, and online shopping, which matches the user's spending style.
+CC006 - The Virgin Money Cashback Credit Card is recommended for its high cashback rate of 4.0% on groceries, which matches the user's high monthly grocery expenditure and dining-focused spending style.",0.393
+P0287,few_shot,CC015,CC016,CC012,"CC015 - High cashback rate on dining (3.0%) and other categories, matching the user's dining-heavy spending style and medium annual fee preference.
+CC016 - Cashback rewards on various categories including dining (2.0%), aligned with the user's dining_rewards goal and medium annual fee preference.
+CC012 - High cashback rate on dining (1.0%) and other categories, complementing the user's dining-heavy spending style and medium annual fee preference.",0.351
+P0288,zero_shot,CC016,CC018,CC006,"CC016 - This card offers a high cashback rate on dining (2.0%) and is suitable for the user's goal of earning dining rewards.
+CC018 - This card offers a high cashback rate on dining (4.0%) and travel (5.0%), aligning with the user's travel interest and dining-focused spending style.
+CC006 - This card offers a high cashback rate on dining (2.0%) and groceries (4.0%), making it a suitable choice for the user's high dining and grocery expenditure.",0.312
+P0288,few_shot,CC015,CC016,CC012,"CC015 - High cashback rate on dining (3.0%) and online shopping (1.0%) matches the user's dining-heavy spending profile and online shopping habits.
+CC016 - Offers a balanced cashback rate across various categories, including dining (2.0%) and online shopping (3.0%), suitable for a user with diverse spending habits.
+CC012 - High cashback rate on dining (1.0%) and travel (3.0%) rewards the user's frequent dining and travel activities, while the medium annual fee aligns with their preference.",0.466
+P0289,zero_shot,CC016,CC018,CC006,"CC016 - This card offers a high cashback rate on dining, which aligns with the user's goal of earning dining rewards.
+CC018 - With a high cashback rate on dining and a medium annual fee, this card meets the user's dining rewards goal and fee preference.
+CC006 - Although it has a higher annual fee, this card offers a high cashback rate on dining, making it a suitable option for the user's spending habits.",0.305
+P0289,few_shot,CC016,CC015,CC012,"CC016 - High cashback rate on dining (2.0%) matches the user's goal of dining rewards and medium annual fee preference.
+CC015 - High cashback rate on dining (3.0%) and online shopping (1.0%) aligns with the user's spending style and dining_rewards goal.
+CC012 - High cashback rate on dining (1.0%) and travel (3.0%) rewards, with a medium annual fee, complements the user's travel_interest and dining_rewards goal.",0.356
+P0290,zero_shot,CC016,CC018,CC006,"CC016 - Offers a high cashback rate of 3.0% on grocery spend, matching the user's high dining and grocery expenditure.
+CC018 - Provides a high cashback rate of 5.0% on travel and 4.0% on dining, aligning with the user's goal of dining rewards and medium travel interest.
+CC006 - Offers a high cashback rate of 4.0% on grocery and 2.0% on dining, catering to the user's dining-heavy spending style and preferred reward type of Dining.",0.329
+P0290,few_shot,CC015,CC012,CC006,"CC015 - High dining cashback rate (3.0%) and additional cashback on other categories, matching the user's dining-focused spending style and medium annual fee preference.
+CC012 - High cashback rate on dining (1.0%) and other categories, including travel, aligning with the user's dining_rewards goal and medium annual fee preference.
+CC006 - High cashback rate on dining (2.0%) and groceries (4.0%), matching the user's high dining expenditure and medium annual fee preference.",0.373
+P0291,zero_shot,CC018,CC016,CC006,"CC018 - This card fits the user's high dining expenditure with a 4.0% dining reward rate, meeting their goal of dining rewards.
+CC016 - This card offers a balanced reward structure with a 2.0% dining rate, meeting the user's dining-focused spending style and preferred reward type.
+CC006 - This card provides a high 2.0% dining reward rate, aligning with the user's dining-heavy profile and preferred reward type.",0.301
+P0291,few_shot,CC015,CC016,CC012,"CC015 - High cashback rate on dining (3%) matches the user's goal of dining rewards and medium annual fee preference.
+CC016 - Offers a balanced cashback rate across various categories, including dining, and a medium annual fee, aligning with the user's preferences.
+CC012 - High cashback rate on dining (1%) and a medium annual fee, making it a suitable option for the user's dining-heavy spending profile.",0.388
+P0292,zero_shot,CC018,CC016,CC012,"CC018 - The Lloyds Cashback Credit Card is the best fit due to its high dining rewards rate of 4.0% and medium annual fee of 30.
+CC016 - The Santander All in One Credit Card is a close second, offering a high dining rewards rate of 2.0% and a low annual fee of 0.
+CC012 - The NatWest Reward Credit Card is also a good option, providing a high dining rewards rate of 1.0% and a low annual fee of 0.",0.264
+P0292,few_shot,CC015,CC016,CC012,"CC015 - High cashback rate on dining (3.0%) and other categories, matching the user's dining-heavy spending profile and medium annual fee preference.
+CC016 - Competitive cashback rates across various categories, including dining (2.0%), and a medium annual fee, aligning with the user's spending style and goals.
+CC012 - High cashback rate on dining (1.0%) and other categories, including travel (3.0%), with a medium annual fee, complementing the user's dining-heavy profile and travel interest.",0.309
+P0293,zero_shot,CC016,CC018,CC006,"CC016 - Offers a high cashback rate on dining (2.0%) and aligns with the user's goal of dining rewards.
+CC018 - Provides a high cashback rate on dining (4.0%) and travel (5.0%), matching the user's travel interest and dining-focused spending style.
+CC006 - Offers a high cashback rate on dining (2.0%) and groceries (4.0%), catering to the user's high dining and grocery expenditure.",0.328
+P0293,few_shot,CC015,CC016,CC012,"CC015 - High dining cashback rate (3.0%) and a well-rounded rewards structure, aligning with the user's dining_rewards goal and spending_style.
+CC016 - Good balance of cashback rates across various categories, including dining, and a low foreign transaction fee, suiting the user's needs.
+CC012 - High cashback rate on dining (1.0%) and a comprehensive rewards structure, matching the user's dining_rewards goal and preferred_reward_type.",0.343
+P0294,zero_shot,CC018,CC016,CC006,"CC018 - This card fits the user's high dining expenditure and dining rewards goal with a high dining rewards rate of 4.0%.
+CC016 - This card suits the user's dining-focused spending style with a high dining rewards rate of 2.0% and a medium annual fee.
+CC006 - This card matches the user's dining-heavy profile with a high dining rewards rate of 2.0% and no annual fee.",0.292
+P0294,few_shot,CC015,CC016,CC012,"CC015 - Highest dining reward rate (3.0%) and cashback on other categories, matching the high dining spend and cashback preference.
+CC016 - High cashback rates across multiple categories, including dining, and a medium annual fee, aligning with the user's dining_rewards goal and medium fee preference.
+CC012 - High cashback rate on dining (1.0%) and other categories, including travel, and a no-fee option, complementing the user's dining-focused spending style.",0.352
+P0295,zero_shot,CC018,CC016,CC011,"CC018 - This card fits the user's high dining expenditure with a 4.0% cashback rate on dining, meeting their preferred reward type of Dining.
+CC016 - This card offers a high cashback rate on various categories, including 2.0% on dining, making it suitable for the user's dining-focused spending style.
+CC011 - This card has no annual fee, which aligns with the user's preference for a medium annual fee, and is a good option for the user's needs.",0.304
+P0295,few_shot,CC015,CC016,CC012,"CC015 - High dining reward rate (3.0%) and cashback on other categories, matching the user's dining-focused spending style and medium annual fee preference.
+CC016 - Balanced cashback rates across categories, including a 2.0% rate on dining, and no foreign transaction fee, suiting the user's needs.
+CC012 - High cashback rate on dining (1.0%) and other categories, including travel (3.0%), aligning with the user's dining_rewards goal and medium annual fee preference.",0.39
+P0296,zero_shot,CC016,CC018,CC006,"CC016 - Offers a high cashback rate on dining (2.0%) and aligns with the user's goal of earning dining rewards.
+CC018 - Provides a high cashback rate on dining (4.0%) and travel (5.0%), matching the user's high dining expenditure and travel interest.
+CC006 - Offers a high cashback rate on dining (2.0%) and groceries (4.0%), catering to the user's dining-heavy spending style and high grocery expenditure.",0.313
+P0296,few_shot,CC015,CC006,CC008,"CC015 - High dining cashback rate (3.0%) matches the user's dining-heavy spending profile and dining_rewards goal.
+CC006 - High dining cashback rate (2.0%) and medium annual fee align with the user's high dining spend and medium annual fee preference.
+CC008 - High dining points rate (2.0%) and points transfer option complement the user's dining-heavy spending and points preference.",0.314
+P0297,zero_shot,CC018,CC016,CC011,"CC018 - This card fits the user's profile due to its high dining reward rate of 4.0%, aligning with their goal of earning dining rewards.
+CC016 - This card is recommended because it offers a high cashback rate on dining of 2.0%, matching the user's preferred reward type and spending style.
+CC011 - This card is a good fit due to its low annual fee of 0, which aligns with the user's preference for a medium annual fee.",0.318
+P0297,few_shot,CC016,CC015,CC012,"CC016 - High cashback rate on dining (2%) matches the user's goal of dining rewards and medium annual fee preference.
+CC015 - High cashback rate on dining (3%) complements the user's dining-heavy spending style and medium annual fee preference.
+CC012 - High cashback rate on dining (1%) and travel (3%) rewards align with the user's dining_rewards goal and medium annual fee preference.",0.357
+P0298,zero_shot,CC018,CC016,CC006,"CC018 - The Lloyds Cashback Credit Card fits this user due to its high dining reward rate of 4.0% and medium annual fee of £30, aligning with the user's dining_rewards goal and medium annual fee preference.
+CC016 - The Santander All in One Credit Card is recommended due to its high dining reward rate of 2.0% and medium annual fee of £0, catering to the user's dining_rewards goal and spending_style of dining_focused.
+CC006 - The Virgin Money Cashback Credit Card is a suitable option for this user with its high dining reward rate of 2.0% and £0 annual fee, aligning with the user's dining_rewards goal and preferred_reward_type of Dining.",0.313
+P0298,few_shot,CC015,CC016,CC008,"CC015 - High dining rewards rate (3.0%) and cashback on other categories, matching the user's dining-focused spending style and medium annual fee preference.
+CC016 - Balanced cashback rates across categories, including a high 3.0% on groceries and 2.0% on dining, suiting the user's dining-heavy profile.
+CC008 - High dining rewards rate (2.0%) and points transfer option, aligning with the user's dining_rewards goal and medium annual fee preference.",0.324
+P0299,zero_shot,CC018,CC016,CC006,"CC018 - This card fits the user's high dining expenditure with a 4% cashback rate on dining and a medium annual fee of £30.
+CC016 - This card suits the user's dining-focused spending style with a 2% cashback rate on dining and a low annual fee of £0.
+CC006 - This card matches the user's dining-heavy profile with a 2% cashback rate on dining and a low annual fee of £0.",0.328
+P0299,few_shot,CC016,CC015,CC012,"CC016 - High cashback rate on dining (2.0%) matches the user's dining-heavy spending profile and medium annual fee preference.
+CC015 - High cashback rate on dining (3.0%) and other categories, including grocery and travel, complements the user's spending style and goals.
+CC012 - High cashback rate on dining (1.0%) and other categories, including travel, aligns with the user's dining-heavy spending profile and medium annual fee preference.",0.319
+P0300,zero_shot,CC016,CC018,CC011,"CC016 - Offers a high cashback rate of 3.0% on groceries, which matches the user's high monthly grocery spend.
+CC018 - Provides a high cashback rate of 5.0% on travel, which aligns with the user's medium travel interest and high monthly travel spend.
+CC011 - Although it's a student card, it has no annual fee, which fits the user's preference for a medium annual fee.",0.257
+P0300,few_shot,CC015,CC016,CC012,"CC015 - High cashback rate on dining (3%) matches the user's goal of dining rewards and medium annual fee preference.
+CC016 - Offers a balanced cashback rate across various categories, including dining (2%), and a medium annual fee.
+CC012 - Provides a high cashback rate on dining (1%) and a medium annual fee, aligning with the user's dining-heavy spending profile.",0.324
