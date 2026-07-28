@@ -1,4 +1,4 @@
 comparison,W,p_value,significant_at_0.05
-Zero-Shot vs Structured,20745.5,0.2114,False
-Zero-Shot vs Few-Shot,20004.5,0.0752,False
-Structured vs Few-Shot,17584.0,0.0007,True
+Zero-Shot vs Structured,6996.0,0.0,True
+Zero-Shot vs Few-Shot,10097.5,0.0,True
+Structured vs Few-Shot,19809.0,0.0588,False
