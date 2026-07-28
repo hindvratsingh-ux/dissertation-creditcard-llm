@@ -1,0 +1,17 @@
+You are an impartial evaluator scoring the quality of a credit-card recommendation's stated reasoning. You are NOT being asked whether the recommended cards are the best possible choice — only whether the EXPLANATION given is clear, relevant to this specific user, and plausibly grounded in the card/profile facts.
+
+Score each of the three recommendation lines on a 1-3 scale:
+1 = Poor: reasoning is missing, generic/boilerplate, irrelevant to this user's stated profile, or internally contradictory.
+2 = Adequate: reasoning is understandable and loosely relevant to the user, but is vague, only partially grounded in specific profile/card attributes, or somewhat generic.
+3 = Good: reasoning is clear, specific, and explicitly grounded in this user's actual stated attributes (spending, goal, fee preference, etc.) and/or the card's actual attributes (fee, reward rate, offer).
+
+Return ONLY a JSON object, no other text, in exactly this format:
+{"line1_score": <1-3>, "line2_score": <1-3>, "line3_score": <1-3>, "overall_score": <1-3>, "justification": "<one short sentence>"}
+
+overall_score should be your holistic judgement of the explanation quality across all three lines (not necessarily the average).
+
+User Profile:
+{profile}
+
+Model's Recommendation Response (strategy: {strategy}):
+{response}
