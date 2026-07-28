@@ -87,3 +87,53 @@ Also found and fixed a data-integrity bug: the file-write path for this connecte
   ```
 - Once that's done, I can pick back up: write the consistency-check script (repeated-run sampling) and the factual-correctness / explanation-quality scoring, and you'd run those locally too since they also need Groq (for LLM-as-judge) or at least local execution.
 - The one piece that does **not** need any LLM calls or network access — deterministic factual-correctness checking (comparing card facts mentioned in existing responses against `cards.csv`) — I can build and run entirely within this sandbox, no blocker there.
+
+## Update (2026-07-28): full re-audit — where every piece actually stands
+
+This is a ground-up recheck of the whole repo, not just the LLM rerun, prompted by a request to map every remaining gap. Findings below are from directly reading/executing the current files, not from memory of earlier sessions.
+
+### Experiment data (`data/llm_results.csv`)
+
+The rerun under the corrected (reasoning-required) prompts is **in progress, running now**, driven from the user's machine ("Antigravity"). Sequence of events today:
+
+1. GitHub's copy had drifted: 1,303 rows instead of 900, with 403 duplicate `(profile_id, strategy)` pairs — old bare-ID rows sitting alongside new reasoning-format rows for the same profile, because `llm_eval.py`'s resume logic only checks whether a `(profile_id, strategy)` pair exists at all, not which format it's in.
+2. I deduplicated locally: kept every `structured` row as-is (300), and for `zero_shot`/`few_shot` kept only rows matching the new `CC001 - <reason>` format, dropping the old bare-ID rows entirely. This left exactly the profiles still needing a rerun genuinely absent from the file, so `llm_eval.py`'s resume logic would pick them up correctly. Committed (`6f5b948`).
+3. Confirmed live just now: the resumed run has real, clean progress — **259/300 zero-shot and 259/300 few-shot profiles done in the new format, zero duplicates.** 41 zero-shot + 41 few-shot profiles remain. `structured` was never affected (300/300, always had reasoning).
+4. **Do not touch `data/llm_results.csv` until this finishes** — it's being actively written to by the background process on the user's machine.
+
+### Everything downstream of the LLM results is stale and must be regenerated
+
+`results/scored_results.csv`, `results/analysis_summary.csv`, `results/wilcoxon_results.csv`, `results/segment_summary.csv`, `results/factual_correctness*.csv`, and both figures were all computed on the **old, incomplete** dataset (900 rows, zero_shot/few_shot with no reasoning text at all — hence `factual_correctness_summary.csv` currently shows 0 checkable claims for those two strategies, and the Kruskal-Wallis/Wilcoxon numbers reflect bare-ID-era responses). None of these numbers are usable in the dissertation as they stand. Re-run `score_outputs.py` → `factual_correctness.py` → `analyze_results.py` → `generate_plots.py`, in that order, once the rerun hits a clean 900/900 with no duplicates.
+
+### Still missing entirely: explanation-quality scoring (LLM-as-judge)
+
+One of the four required evaluation criteria has no implementation anywhere in `src/`. This needs a new script (I can write it — the code itself needs no network) that sends each response + profile to an LLM judge and gets back a quality score; running it needs Groq access, so execution has to happen locally, same as the main eval. This is the single largest remaining piece of *new* work on the experiment side.
+
+### Also not yet run: consistency checking
+
+`src/consistency_check.py` exists (stratified sample, 3 profiles/archetype × 3 repeated runs, Jaccard stability) but has never actually been executed — no output file exists yet. Needs Groq, so it runs locally, after the main rerun finishes (to avoid competing for the same daily rate limit).
+
+### Repo hygiene, fixed today
+
+- `README.md` was still describing the **old, abandoned pipeline** (80 profiles, heuristic baseline, `run_experiments.py --dry-run` flow, manual rubric) — a rewrite had been drafted in an earlier session but never actually reached the live repo. Rewritten and committed just now to match the real pipeline (300 profiles, cosine baseline, `llm_eval.py`, four-criteria evaluation).
+- `src/run_experiments.py` — a legacy duplicate of `llm_eval.py` (writes to a different, unused `results/raw_recommendations.csv`, calls the old baseline flow) — moved to `archive/` with a note, so nothing in the repo points two ways for the same step. Committed.
+- The `archive/` folder referenced in an earlier session's notes did not actually exist in the live repo (the old superseded scripts had been deleted outright, not archived) — recreated cleanly with just the one real archived file plus explanation.
+
+### Dissertation document: still a placeholder
+
+`main.tex`/`main.pdf`/`dissertation_submission.zip` at the repo root are the **original skeleton stub** — `\author{Your Name}`, one-line chapter placeholders ("Provide background, motivation and objectives."), no real content. Chapters 1–3 have real prose drafted in scratch working files (not yet in the repo — pending a decision on whether to continue in LaTeX to match this skeleton, or move to Word/docx), but Chapter 3's numbers are placeholder-bracketed pending the rerun above, and Chapters 4–6, front matter (title page, declaration, abstract, ToC, list of illustrations), consolidated references, and appendices haven't been started.
+
+### Push access
+
+This session's sandbox has no GitHub credentials configured (a fresh sandbox instance loses whatever was set up before), so I can't push directly right now — I've been committing locally, which lands directly in the real repo since this folder is the actual local clone, and the next `git push` (by the user or Antigravity, both of which have working credentials) picks everything up. Currently sitting 2 local commits ahead of `origin/main`, both purely additive/non-conflicting with what Antigravity is doing.
+
+### Full remaining punch list, in dependency order
+
+1. Let the current rerun finish (41 + 41 profiles left).
+2. Push local commits (`6f5b948`, `0679f6d`) + the rerun's final commit — clean 900/900, verify via fresh clone.
+3. Re-run the full scoring/analysis chain for final numbers.
+4. Write + run the LLM-as-judge explanation-quality scorer (new code + one more local run).
+5. Run `consistency_check.py` (one more local run).
+6. Re-run scoring/analysis one final time once 4–5 are in, so every number in the dissertation is final and internally consistent.
+7. Replace the `main.tex` skeleton with real content: merge Chapters 1–3 (drafted, pending final numbers in Ch.3), then write Ch.4 (Analysis & Findings, blocked on step 6), Ch.5 (Discussion/Limitations), Ch.6 (Recommendations & Conclusions), front matter, consolidated Harvard references, appendices.
+8. Word-count check against the ~10,000-word ±10% target once complete.
