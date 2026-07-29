@@ -98,11 +98,11 @@ def _extract_card_ids(text: str) -> List[str]:
 
 def _sample_profiles(n_per_archetype: int) -> pd.DataFrame:
     profiles = pd.read_csv(DATA_DIR / "profiles.csv")
-    sampled = (
-        profiles.groupby("profile_type", group_keys=False)
-        .apply(lambda g: g.sample(n=min(n_per_archetype, len(g)), random_state=42))
-    )
-    return sampled.reset_index(drop=True)
+    sampled_dfs = []
+    for _, group in profiles.groupby("profile_type"):
+        n = min(n_per_archetype, len(group))
+        sampled_dfs.append(group.sample(n=n, random_state=42))
+    return pd.concat(sampled_dfs, ignore_index=True)
 
 
 def _call_groq(client: Groq, user_message: str) -> str:
@@ -116,7 +116,21 @@ def _call_groq(client: Groq, user_message: str) -> str:
             )
             return resp.choices[0].message.content.strip()
         except Exception as exc:
-            if attempt < MAX_RETRIES:
+            err_msg = str(exc)
+            is_transient = "rate_limit" in err_msg.lower() or "429" in err_msg
+            if is_transient and attempt < MAX_RETRIES:
+                import re
+                sleep_seconds = RETRY_DELAY
+                match = re.search(r"try again in ([0-9hms\.]+)", err_msg)
+                if match:
+                    parts = re.findall(r"([0-9\.]+)([hms])", match.group(1))
+                    parsed = sum(
+                        float(v) * {"h": 3600, "m": 60, "s": 1}[u] for v, u in parts
+                    ) if parts else 0
+                    sleep_seconds = max(parsed + 5.0, RETRY_DELAY)
+                print(f"[retry {attempt}/{MAX_RETRIES}] Rate limited. Sleeping {sleep_seconds:.1f}s...")
+                time.sleep(sleep_seconds)
+            elif attempt < MAX_RETRIES:
                 print(f"[retry {attempt}/{MAX_RETRIES}] {exc}")
                 time.sleep(RETRY_DELAY)
             else:

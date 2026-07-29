@@ -1,0 +1,793 @@
+profile_id,strategy,run_number,recommended_cards,raw_response
+P0148,zero_shot,1,CC016|CC018|CC012,"CC016 - Offers a balanced cashback rate across various spending categories, including grocery, fuel, dining, travel, and online shopping, making it suitable for the user's spending style.
+CC018 - Provides a high cashback rate on travel, which aligns with the user's medium travel interest, and a relatively low annual fee of £30.
+CC012 - Offers a high cashback rate on fuel, which matches the user's monthly fuel spend, and a balanced cashback rate across other spending categories."
+P0148,zero_shot,2,CC016|CC018|CC015,"CC016 - Offers a balanced cashback rate across various spending categories, making it suitable for the user's spending style.
+CC018 - Provides a high cashback rate on travel, aligning with the user's medium travel interest and goal of maximizing overall rewards.
+CC015 - Offers a high cashback rate on groceries, matching the user's high monthly grocery spend and balanced spending style."
+P0148,zero_shot,3,CC016|CC018|CC015,"CC016 - Offers a balanced cashback rate across various spending categories, making it suitable for the user's spending style.
+CC018 - Provides a high cashback rate on travel, aligning with the user's travel interest and goal of maximizing overall rewards.
+CC015 - Offers a high cashback rate on groceries, which matches the user's high monthly grocery spend and balanced spending style."
+P0148,structured,1,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""This card offers a high cashback rate on fuel and travel, and a medium annual fee."", ""warnings"": ""High cashback rates may not be available for all users.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""This card offers a balanced cashback rate across all spending categories and a low annual fee."", ""warnings"": ""The cashback rates may not be as high as other cards.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""This card offers a high cashback rate on groceries and a medium annual fee."", ""warnings"": ""The cashback rates may not be as high as other cards for certain spending categories.""}
+}"
+P0148,structured,2,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates across various spending categories, including fuel and travel."", ""warnings"": ""Annual fee is not specified in the catalogue.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various spending categories, including groceries and fuel."", ""warnings"": ""No specific travel cashback rate mentioned.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on groceries and fuel, suitable for a balanced spending style."", ""warnings"": ""No specific travel cashback rate mentioned.""}
+}"
+P0148,structured,3,CC012|CC016|CC006,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates across multiple categories, including fuel and travel."", ""warnings"": ""Annual fee not specified.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including groceries and travel."", ""warnings"": ""No specific cashback rate for dining.""},
+  ""rank_3"": {""card_id"": ""CC006"", ""card_name"": ""Virgin Money Cashback Credit Card"", ""reason"": ""High cashback rate for groceries, which matches the user's high grocery spend."", ""warnings"": ""No cashback rate for fuel.""}
+}"
+P0148,few_shot,1,CC016|CC015|CC012,"CC016 - Highest overall cashback rate (3% on grocery, 4% on fuel, 3% on online shopping, and 2% on dining and travel) matches the user's goal of max_overall_rewards.
+CC015 - High cashback rates across multiple categories (5% on grocery, 3% on fuel and dining, 2% on travel, and 1% on online shopping) aligns with the user's balanced spending style and cashback preference.
+CC012 - High cashback rates on travel (3%) and online shopping (4%) complement the user's medium travel interest and balanced spending style."
+P0148,few_shot,2,CC016|CC015|CC012,"CC016 - Highest overall cashback rate (3% on grocery, 4% on fuel, 3% on online shopping, and 2% on dining and travel) matches the user's goal of max_overall_rewards.
+CC015 - High cashback rate on grocery (5%) and other categories, with a medium annual fee, suits the user's balanced spending style and medium fee preference.
+CC012 - High cashback rate on travel (3%) and other categories, with no annual fee, complements the user's medium travel interest and balanced spending style."
+P0148,few_shot,3,CC016|CC015|CC012,"CC016 - Highest cashback rate across multiple categories, including grocery, fuel, and online shopping, aligning with the balanced cashback profile.
+CC015 - High cashback rate on grocery and fuel, complementing the user's spending style and goal of max overall rewards.
+CC012 - Offers a high cashback rate on travel, dining, and online shopping, matching the user's medium travel interest and balanced spending style."
+P0151,zero_shot,1,CC018|CC016|CC015,"CC018 - Lloyds Cashback Credit Card is recommended due to its high cashback rates across various categories, including grocery, fuel, dining, travel, and online shopping, which aligns with the user's spending habits.
+CC016 - Santander All in One Credit Card is recommended due to its balanced cashback rates across multiple categories, including grocery, fuel, dining, travel, and online shopping, which suits the user's spending style.
+CC015 - MBNA Everyday Plus Credit Card is recommended due to its high cashback rates on grocery, fuel, dining, travel, and online shopping, which matches the user's spending habits and goals."
+P0151,zero_shot,2,CC018|CC016|CC015,"CC018 - This card fits the user due to its high cashback rate on various categories, including grocery, fuel, dining, travel, and online shopping, which aligns with the user's spending habits.
+CC016 - This card is recommended because it offers a balanced cashback rate across multiple categories, including grocery, fuel, dining, travel, and online shopping, which suits the user's spending style.
+CC015 - This card is suitable for the user as it provides a high cashback rate on grocery, fuel, dining, and online shopping, which matches the user's spending habits and preferences."
+P0151,zero_shot,3,CC018|CC016|CC012,"CC018 - Lloyds Cashback Credit Card is recommended due to its high cashback rate on grocery, fuel, dining, travel, and online shopping, aligning with the user's spending style and goals.
+CC016 - Santander All in One Credit Card is recommended due to its balanced cashback rates across various spending categories, including grocery, fuel, dining, travel, and online shopping, which suits the user's spending style.
+CC012 - NatWest Reward Credit Card is recommended due to its high cashback rate on grocery, fuel, dining, travel, and online shopping, making it suitable for the user's spending habits and goals."
+P0151,structured,1,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates across various categories, including fuel and travel, making it suitable for this user's spending habits."", ""warnings"": ""Annual fee is not specified, but it may be higher than the user's preferred medium annual fee.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including groceries, fuel, and online shopping, making it suitable for this user's spending style."", ""warnings"": ""No specific warnings for this card.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, and dining, making it suitable for this user's spending habits."", ""warnings"": ""Annual fee is not specified, but it may be higher than the user's preferred medium annual fee.""}
+}"
+P0151,structured,2,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates across various spending categories, including fuel and travel."", ""warnings"": ""Annual fee not specified, but may be applicable.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across multiple spending categories."", ""warnings"": ""No specific warnings.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates for groceries and fuel, suitable for user's spending habits."", ""warnings"": ""No specific warnings.""}
+}"
+P0151,structured,3,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates across various spending categories, including fuel and travel, making it suitable for this user's spending habits."", ""warnings"": ""Annual fee is not specified, but it's likely to be medium or high.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various spending categories, including groceries, fuel, and online shopping, making it suitable for this user's spending style."", ""warnings"": ""No specific travel rewards, but overall cashback rate is competitive.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, and dining, making it suitable for this user's spending habits."", ""warnings"": ""No specific travel rewards, but overall cashback rate is competitive.""}
+}"
+P0151,few_shot,1,CC016|CC015|CC012,"CC016 - Highest overall cashback rate (3% on grocery, 4% on fuel, 3% on online shopping, and 2% on dining and travel) across all spending categories.
+CC015 - High cashback rate on grocery (5%) and online shopping (1%), complementing the user's balanced spending style.
+CC012 - High cashback rates on travel (3%) and online shopping (4%), matching the user's medium travel interest and balanced spending style."
+P0151,few_shot,2,CC016|CC015|CC012,"CC016 - Highest cashback rate across multiple categories, including grocery, fuel, and online shopping, aligning with the balanced cashback goal.
+CC015 - High cashback rate on grocery and fuel spend, complementing the user's spending style and preferred reward type.
+CC012 - Offers a high cashback rate on travel, dining, and online shopping, matching the user's medium travel interest and balanced spending style."
+P0151,few_shot,3,CC016|CC015|CC012,"CC016 - Highest overall cashback rate across all spending categories, with a balanced cashback structure matching the user's spending style.
+CC015 - Offers a high cashback rate on groceries and other categories, complementing the user's balanced spending profile.
+CC012 - Provides a high cashback rate on travel, dining, and online shopping, aligning with the user's medium travel interest and balanced spending style."
+P0119,zero_shot,1,CC016|CC018|CC012,"CC016 - Offers a balanced cashback rate across various spending categories, including grocery, fuel, dining, travel, and online shopping, making it suitable for the user's spending style.
+CC018 - Provides a high cashback rate on travel, which aligns with the user's medium travel interest and goal of maximizing overall rewards.
+CC012 - Offers a high cashback rate on fuel, which matches the user's monthly fuel spend, and also provides a high cashback rate on travel, aligning with the user's travel interest."
+P0119,zero_shot,2,CC016|CC015|CC012,"CC016 - Offers a balanced cashback rate across various spending categories, including grocery, fuel, dining, travel, and online shopping, making it suitable for the user's spending style.
+CC015 - Provides a high cashback rate on grocery and fuel purchases, aligning with the user's monthly expenses on these categories.
+CC012 - Offers a high cashback rate on travel, fuel, and online shopping, which matches the user's monthly spending on these categories and their travel interest."
+P0119,zero_shot,3,CC016|CC018|CC015,"CC016 - Offers a balanced cashback rate across various spending categories, including grocery, fuel, dining, travel, and online shopping, making it suitable for the user's spending style.
+CC018 - Provides a high cashback rate on travel, which aligns with the user's medium travel interest and goal of maximizing overall rewards.
+CC015 - Offers a high cashback rate on grocery spending, which matches the user's high grocery spend and balanced spending style."
+P0119,structured,1,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates across multiple categories, including fuel and travel, making it a great fit for this user's spending habits."", ""warnings"": ""Annual fee of 0 is not explicitly mentioned, but it is assumed to be 0.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across multiple categories, including grocery, fuel, and online shopping, making it a suitable choice for this user's spending style."", ""warnings"": ""No specific warnings for this card.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on grocery and fuel, making it a great fit for this user's spending habits, but may not provide the best overall rewards."", ""warnings"": ""Annual fee of 0 is not explicitly mentioned, but it is assumed to be 0.""}
+}"
+P0119,structured,2,CC012|CC016|CC006,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates across various categories, including fuel and travel."", ""warnings"": ""Annual fee not specified.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across multiple categories, including groceries and fuel."", ""warnings"": ""No specific travel-related cashback rate.""},
+  ""rank_3"": {""card_id"": ""CC006"", ""card_name"": ""Virgin Money Cashback Credit Card"", ""reason"": ""High cashback rate on groceries and dining, aligning with user's spending habits."", ""warnings"": ""No information on cashback rates for other categories.""}
+}"
+P0119,structured,3,CC016|CC015|CC012,"{
+  ""rank_1"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""High cashback rates across various spending categories, including groceries, fuel, dining, travel, and online shopping."", ""warnings"": ""Annual fee is 0, but be aware of the credit limit and interest rates.""},
+  ""rank_2"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates for groceries, fuel, dining, travel, and online shopping, making it suitable for the user's spending style."", ""warnings"": ""Annual fee is 0, but be aware of the credit limit and interest rates.""},
+  ""rank_3"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates for groceries, fuel, dining, travel, and online shopping, making it suitable for the user's spending style."", ""warnings"": ""Annual fee is 0, but be aware of the credit limit and interest rates.""}
+}"
+P0119,few_shot,1,CC016|CC015|CC012,"CC016 - Highest overall cashback rate (3% on grocery, 4% on fuel, 3% on online shopping, and 2% on dining and travel) matches the user's goal of max_overall_rewards.
+CC015 - High cashback rate on grocery (5%), fuel (3%), dining (3%), and travel (2%) complements the user's balanced spending style and cashback preference.
+CC012 - Offers a high cashback rate on travel (3%) and online shopping (4%), along with a balanced cashback rate on other categories, aligning with the user's goal of max_overall_rewards."
+P0119,few_shot,2,CC016|CC015|CC012,"CC016 - Highest overall cashback rate (3% on grocery, 4% on fuel, 3% on online shopping) matches the user's goal of max_overall_rewards.
+CC015 - High cashback rate on grocery (5%) and online shopping (1%) complements the user's balanced spending style and cashback preference.
+CC012 - High cashback rate on travel (3%) and online shopping (4%) aligns with the user's medium travel interest and balanced spending style."
+P0119,few_shot,3,CC016|CC015|CC012,"CC016 - Offers a balanced cashback rate across all spending categories, including 3% on groceries, 4% on fuel, and 3% on online shopping, making it suitable for the user's balanced spending style.
+CC015 - Provides a high cashback rate on groceries (5%), fuel (3%), and dining (3%), matching the user's medium travel interest and balanced spending style.
+CC012 - Offers a high cashback rate on travel (3%) and online shopping (4%), complementing the user's medium travel interest and balanced spending style, with a medium annual fee."
+P0281,zero_shot,1,CC016|CC018|CC006,"CC016 - This card offers a high cashback rate on dining, matching the user's goal of earning dining rewards.
+CC018 - This card offers a high cashback rate on dining and travel, aligning with the user's spending habits and travel interest.
+CC006 - This card offers a high cashback rate on dining, making it a suitable choice for the user's dining-heavy spending profile."
+P0281,zero_shot,2,CC018|CC016|CC006,"CC018 - This card fits the user due to its high dining rewards rate of 4.0% and medium annual fee of 30, aligning with the user's dining_rewards goal and medium annual fee preference.
+CC016 - This card fits the user due to its high cashback rates across various categories, including dining, and a medium annual fee of 0, aligning with the user's dining_rewards goal and medium annual fee preference.
+CC006 - This card fits the user due to its high cashback rate of 2.0% on dining and a medium annual fee of 0, aligning with the user's dining_rewards goal and medium annual fee preference."
+P0281,zero_shot,3,CC016|CC018|CC006,"CC016 - Offers a high cashback rate of 2.0% on dining, aligning with the user's goal of dining rewards.
+CC018 - Provides a high cashback rate of 4.0% on dining and 5.0% on travel, meeting the user's dining and travel interests.
+CC006 - Offers a high cashback rate of 2.0% on dining and 4.0% on groceries, catering to the user's dining-focused spending style."
+P0281,structured,1,CC012|CC016|CC008,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on dining and travel, and a medium annual fee."", ""warnings"": ""High fuel and online shopping rates.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including dining, and a medium annual fee."", ""warnings"": ""High fuel rate.""},
+  ""rank_3"": {""card_id"": ""CC008"", ""card_name"": ""American Express Preferred Rewards Gold"", ""reason"": ""High cashback rates on grocery and dining, and a high annual fee."", ""warnings"": ""High foreign transaction fee.""}
+}"
+P0281,structured,2,CC012|CC008|CC016,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High rewards rates for dining and travel, and a medium annual fee."", ""warnings"": ""High foreign transaction fee if not abroad.""},
+  ""rank_2"": {""card_id"": ""CC008"", ""card_name"": ""American Express Preferred Rewards Gold"", ""reason"": ""High rewards rates for dining and grocery, and a high annual fee."", ""warnings"": ""High foreign transaction fee.""},
+  ""rank_3"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""High rewards rates for dining and travel, and a medium annual fee."", ""warnings"": ""No information available on foreign transaction fee.""}
+}"
+P0281,structured,3,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""This card offers a high cashback rate on dining and travel, matching your spending habits and goals."", ""warnings"": ""The annual fee is not specified, but it's likely to be medium.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""This card offers a high cashback rate on dining and travel, and a medium annual fee, matching your spending habits and goals and fee preference."", ""warnings"": ""The cashback rate on online shopping is high, but you may not use this category frequently.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""This card offers a high cashback rate on dining and travel, and a medium annual fee, matching your spending habits and goals and fee preference."", ""warnings"": ""The cashback rate on online shopping is low, but you may not use this category frequently.""}
+}"
+P0281,few_shot,1,CC015|CC012|CC006,"CC015 - High dining cashback rate (3.0%) on a card with no annual fee, matching the user's dining_rewards goal and dining_focused spending style.
+CC012 - High cashback on dining (1.0%) and travel (3.0%) alongside a medium annual fee, aligning with the user's dining_rewards goal and medium travel interest.
+CC006 - High cashback on dining (2.0%) and grocery (4.0%) alongside no annual fee, matching the user's dining_rewards goal and high dining expenditure."
+P0281,few_shot,2,CC015|CC016|CC008,"CC015 - High dining cashback rate (3.0%) matches the user's dining-heavy spending profile and dining_rewards goal.
+CC016 - Offers a balanced cashback rate across various categories, including dining (2.0%), and has no annual fee.
+CC008 - High dining reward rate (2.0%) and points transfer option align with the user's dining_rewards goal and medium travel interest."
+P0281,few_shot,3,CC015|CC016|CC008,"CC015 - High dining cashback rate (3.0%) and additional rewards on other categories, aligning with the user's dining-focused spending style and medium annual fee preference.
+CC016 - High cashback rate on dining (2.0%) and other categories, matching the user's dining_rewards goal and medium annual fee preference.
+CC008 - High points earning rate on dining (2.0%) and other categories, complementing the user's dining-focused spending style and medium annual fee preference."
+P0277,zero_shot,1,CC018|CC016|CC006,"CC018 - This card fits the user's high dining expenditure with a 4.0% cashback rate on dining, meeting their goal of dining rewards.
+CC016 - This card offers a well-rounded cashback rate of 2.0% on dining, along with other high rates on grocery and fuel, meeting the user's dining-focused spending style.
+CC006 - This card provides a high 2.0% cashback rate on dining, along with a 4.0% rate on grocery, catering to the user's dining-heavy profile and medium annual fee preference."
+P0277,zero_shot,2,CC018|CC006|CC002,"CC018 - Lloyds Cashback Credit Card is recommended due to its high dining rewards rate of 4.0% and annual fee of £30, which aligns with the user's preference for a medium annual fee.
+CC006 - Virgin Money Cashback Credit Card is recommended due to its high dining rewards rate of 2.0% and no annual fee, making it a suitable option for the user's dining-heavy spending habits.
+CC002 - American Express Platinum Cashback is recommended due to its high dining rewards rate of 0.5% and annual fee of £25, which aligns with the user's preference for a medium annual fee and goal of earning dining rewards."
+P0277,zero_shot,3,CC018|CC016|CC006,"CC018 - The Lloyds Cashback Credit Card is the best fit due to its high dining rewards rate of 4.0% and medium annual fee of 30, aligning with the user's preference for dining rewards and medium annual fee.
+CC016 - The Santander All in One Credit Card is a suitable option due to its high cashback rates across various categories, including dining at 2.0%, and a fee of 0, matching the user's dining-focused spending style and low annual fee preference.
+CC006 - The Virgin Money Cashback Credit Card is recommended due to its high dining rewards rate of 2.0% and a fee of 0, catering to the user's preference for dining rewards and low annual fee."
+P0277,structured,1,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on dining and travel, suitable for a dining-heavy user with medium travel interest."", ""warnings"": ""Annual fee is not specified in the catalogue, but it's likely to be higher than the user's preferred medium fee.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including dining, and a medium annual fee."", ""warnings"": ""No specific dining rewards, but overall a good option for a dining-focused user.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""Competitive cashback rates on dining, suitable for a user with high dining expenditure."", ""warnings"": ""No specific rewards for travel or online shopping, but a good option for a user with limited travel interest.""}
+}"
+P0277,structured,2,CC012|CC016|CC006,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on dining and travel, suitable for your spending style and goal."", ""warnings"": ""High cashback rates on other categories may lead to overspending.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including dining, and a low annual fee."", ""warnings"": ""No specific high rewards in any category.""},
+  ""rank_3"": {""card_id"": ""CC006"", ""card_name"": ""Virgin Money Cashback Credit Card"", ""reason"": ""High cashback rate on dining and a low annual fee, suitable for your spending style and goal."", ""warnings"": ""Lower cashback rates on other categories.""}
+}"
+P0277,structured,3,CC012|CC016|CC006,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on dining and travel, and a medium annual fee."", ""warnings"": ""High cashback rates on other categories may not be as beneficial for your spending habits.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including dining, and a low annual fee."", ""warnings"": ""Cashback rates on dining are not as high as other cards in this catalogue.""},
+  ""rank_3"": {""card_id"": ""CC006"", ""card_name"": ""Virgin Money Cashback Credit Card"", ""reason"": ""High cashback rate on dining and a low annual fee."", ""warnings"": ""Cashback rates on other categories are relatively low.""}
+}"
+P0277,few_shot,1,CC015|CC016|CC012,"CC015 - High cashback rate on dining (3.0%) matches the user's goal of dining rewards and medium annual fee preference.
+CC016 - Offers a balanced cashback rate on dining (2.0%) and a medium annual fee, suitable for the user's dining-heavy spending profile.
+CC012 - Provides a high cashback rate on dining (1.0%) and a low foreign fee, aligning with the user's dining-focused spending style and medium annual fee preference."
+P0277,few_shot,2,CC015|CC016|CC018,"CC015 - High cashback rate on dining (3%) and other categories, matching the user's dining-heavy spending profile and medium annual fee preference.
+CC016 - Competitive cashback rates across various categories, including dining (2%), and a medium annual fee, aligning with the user's goals and spending habits.
+CC018 - High cashback rate on dining (4%) and other categories, complementing the user's dining-heavy spending profile and medium annual fee preference."
+P0277,few_shot,3,CC015|CC012|CC006,"CC015 - High dining cashback rate (3.0%) matches the user's dining-heavy spending profile and dining_rewards goal.
+CC012 - Offers a high cashback rate on dining (1.0%) and travel (3.0%), complementing the user's spending habits and goals.
+CC006 - High cashback rate on dining (2.0%) and groceries (4.0%) aligns with the user's dining-heavy spending profile and dining_rewards goal."
+P0268,zero_shot,1,CC018|CC016|CC006,"CC018 - Lloyds Cashback Credit Card is recommended due to its high dining rewards rate of 4.0% and annual fee of £30, which aligns with the user's preference for medium annual fees and dining rewards.
+CC016 - Santander All in One Credit Card is recommended due to its high cashback rates across various categories, including dining, and a fee of £0, which aligns with the user's preference for low to medium annual fees.
+CC006 - Virgin Money Cashback Credit Card is recommended due to its high dining rewards rate of 2.0% and a fee of £0, which aligns with the user's preference for dining rewards and low annual fees."
+P0268,zero_shot,2,CC018|CC016|CC006,"CC018 - This card fits the user due to its high dining rewards rate of 4.0%, aligning with their goal of dining rewards and high monthly dining expenditure.
+CC016 - This card is recommended because it offers a balanced cashback rate across various categories, including dining, which matches the user's spending style and goals.
+CC006 - This card is suitable for the user due to its high grocery rewards rate of 4.0%, which aligns with their high monthly grocery expenditure and dining-focused spending style."
+P0268,zero_shot,3,CC018|CC016|CC006,"CC018 - This card fits the user's profile due to its high dining rewards rate of 4.0%, aligning with their goal of earning dining rewards.
+CC016 - This card is a good match because it offers a high cashback rate of 3.0% on dining, catering to the user's dining-heavy spending habits.
+CC006 - This card is recommended because it offers a high cashback rate of 2.0% on dining, making it suitable for the user's dining-focused spending style."
+P0268,structured,1,CC012|CC016|CC008,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High rewards rates for dining and travel, and a medium annual fee."", ""warnings"": ""High rewards rates for fuel and online shopping may not be relevant to your spending habits.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced rewards rates for various spending categories and a low annual fee."", ""warnings"": ""Rewards rates for dining and travel are not as high as other options.""},
+  ""rank_3"": {""card_id"": ""CC008"", ""card_name"": ""American Express Preferred Rewards Gold"", ""reason"": ""High rewards rates for dining and travel, and a high annual fee."", ""warnings"": ""High annual fee may not be suitable for your budget.""}
+}"
+P0268,structured,2,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on dining and travel, and a medium annual fee."", ""warnings"": ""High fuel and online shopping rates.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including dining, and a medium annual fee."", ""warnings"": ""No specific high rewards in any category.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""Good cashback rates on dining and a medium annual fee."", ""warnings"": ""Low cashback rate on groceries.""}
+}"
+P0268,structured,3,CC012|CC016|CC008,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on dining and travel, with a medium annual fee."", ""warnings"": ""High foreign transaction fee on non-eligible purchases.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Good cashback rates on dining and travel, with a low annual fee."", ""warnings"": ""High cashback rates on fuel and online shopping may not be suitable for this user's spending habits.""},
+  ""rank_3"": {""card_id"": ""CC008"", ""card_name"": ""American Express Preferred Rewards Gold"", ""reason"": ""High cashback rates on dining and travel, with a high annual fee."", ""warnings"": ""High foreign transaction fee on non-eligible purchases and high annual fee may not be suitable for this user's budget.""}
+}"
+P0268,few_shot,1,CC015|CC006|CC012,"CC015 - High dining cashback rate (3%) matches the user's dining-heavy spending profile and dining_rewards goal.
+CC006 - High dining cashback rate (2%) and no annual fee align with the user's dining focus and medium annual fee preference.
+CC012 - High dining cashback rate (1%) and cashback on other categories, including travel, complement the user's dining-heavy spending and medium travel interest."
+P0268,few_shot,2,CC015|CC016|CC012,"CC015 - High cashback rate on dining (3.0%) and other categories, matching the user's dining-heavy spending profile and medium annual fee preference.
+CC016 - Offers a high cashback rate on dining (2.0%) and other categories, complementing the user's dining-focused spending style and medium annual fee preference.
+CC012 - Provides a high cashback rate on dining (1.0%) and other categories, including travel (3.0%), aligning with the user's dining_rewards goal and medium annual fee preference."
+P0268,few_shot,3,CC015|CC016|CC008,"CC015 - High cashback rate on dining (3.0%) and other categories, matching the user's dining-heavy spending style and medium annual fee preference.
+CC016 - Offers a balanced cashback rate across various categories, including dining (2.0%), and a medium annual fee, aligning with the user's preferences.
+CC008 - High points rate on dining (2.0%) and other categories, complementing the user's dining-heavy spending and high annual fee preference."
+P0072,zero_shot,1,CC016|CC012|CC015,"CC016 - Offers a balanced cashback rate across various categories, including groceries, fuel, and online shopping, making it suitable for the user's spending style.
+CC012 - Provides a high cashback rate on fuel purchases, which aligns with the user's high monthly fuel spend, and also offers a good rate on groceries and travel.
+CC015 - Offers a high cashback rate on groceries, which matches the user's primary spending category, and also provides a good rate on fuel and online shopping."
+P0072,zero_shot,2,CC016|CC015|CC012,"CC016 - Offers a balanced cashback rate across various categories, including groceries, fuel, and online shopping, making it suitable for the user's spending style.
+CC015 - Provides a high cashback rate on groceries, which aligns with the user's primary spending category, and also offers a decent rate on fuel and dining.
+CC012 - Offers a high cashback rate on fuel, which matches the user's significant monthly fuel spend, and also provides a decent rate on groceries and online shopping."
+P0072,zero_shot,3,CC016|CC015|CC018,"CC016 - Offers a balanced cashback rate across various categories, including grocery, fuel, and online shopping, making it suitable for the user's spending style.
+CC015 - Provides a high cashback rate on grocery spending, which aligns with the user's primary spending category, and also offers a decent rate on other categories.
+CC018 - Offers a high cashback rate on grocery spending and other categories, although it has a higher annual fee, which aligns with the user's medium annual fee preference."
+P0072,structured,1,CC012|CC016|CC006,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, and travel, and a medium annual fee."", ""warnings"": ""High cashback rates may not be available for all categories.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including groceries, fuel, and online shopping, with a medium annual fee."", ""warnings"": ""Cashback rates may not be as high as some other cards.""},
+  ""rank_3"": {""card_id"": ""CC006"", ""card_name"": ""Virgin Money Cashback Credit Card"", ""reason"": ""High cashback rate on groceries and a medium annual fee."", ""warnings"": ""Lower cashback rates on other categories compared to other cards.""}
+}"
+P0072,structured,2,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, dining, travel, and online shopping make this card suitable for your family's spending habits."", ""warnings"": ""Annual fee is not specified, but it's likely to be around 0.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""This card offers a balanced cashback rate across various categories, including grocery, fuel, dining, travel, and online shopping, making it suitable for your family's spending style."", ""warnings"": ""Annual fee is not specified, but it's likely to be around 0.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""This card offers high cashback rates on grocery, fuel, dining, travel, and online shopping, making it a good option for your family's spending habits."", ""warnings"": ""Annual fee is not specified, but it's likely to be around 0.""}
+}"
+P0072,structured,3,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, dining, travel, and online shopping, matching the user's spending habits."", ""warnings"": ""Annual fee of 0 is not explicitly mentioned, but it's likely to be 0.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including grocery, fuel, dining, travel, and online shopping."", ""warnings"": ""No specific warning""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, dining, travel, and online shopping, matching the user's spending habits."", ""warnings"": ""Annual fee of 0 is not explicitly mentioned, but it's likely to be 0.""}
+}"
+P0072,few_shot,1,CC016|CC015|CC012,"CC016 - High cashback rate on groceries (3%) and other categories, aligning with the family grocery-heavy profile and max_cashback goal.
+CC015 - High cashback rate on groceries (5%) and other categories, complementing the family grocery-heavy profile and max_cashback goal.
+CC012 - High cashback rate on groceries (2%), fuel (5%), and travel (3%), matching the family grocery-heavy profile and max_cashback goal."
+P0072,few_shot,2,CC016|CC015|CC012,"CC016 - High cashback rate on groceries (3.0%) and other categories, matching the family's grocery-heavy spending style and max_cashback goal.
+CC015 - High cashback rate on groceries (5.0%) and other categories, complementing the family's grocery-heavy spending and cashback preference.
+CC012 - High cashback rate on groceries (2.0%), fuel (5.0%), and travel (3.0%), aligning with the family's grocery-heavy spending and travel interest."
+P0072,few_shot,3,CC016|CC015|CC012,"CC016 - Highest cashback rate on groceries (3.0%) and a balanced cashback structure, matching the family's grocery-heavy spending and max_cashback goal.
+CC015 - High cashback rate on groceries (5.0%) and a balanced cashback structure, complementing the family's grocery-heavy spending.
+CC012 - High cashback rate on fuel (5.0%) and a balanced cashback structure, matching the family's fuel-heavy spending and max_cashback goal."
+P0075,zero_shot,1,CC018|CC016|CC015,"CC018 - The Lloyds Cashback Credit Card is the best fit due to its high cashback rate on grocery (4.0%) and travel (5.0%) purchases, aligning with the user's spending habits and goal of max cashback.
+CC016 - The Santander All in One Credit Card is a suitable option due to its balanced cashback rates across various categories, including grocery (3.0%), fuel (4.0%), and online shopping (3.0%), catering to the user's spending style.
+CC015 - The MBNA Everyday Plus Credit Card is a good choice due to its high cashback rate on grocery (5.0%) and fuel (3.0%) purchases, which aligns with the user's spending habits and preferences for a medium annual fee."
+P0075,zero_shot,2,CC016|CC015|CC012,"CC016 - Offers a balanced cashback rate across various spending categories, including grocery, fuel, and online shopping, making it suitable for a family household with children.
+CC015 - Provides a high cashback rate on groceries, fuel, and dining, aligning with the user's spending habits and preferences.
+CC012 - Offers a high cashback rate on fuel and travel, which matches the user's spending profile and goals, and also provides a medium annual fee."
+P0075,zero_shot,3,CC016|CC015|CC012,"CC016 - Offers a high cashback rate on grocery spend, which aligns with the user's heavy grocery spending.
+CC015 - Provides a high cashback rate on grocery spend, making it suitable for the user's grocery-heavy spending profile.
+CC012 - Offers a high cashback rate on fuel spend, which matches the user's frequent fuel purchases."
+P0075,structured,1,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, and travel, making it suitable for your spending habits."", ""warnings"": ""Annual fee of 0 is not specified, but it is generally considered a medium fee.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including groceries, fuel, and online shopping."", ""warnings"": ""No specific warnings for this card.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, and online shopping, making it suitable for your spending habits."", ""warnings"": ""Annual fee of 0 is not specified, but it is generally considered a medium fee.""}
+}"
+P0075,structured,2,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, dining, travel, and online shopping, matching the user's spending habits."", ""warnings"": ""Annual fee is not specified, but it's likely to be around £0.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including grocery, fuel, dining, travel, and online shopping."", ""warnings"": ""No specific cashback rate for groceries, but overall rates are competitive.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, dining, travel, and online shopping, making it suitable for the user's spending habits."", ""warnings"": ""Annual fee is not specified, but it's likely to be around £0.""}
+}"
+P0075,structured,3,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, dining, travel, and online shopping make this card suitable for your spending habits."", ""warnings"": ""Annual fee is not specified, but it's likely to be medium or high.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including grocery, fuel, dining, travel, and online shopping, make this card suitable for your spending style."", ""warnings"": ""Annual fee is not specified, but it's likely to be medium or high.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, dining, travel, and online shopping make this card suitable for your spending habits, but be aware of the potential for high annual fees."", ""warnings"": ""Annual fee is not specified, but it's likely to be medium or high.""}
+}"
+P0075,few_shot,1,CC016|CC015|CC012,"CC016 - Highest cashback rate on groceries (3.0%) and balanced rewards across categories, aligning with the family's grocery-heavy spending and max_cashback goal.
+CC015 - High cashback rate on groceries (5.0%) and fuel (3.0%), matching the user's spending style and preferences.
+CC012 - High cashback rate on fuel (5.0%) and travel (3.0%), complementing the user's moderate travel interest and balanced spending."
+P0075,few_shot,2,CC016|CC015|CC012,"CC016 - High cashback rate on groceries (3%) and balanced rewards across other categories, matching the family's grocery-heavy spending style and max_cashback goal.
+CC015 - High cashback rate on groceries (5%) and balanced rewards across other categories, complementing the family's grocery-heavy spending style and max_cashback goal.
+CC012 - High cashback rate on groceries (2%), fuel (5%), and travel (3%), offering a well-rounded rewards structure for a family with a balanced spending style."
+P0075,few_shot,3,CC016|CC015|CC012,"CC016 - Highest cashback rate on groceries (3.0%) and other categories, matching the family grocery-heavy profile and max_cashback goal.
+CC015 - High cashback rate on groceries (5.0%) and other categories, complementing the family's grocery spend and cashback preference.
+CC012 - High cashback rate on groceries (2.0%), fuel (5.0%), and travel (3.0%), aligning with the family's grocery-heavy spend and travel interest."
+P0043,zero_shot,1,CC016|CC012|CC015,"CC016 - Offers a balanced cashback rate across various categories, including groceries, fuel, and online shopping, making it suitable for the user's spending style.
+CC012 - Provides a high cashback rate on fuel and travel, aligning with the user's high fuel and medium travel spending, while also offering a medium annual fee.
+CC015 - Offers a high cashback rate on groceries, matching the user's primary spending category, and a medium annual fee, which aligns with the user's preference."
+P0043,zero_shot,2,CC016|CC015|CC018,"CC016 - Offers a balanced cashback rate across various categories, including groceries and fuel, making it suitable for the user's spending habits.
+CC015 - Provides a high cashback rate on groceries, which aligns with the user's primary spending category, and a medium annual fee.
+CC018 - Offers a high cashback rate on groceries and travel, which matches the user's spending habits and goal of maximizing cashback."
+P0043,zero_shot,3,CC016|CC015|CC012,"CC016 - Offers a balanced cashback rate across various categories, including grocery, fuel, and online shopping, making it suitable for the user's spending style.
+CC015 - Provides a high cashback rate on grocery spending, which aligns with the user's primary spending category, and a medium annual fee.
+CC012 - Offers a high cashback rate on fuel spending, which matches the user's frequent fuel purchases, and a medium annual fee."
+P0043,structured,1,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, and travel, and a medium annual fee."", ""warnings"": ""High cashback rates may not be available on all purchases.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories and a low annual fee."", ""warnings"": ""Cashback rates may not be as high as other cards in specific categories.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, and dining, and a low annual fee."", ""warnings"": ""Cashback rates may not be available on all purchases.""}
+}"
+P0043,structured,2,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, dining, travel, and online shopping, with a medium annual fee."", ""warnings"": ""High cashback rates may not be sustainable in the long term.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various spending categories, with a low annual fee."", ""warnings"": ""Cashback rates are not exceptionally high in any category.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, dining, travel, and online shopping, with a low annual fee."", ""warnings"": ""Annual fee may increase in the future.""}
+}"
+P0043,structured,3,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, dining, travel, and online shopping, matching the user's spending habits."", ""warnings"": ""Annual fee is not specified, but it is likely to be medium or high.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including groceries, fuel, dining, travel, and online shopping, suitable for the user's spending style."", ""warnings"": ""Annual fee is not specified.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, dining, travel, and online shopping, matching the user's spending habits and goals."", ""warnings"": ""Annual fee is not specified, but it is likely to be medium or high.""}
+}"
+P0043,few_shot,1,CC016|CC015|CC012,"CC016 - Highest cashback rate on groceries (3.0%) and a balanced rate across other categories, matching the family's heavy grocery spend and max_cashback goal.
+CC015 - High cashback rate on groceries (5.0%) and a well-rounded rate across other categories, aligning with the family's grocery-heavy spending style.
+CC012 - High cashback rate on groceries (2.0%) and a strong rate on fuel (5.0%), complementing the family's heavy fuel spend and balanced spending style."
+P0043,few_shot,2,CC016|CC015|CC012,"CC016 - High cashback rate on groceries (3.0%) and other categories, aligning with the family's grocery-heavy spending profile and max_cashback goal.
+CC015 - High cashback rate on groceries (5.0%) and other categories, matching the family's grocery-heavy spending profile and max_cashback goal.
+CC012 - High cashback rate on groceries (2.0%), fuel (5.0%), and travel (3.0%), complementing the family's grocery-heavy spending profile and travel interest."
+P0043,few_shot,3,CC016|CC015|CC012,"CC016 - Highest cashback rate on groceries (3.0%) and fuel (4.0%), matching the family's heavy grocery and fuel spend.
+CC015 - High cashback rate on groceries (5.0%), fuel (3.0%), and dining (3.0%), aligning with the family's spending style.
+CC012 - High cashback rate on fuel (5.0%), travel (3.0%), and online shopping (4.0%), complementing the family's heavy fuel and travel spend."
+P0244,zero_shot,1,CC012|CC015|CC016,"CC012 - This card offers a high fuel cashback rate of 5.0% that matches the user's goal of fuel rewards.
+CC015 - This card provides a high cashback rate of 3.0% on fuel purchases, which aligns with the user's spending style and fuel-dependent commute.
+CC016 - This card offers a high cashback rate of 4.0% on fuel purchases, making it a suitable option for the user's high monthly fuel expenditure."
+P0244,zero_shot,2,CC015|CC012|CC016,"CC015 - This card fits the user's profile due to its high fuel cashback rate of 3.0%, aligning with their goal of fuel rewards.
+CC012 - This card matches the user's profile because it offers a high fuel cashback rate of 5.0%, catering to their fuel-dependent commute.
+CC016 - This card is recommended as it offers a high fuel cashback rate of 4.0%, making it suitable for the user's high monthly fuel expenditure."
+P0244,zero_shot,3,CC012|CC015|CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with their goal of fuel rewards and high monthly fuel expenditure.
+CC015 - This card suits the user's needs with its low annual fee and high cashback rates for fuel (3.0%), grocery (5.0%), and online shopping (1.0%), catering to their spending style and preferences.
+CC016 - This card matches the user's requirements with its low annual fee and high cashback rates for fuel (4.0%), grocery (3.0%), and online shopping (3.0%), making it a suitable option for their spending habits."
+P0244,structured,1,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High fuel cashback rate of 5.0% and low annual fee."", ""warnings"": ""Travel interest is low.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Moderate fuel cashback rate of 4.0% and low annual fee."", ""warnings"": ""Fuel cashback rate is lower than NatWest Reward Credit Card.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High fuel cashback rate of 3.0% and low annual fee."", ""warnings"": ""Fuel cashback rate is lower than NatWest Reward Credit Card.""}
+}"
+P0244,structured,2,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High fuel cashback rate of 5.0% and low annual fee."", ""warnings"": ""High annual cashback earnings may be subject to change.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Good fuel cashback rate of 4.0% and low annual fee."", ""warnings"": ""Multiple high cashback rates may lead to overspending.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""Fuel cashback rate of 3.0% and low annual fee."", ""warnings"": ""Multiple high cashback rates may lead to overspending.""}
+}"
+P0244,structured,3,CC012|CC016|CC006,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High fuel cashback rate of 5.0% and low annual fee."", ""warnings"": ""Travel interest is low.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""High fuel cashback rate of 4.0% and low annual fee."", ""warnings"": ""Travel interest is low.""},
+  ""rank_3"": {""card_id"": ""CC006"", ""card_name"": ""Virgin Money Cashback Credit Card"", ""reason"": ""High grocery cashback rate of 4.0% and low annual fee."", ""warnings"": ""Fuel cashback rate is lower than other options.""}
+}"
+P0244,few_shot,1,CC012|CC015|CC016,"CC012 - Fuel cashback rate of 5% matches the user's goal of fuel rewards and high monthly fuel expenditure.
+CC015 - Offers a high fuel cashback rate of 3% and a low annual fee, aligning with the user's fuel_rewards goal and low annual fee preference.
+CC016 - Provides a balanced cashback rate of 4% on fuel and a low annual fee, matching the user's fuel_rewards goal and needs for low-cost spending."
+P0244,few_shot,2,CC012|CC015|CC016,"CC012 - Fuel cashback rate of 5.0% matches the user's goal of fuel rewards and high monthly fuel expenditure.
+CC015 - Offers a high fuel cashback rate of 3.0% and a low annual fee, aligning with the user's needs.
+CC016 - Provides a moderate fuel cashback rate of 4.0% and a low annual fee, suitable for the user's fuel-focused spending style."
+P0244,few_shot,3,CC012|CC015|CC016,"CC012 - Fuel cashback rate of 5.0% matches the user's high fuel expenditure and fuel_rewards goal.
+CC015 - High fuel cashback rate of 3.0% and low annual fee align with the user's needs and spending style.
+CC016 - Fuel cashback rate of 4.0% and low annual fee complement the user's high fuel expenditure and low-cost preference."
+P0240,zero_shot,1,CC012|CC015|CC016,"CC012 - Offers a high fuel cashback rate of 5.0% that aligns with the user's goal of fuel rewards and high monthly fuel expenditure.
+CC015 - Provides a suitable balance of cashback rates, including 3.0% on fuel, which matches the user's spending style and preferred reward type.
+CC016 - Offers a high fuel cashback rate of 4.0% and a low annual fee, making it a suitable option for the user's needs."
+P0240,zero_shot,2,CC012|CC015|CC016,"CC012 - NatWest Reward Credit Card fits this user due to its high fuel cashback rate of 5.0%.
+CC015 - MBNA Everyday Plus Credit Card is recommended because it offers a high fuel cashback rate of 3.0% and a low annual fee.
+CC016 - Santander All in One Credit Card is suitable for this user as it provides a high fuel cashback rate of 4.0% and a low annual fee."
+P0240,zero_shot,3,CC012|CC015|CC016,"CC012 - This card fits the user's profile due to its high fuel cashback rate of 5.0%, aligning with the user's goal of fuel rewards.
+CC015 - This card is recommended because it offers a high cashback rate of 3.0% on fuel purchases, matching the user's spending style and fuel rewards goal.
+CC016 - This card is suitable for the user due to its balanced cashback rates, including 4.0% on fuel purchases, which aligns with the user's spending habits and fuel rewards goal."
+P0240,structured,1,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High fuel cashback rate of 5.0% and low annual fee."", ""warnings"": ""High annual fuel cashback rate may not be available for all users.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Good fuel cashback rate of 4.0% and low annual fee."", ""warnings"": ""Multiple high cashback rates may be difficult to achieve.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""Fuel cashback rate of 3.0% and low annual fee."", ""warnings"": ""Multiple high cashback rates may be difficult to achieve.""}
+}"
+P0240,structured,2,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High fuel cashback rate of 5% and low annual fee."", ""warnings"": ""Travel interest is low, but card has a high travel cashback rate.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced fuel cashback rate of 4% and low annual fee."", ""warnings"": ""Fuel cashback rate is lower than NatWest Reward Credit Card.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""Fuel cashback rate of 3% and low annual fee."", ""warnings"": ""Fuel cashback rate is lower than NatWest Reward Credit Card and Santander All in One Credit Card.""}
+}"
+P0240,structured,3,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High fuel cashback rate of 5.0% and low annual fee."", ""warnings"": ""High annual cashback rewards may be subject to change.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""High fuel cashback rate of 4.0% and low annual fee."", ""warnings"": ""High annual cashback rewards may be subject to change.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High fuel cashback rate of 3.0% and low annual fee."", ""warnings"": ""High annual cashback rewards may be subject to change.""}
+}"
+P0240,few_shot,1,CC015|CC016|CC012,"CC015 - High fuel cashback rate (3.0%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate of 4.0% and low annual fee, aligning with the fuel commuter profile and fuel rewards goal.
+CC012 - Fuel cashback rate of 5.0% and low annual fee, complementing the high fuel expenditure and fuel rewards goal."
+P0240,few_shot,2,CC012|CC015|CC016,"CC012 - Fuel cashback rate of 5.0% matches the user's high fuel expenditure and fuel_rewards goal.
+CC015 - High fuel cashback rate of 3.0% and low annual fee align with the user's fuel_rewards goal and low fee preference.
+CC016 - Fuel cashback rate of 4.0% and low annual fee suit the user's high fuel expenditure and low fee preference."
+P0240,few_shot,3,CC012|CC016|CC015,"CC012 - High fuel cashback rate (5.0%) and low annual fee, matching the fuel commuter profile and fuel rewards goal.
+CC016 - Fuel cashback rate (4.0%) and low annual fee, complementing the high fuel expenditure and low-cost preference.
+CC015 - High fuel cashback rate (3.0%) and low annual fee, aligning with the fuel commuter profile and fuel rewards goal."
+P0231,zero_shot,1,CC012|CC015|CC016,"CC012 - Offers a high fuel cashback rate of 5.0% that aligns with the user's goal of fuel rewards.
+CC015 - Provides a high fuel cashback rate of 3.0% and a low annual fee, meeting the user's needs for low cost and fuel rewards.
+CC016 - Offers a high fuel cashback rate of 4.0% and a low annual fee, making it a suitable option for the user's fuel-dependent spending style."
+P0231,zero_shot,2,CC012|CC016|CC015,"CC012 - This card offers the highest fuel cashback rate at 5.0%, aligning with the user's goal of fuel rewards and high monthly fuel expenditure.
+CC016 - This card provides a high fuel cashback rate of 4.0%, along with a competitive rate for other common expenses, making it suitable for the user's spending style.
+CC015 - This card offers a high cashback rate for groceries and fuel, making it a good fit for the user's high monthly fuel expenditure and grocery bills."
+P0231,zero_shot,3,CC012|CC015|CC016,"CC012 - This card offers a high fuel cashback rate of 5.0% that matches the user's goal of fuel rewards.
+CC015 - This card provides a high cashback rate of 5.0% on groceries, which aligns with the user's high monthly grocery expenditure.
+CC016 - This card offers a high cashback rate of 4.0% on fuel, which suits the user's high monthly fuel expenditure and low annual fee preference."
+P0231,structured,1,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High fuel cashback rate of 5.0% and low annual fee."", ""warnings"": ""High annual fuel cashback rate may not be available for all users.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""High fuel cashback rate of 4.0% and low annual fee."", ""warnings"": ""Multiple high cashback rates may be difficult to achieve.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High fuel cashback rate of 3.0% and low annual fee."", ""warnings"": ""Multiple high cashback rates may be difficult to achieve.""}
+}"
+P0231,structured,2,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High fuel cashback rate of 5% and low annual fee."", ""warnings"": ""High annual cashback rewards may lead to overspending.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Moderate fuel cashback rate of 4% and low annual fee."", ""warnings"": ""Multiple high cashback rates may lead to overspending.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""Fuel cashback rate of 3% and low annual fee."", ""warnings"": ""Multiple high cashback rates may lead to overspending.""}
+}"
+P0231,structured,3,CC012|CC016|CC006,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High fuel cashback rate of 5.0% and low annual fee."", ""warnings"": ""Travel interest is low.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""High fuel cashback rate of 4.0% and low annual fee."", ""warnings"": ""Travel interest is low.""},
+  ""rank_3"": {""card_id"": ""CC006"", ""card_name"": ""Virgin Money Cashback Credit Card"", ""reason"": ""High grocery cashback rate of 4.0% and low annual fee."", ""warnings"": ""Fuel cashback rate is lower than expected.""}
+}"
+P0231,few_shot,1,CC015|CC016|CC012,"CC015 - High fuel cashback rate (3.0%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4.0%) and low annual fee, complementing the high fuel expenditure and low fee preference.
+CC012 - High fuel cashback rate (5.0%) and low annual fee, aligning with the fuel commuter profile and fuel rewards goal."
+P0231,few_shot,2,CC015|CC016|CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - Fuel cashback rate (4%) and low annual fee, complementing the user's high fuel expenditure and low fee preference.
+CC012 - Fuel cashback rate (5%) and low annual fee, aligning with the user's goal of fuel rewards and low fee preference."
+P0231,few_shot,3,CC015|CC016|CC012,"CC015 - High fuel cashback rate (3%) and low annual fee, matching the fuel commuter profile and low fee preference.
+CC016 - High fuel cashback rate (4%) and low annual fee, complementing the fuel commuter profile and fuel rewards goal.
+CC012 - High fuel cashback rate (5%) and low annual fee, aligning with the fuel commuter profile and fuel rewards goal."
+P0170,zero_shot,1,CC018|CC016|CC015,"CC018 - Lloyds Cashback Credit Card is recommended due to its high cashback rate on travel, which aligns with the user's goal of large purchase rewards and travel interest.
+CC016 - Santander All in One Credit Card is recommended due to its high cashback rate on grocery, fuel, and online shopping, which matches the user's spending style as a large spender.
+CC015 - MBNA Everyday Plus Credit Card is recommended due to its high cashback rate on grocery, fuel, and online shopping, which also matches the user's spending style as a large spender and preferred reward type of cashback."
+P0170,zero_shot,2,CC018|CC016|CC015,"CC018 - Lloyds Cashback Credit Card is recommended due to its high cashback rate on groceries and travel, aligning with the user's spending habits and goal of large purchase rewards.
+CC016 - Santander All in One Credit Card is recommended due to its high cashback rate on groceries, fuel, and online shopping, catering to the user's spending style and preferences.
+CC015 - MBNA Everyday Plus Credit Card is recommended due to its high cashback rate on groceries, fuel, and online shopping, making it suitable for the user's large spending habits and cashback reward preference."
+P0170,zero_shot,3,CC018|CC016|CC015,"CC018 - Lloyds Cashback Credit Card is recommended due to its high cashback rate on grocery, fuel, dining, travel, and online shopping purchases, aligning with the user's spending habits.
+CC016 - Santander All in One Credit Card is recommended due to its high cashback rate on grocery, fuel, dining, travel, and online shopping purchases, making it suitable for the user's spending style.
+CC015 - MBNA Everyday Plus Credit Card is recommended due to its high cashback rate on grocery, fuel, dining, travel, and online shopping purchases, which matches the user's spending habits and goals."
+P0170,structured,1,CC016|CC015|CC012,"{
+  ""rank_1"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, and online shopping categories, suitable for large spenders."", ""warnings"": ""Annual fee is 0, but be aware of the 0% interest period and purchase protection.""},
+  ""rank_2"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, and dining categories, suitable for large spenders."", ""warnings"": ""Annual fee is 0, but be aware of the 0% interest period and purchase protection.""},
+  ""rank_3"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, and online shopping categories, suitable for large spenders."", ""warnings"": ""Annual fee is 0, but be aware of the 0% interest period and purchase protection.""}
+}"
+P0170,structured,2,CC012|CC016|CC002,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on fuel and travel, and a medium annual fee."", ""warnings"": ""High cashback rates on fuel and travel may not be as beneficial for the user's spending habits.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories and a medium annual fee."", ""warnings"": ""No specific high cashback rates on the user's spending habits.""},
+  ""rank_3"": {""card_id"": ""CC002"", ""card_name"": ""American Express Platinum Cashback"", ""reason"": ""High cashback rate on groceries and a medium annual fee."", ""warnings"": ""No high cashback rates on fuel and travel, which are significant spending categories for the user.""}
+}"
+P0170,structured,3,CC012|CC016|CC018,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on fuel, travel, and online shopping, and a medium annual fee."", ""warnings"": ""High fuel cashback rate may not be as beneficial for a large spender.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories and a medium annual fee."", ""warnings"": ""Fuel cashback rate is lower than NatWest Reward Credit Card.""},
+  ""rank_3"": {""card_id"": ""CC018"", ""card_name"": ""Lloyds Cashback Credit Card"", ""reason"": ""High cashback rates on various categories, but a higher annual fee."", ""warnings"": ""Annual fee is higher than the user's preferred medium fee.""}
+}"
+P0170,few_shot,1,CC016|CC015|CC012,"CC016 - Offers a high cashback rate on grocery spend (3%) and a medium cashback rate on online shopping (3%), matching the user's large spender profile and cashback preference.
+CC015 - Provides a high cashback rate on grocery spend (5%) and a medium cashback rate on online shopping (1%), aligning with the user's large spender profile and cashback preference.
+CC012 - Offers a high cashback rate on online shopping (4%) and a medium cashback rate on travel (3%), complementing the user's large spender profile and cashback preference."
+P0170,few_shot,2,CC016|CC015|CC012,"CC016 - Highest cashback rate on groceries (3.0%) and online shopping (3.0%), matching the user's large spender profile and cashback preference.
+CC015 - High cashback rate on groceries (5.0%), fuel (3.0%), and dining (3.0%), complementing the user's large spender profile and cashback preference.
+CC012 - High cashback rate on travel (3.0%) and online shopping (4.0%), aligning with the user's large purchase rewards goal and cashback preference."
+P0170,few_shot,3,CC016|CC015|CC018,"CC016 - High cashback rate on groceries (3.0%) and fuel (4.0%) matches the user's large spend on these categories.
+CC015 - High cashback rate on groceries (5.0%) and fuel (3.0%) complements the user's large spend on these categories.
+CC018 - High cashback rate on travel (5.0%) and dining (4.0%) aligns with the user's goal of large purchase rewards and travel interest."
+P0166,zero_shot,1,CC018|CC016|CC015,"CC018 - Lloyds Cashback Credit Card is recommended due to its high cashback rate on travel, which aligns with the user's goal of large purchase rewards and travel interest.
+CC016 - Santander All in One Credit Card is recommended due to its high cashback rate on groceries, fuel, and online shopping, which matches the user's spending style as a large spender.
+CC015 - MBNA Everyday Plus Credit Card is recommended due to its high cashback rate on groceries, fuel, and dining, which aligns with the user's spending profile and preferred reward type of cashback."
+P0166,zero_shot,2,CC018|CC016|CC015,"CC018 - Lloyds Cashback Credit Card is recommended due to its high cashback rate on travel purchases, which aligns with the user's goal of large purchase rewards and travel interest.
+CC016 - Santander All in One Credit Card is recommended due to its high cashback rate on grocery purchases, which matches the user's monthly grocery spend and preferred reward type.
+CC015 - MBNA Everyday Plus Credit Card is recommended due to its high cashback rate on grocery purchases and its medium annual fee, which aligns with the user's annual fee preference."
+P0166,zero_shot,3,CC016|CC018|CC015,"CC016 - Offers a high cashback rate on grocery, fuel, and online shopping, making it suitable for this user's spending habits.
+CC018 - Provides a high cashback rate on grocery, fuel, dining, travel, and online shopping, aligning with this user's spending style and goals.
+CC015 - Offers a high cashback rate on grocery, fuel, dining, and online shopping, making it a good fit for this user's spending habits and preferred reward type."
+P0166,structured,1,CC016|CC015|CC012,"{
+  ""rank_1"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, and online shopping categories, suitable for large spenders."", ""warnings"": ""Annual fee preference is medium, but this card has no annual fee.""},
+  ""rank_2"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, and dining categories, suitable for large spenders."", ""warnings"": ""Annual fee preference is medium, but this card has no annual fee.""},
+  ""rank_3"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on grocery, fuel, and online shopping categories, suitable for large spenders."", ""warnings"": ""Annual fee preference is medium, but this card has no annual fee.""}
+}"
+P0166,structured,2,CC016|CC015|CC012,"{
+  ""rank_1"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, and online shopping, suitable for large spenders."", ""warnings"": ""Annual fee is 0, but be aware of the 0% interest period and purchase protection.""},
+  ""rank_2"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, and online shopping, suitable for large spenders."", ""warnings"": ""Annual fee is 0, but be aware of the 0% interest period and purchase protection.""},
+  ""rank_3"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, and online shopping, suitable for large spenders."", ""warnings"": ""Annual fee is 0, but be aware of the 0% interest period and purchase protection.""}
+}"
+P0166,structured,3,CC016|CC015|CC012,"{
+  ""rank_1"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, and online shopping, suitable for large spenders."", ""warnings"": ""Annual fee is 0, but be aware of the 3% foreign transaction fee.""},
+  ""rank_2"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, and dining, suitable for large spenders."", ""warnings"": ""Annual fee is 0, but be aware of the high cashback rates on certain categories.""},
+  ""rank_3"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on fuel, travel, and online shopping, suitable for large spenders."", ""warnings"": ""Annual fee is 0, but be aware of the high cashback rates on certain categories.""}
+}"
+P0166,few_shot,1,CC016|CC015|CC012,"CC016 - Offers a high cashback rate on grocery (£3.0%), fuel (£4.0%), and online shopping (£3.0%) purchases, matching the user's large spender profile and cashback preference.
+CC015 - Provides a high cashback rate on grocery (£5.0%), fuel (£3.0%), dining (£3.0%), and travel (£2.0%) purchases, aligning with the user's large spender profile and cashback preference.
+CC012 - Offers a high cashback rate on travel (£3.0%) and online shopping (£4.0%) purchases, complementing the user's large spender profile and cashback preference."
+P0166,few_shot,2,CC016|CC015|CC012,"CC016 - Offers a high cashback rate on grocery (£3.0%), fuel (£4.0%), and online shopping (£3.0%) purchases, matching the user's large spender profile and cashback preference.
+CC015 - Provides a high cashback rate on grocery (£5.0%), fuel (£3.0%), dining (£3.0%), and travel (£2.0%) purchases, complementing the user's large spender profile and cashback preference.
+CC012 - Offers a high cashback rate on grocery (£2.0%), fuel (£5.0%), dining (£1.0%), travel (£3.0%), and online shopping (£4.0%) purchases, aligning with the user's large spender profile and cashback preference."
+P0166,few_shot,3,CC016|CC015|CC012,"CC016 - High cashback rate on groceries (3.0%) and other categories, matching the large spender profile and cashback preference.
+CC015 - High cashback rate on groceries (5.0%) and other categories, complementing the large spender profile and cashback preference.
+CC012 - High cashback rate on travel (3.0%) and other categories, aligning with the large purchase rewards goal and cashback preference."
+P0157,zero_shot,1,CC018|CC016|CC015,"CC018 - Lloyds Cashback Credit Card is recommended due to its high cashback rate on grocery, fuel, dining, travel, and online shopping, aligning with the user's spending habits.
+CC016 - Santander All in One Credit Card is recommended due to its high cashback rate on grocery, fuel, dining, travel, and online shopping, making it suitable for the user's spending style.
+CC015 - MBNA Everyday Plus Credit Card is recommended due to its high cashback rate on grocery, fuel, dining, travel, and online shopping, matching the user's large spender profile and cashback preference."
+P0157,zero_shot,2,CC016|CC018|CC015,"CC016 - Offers a high cashback rate on groceries, fuel, and online shopping, making it suitable for this user's spending habits.
+CC018 - Provides a high cashback rate on groceries, fuel, dining, travel, and online shopping, aligning with this user's spending style and goals.
+CC015 - Offers a high cashback rate on groceries, fuel, dining, travel, and online shopping, making it a suitable choice for this user's spending habits and goals."
+P0157,zero_shot,3,CC018|CC016|CC015,"CC018 - Lloyds Cashback Credit Card is recommended due to its high cashback rate on grocery and travel purchases, which aligns with the user's spending habits and goal of earning rewards for large purchases.
+CC016 - Santander All in One Credit Card is recommended due to its well-rounded cashback rates across various categories, including grocery, fuel, dining, travel, and online shopping, making it suitable for the user's diverse spending style.
+CC015 - MBNA Everyday Plus Credit Card is recommended due to its high cashback rate on grocery purchases, which matches the user's significant monthly grocery spend and aligns with their preferred reward type of cashback."
+P0157,structured,1,CC012|CC016|CC018,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on fuel and travel, suitable for large purchase rewards and medium annual fee preference."", ""warnings"": ""High cashback rates may lead to overspending.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, suitable for large purchase rewards and medium annual fee preference."", ""warnings"": ""No specific high cashback rates on any category.""},
+  ""rank_3"": {""card_id"": ""CC018"", ""card_name"": ""Lloyds Cashback Credit Card"", ""reason"": ""High cashback rates on various categories, suitable for large purchase rewards, but high annual fee may not align with medium preference."", ""warnings"": ""High annual fee and high cashback rates may lead to overspending.""}
+}"
+P0157,structured,2,CC012|CC016|CC018,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on fuel and travel, and a medium annual fee."", ""warnings"": ""High cashback rates may not be available for large purchases.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, and online shopping, and a 0 annual fee."", ""warnings"": ""High cashback rates may not be available for large purchases.""},
+  ""rank_3"": {""card_id"": ""CC018"", ""card_name"": ""Lloyds Cashback Credit Card"", ""reason"": ""High cashback rates on groceries, fuel, and travel, and a medium annual fee."", ""warnings"": ""High cashback rates may not be available for large purchases.""}
+}"
+P0157,structured,3,CC012|CC016|CC015,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on fuel and travel, and a medium annual fee."", ""warnings"": ""High cashback rates may not be available for large purchases.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Good cashback rates across various categories, including groceries and fuel, with a medium annual fee."", ""warnings"": ""Cashback rates may not be as high as other cards for specific categories.""},
+  ""rank_3"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on groceries and fuel, with a medium annual fee."", ""warnings"": ""Cashback rates may not be as high as other cards for specific categories.""}
+}"
+P0157,few_shot,1,CC016|CC015|CC012,"CC016 - High cashback rate on grocery (3.0%) and online shopping (3.0%) matches the user's large online shopping spend and medium annual fee preference.
+CC015 - High cashback rate on grocery (5.0%) and online shopping (1.0%) complements the user's large online shopping spend and prioritization of 0% interest period or purchase protection.
+CC012 - High cashback rate on online shopping (4.0%) and travel (3.0%) rewards the user's travel interest and large online shopping spend, with a medium annual fee."
+P0157,few_shot,2,CC016|CC015|CC018,"CC016 - Offers a high cashback rate on groceries (3.0%) and online shopping (3.0%), matching the user's large spender profile and cashback preference.
+CC015 - Provides a high cashback rate on groceries (5.0%) and online shopping (1.0%), aligning with the user's large spender profile and cashback preference.
+CC018 - Offers a high cashback rate on groceries (4.0%), travel (5.0%), and online shopping (2.0%), complementing the user's large spender profile and cashback preference."
+P0157,few_shot,3,CC016|CC015|CC018,"CC016 - Offers a high cashback rate on grocery (3.0%), fuel (4.0%), and online shopping (3.0%) purchases, matching the user's large spender profile and cashback preference.
+CC015 - Provides a high cashback rate on grocery (5.0%), fuel (3.0%), and dining (3.0%) purchases, complementing the user's large spender profile and cashback preference.
+CC018 - Offers a high cashback rate on grocery (4.0%), dining (4.0%), and travel (5.0%) purchases, matching the user's large spender profile and cashback preference."
+P0207,zero_shot,1,CC016|CC015|CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, aligning with the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5.0% on groceries, which is a significant portion of the user's monthly spend, and a low annual fee.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, making it a suitable choice for the user's online-focused spending style."
+P0207,zero_shot,2,CC016|CC015|CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a suitable choice for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5.0% on groceries, which aligns with the user's monthly grocery spend, and a low annual fee.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, making it a suitable choice for the user's goal of online shopping rewards, and a low annual fee."
+P0207,zero_shot,3,CC016|CC015|CC017,"CC016 - Offers a high online shopping cashback rate of 3.0% and a low annual fee, making it suitable for the user's online shopping habits and preference for low fees.
+CC015 - Provides a high online shopping cashback rate of 1.0% and a low annual fee, aligning with the user's online-focused spending style and preference for low fees.
+CC017 - Offers a moderate online shopping cashback rate of 0.5% and a low annual fee, making it a suitable option for the user's online shopping habits and preference for low fees."
+P0207,structured,1,CC015|CC016|CC012,"{
+  ""rank_1"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rate on online shopping (1.0%) and other categories (up to 5.0%)"", ""warnings"": ""Annual fee preference is low, but this card has no annual fee""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""High cashback rate on online shopping (3.0%) and other categories (up to 4.0%)"", ""warnings"": ""Annual fee preference is low, but this card has no annual fee""},
+  ""rank_3"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rate on online shopping (4.0%) and other categories (up to 5.0%)"", ""warnings"": ""Annual fee preference is low, but this card has no annual fee""}
+}"
+P0207,structured,2,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on online shopping and other categories, with a low annual fee."", ""warnings"": ""High cashback rates may lead to overspending.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Good cashback rates on online shopping and other categories, with a low annual fee."", ""warnings"": ""Cashback rates may not be as high as some other cards.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""Low annual fee and decent cashback rates on online shopping and other categories."", ""warnings"": ""Cashback rates may not be as high as some other cards.""}
+}"
+P0207,structured,3,CC015|CC016|CC012,"{
+  ""rank_1"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on online shopping and other categories, low annual fee."", ""warnings"": ""High cashback rates may not be sustainable.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Good cashback rates on online shopping and other categories, low annual fee."", ""warnings"": ""Cashback rates may not be as high as some other cards.""},
+  ""rank_3"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rate on online shopping, low annual fee."", ""warnings"": ""Cashback rates may not be as high as some other cards on other categories.""}
+}"
+P0207,few_shot,1,CC015|CC016|CC012,"CC015 - High online shopping reward rate (1.0%) and low annual fee, matching the heavy online shopping spend and low fee preference.
+CC016 - High online shopping reward rate (3.0%) and low annual fee, complementing the user's online shopping focus.
+CC012 - High online shopping reward rate (4.0%) and low annual fee, aligning with the user's goal of online shopping rewards."
+P0207,few_shot,2,CC016|CC015|CC012,"CC016 - High cashback rate on online shopping (3%) and low annual fee, aligning with the user's online shopping focus and low fee preference.
+CC015 - High cashback rate on online shopping (1%) and low annual fee, matching the user's online shopping focus and low fee preference.
+CC012 - High cashback rate on online shopping (4%) and low annual fee, complementing the user's heavy online shopping spend and online rewards goal."
+P0207,few_shot,3,CC015|CC016|CC017,"CC015 - High online shopping reward rate (1.0%) and cashback on other categories, matching the online_shopper profile and online_shopping_rewards goal.
+CC016 - High online shopping reward rate (3.0%) and cashback on other categories, complementing heavy online spend.
+CC017 - High online shopping reward rate (2.0%) and cashback on other categories, aligning with online_shopper profile and low annual fee preference."
+P0203,zero_shot,1,CC016|CC015|CC017,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it suitable for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5.0% on groceries, 4.0% on online shopping, and a low annual fee, fitting the user's spending style and fee preference.
+CC017 - Offers a high cashback rate of 2.0% on dining and a low annual fee, aligning with the user's spending habits and fee preference."
+P0203,zero_shot,2,CC016|CC015|CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a suitable choice for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5.0% on groceries, which aligns with the user's monthly grocery spend, and also offers a decent online shopping rate of 1.0%.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, which aligns with the user's goal of online shopping rewards, and also provides a decent rate on other categories such as travel and dining."
+P0203,zero_shot,3,CC016|CC015|CC011,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a suitable choice for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5.0% on groceries, which aligns with the user's monthly grocery spend, and a low annual fee.
+CC011 - Although it's a student credit card, it has a low annual fee and a low cashback rate, making it a suitable option for the user's needs_low_cost requirement."
+P0203,structured,1,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High online shopping rewards and low annual fee."", ""warnings"": ""High fuel rewards may not be relevant to your spending habits.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced rewards across various categories and low annual fee."", ""warnings"": ""Fuel rewards are higher than online shopping rewards.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""Low annual fee and decent online shopping rewards."", ""warnings"": ""Grocery and dining rewards are lower than online shopping rewards.""}
+}"
+P0203,structured,2,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on online shopping and other categories, low annual fee."", ""warnings"": ""High cashback rates may not be sustainable in the long term.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including online shopping, and low annual fee."", ""warnings"": ""Cashback rates may not be as high as some other cards.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""Competitive cashback rates on online shopping and other categories, low annual fee."", ""warnings"": ""Cashback rates may not be as high as some other cards.""}
+}"
+P0203,structured,3,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High online shopping rewards and low annual fee."", ""warnings"": ""High fuel and travel rewards may not be relevant to your spending habits.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced rewards across various categories and low annual fee."", ""warnings"": ""Online shopping rewards are not the highest, but overall a well-rounded card.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""Low annual fee and decent online shopping rewards."", ""warnings"": ""Grocery and dining rewards are lower compared to other cards.""}
+}"
+P0203,few_shot,1,CC015|CC016|CC012,"CC015 - High online shopping cashback rate (1.0%) and low annual fee, matching the user's heavy online shopping spend and low fee preference.
+CC016 - Balanced cashback rates across various categories, including online shopping, and no annual fee, aligning with the user's online-focused spending style and low fee preference.
+CC012 - High online shopping cashback rate (4.0%) and no annual fee, complementing the user's heavy online shopping spend and online shopping rewards goal."
+P0203,few_shot,2,CC015|CC016|CC012,"CC015 - High online shopping reward rate (1.0%) and low annual fee, matching the online_shopper profile and low fee preference.
+CC016 - High online shopping reward rate (3.0%) and low annual fee, aligning with the online_shopper profile and low fee preference.
+CC012 - High online shopping reward rate (4.0%) and low annual fee, complementing the online_shopper profile and low fee preference."
+P0203,few_shot,3,CC015|CC016|CC017,"CC015 - High online shopping reward rate (1.0%) and low fee, matching the online_shopper profile and low fee preference.
+CC016 - Balanced cashback rates across categories, including a high online shopping rate (3.0%), aligning with the online_shopper goal.
+CC017 - Low fee and decent cashback rates on groceries and dining, suitable for a low-income online_shopper."
+P0194,zero_shot,1,CC016|CC015|CC012,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it a great fit for the user's online-focused spending style and goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 4.0% on online shopping, which aligns with the user's preferred reward type and spending habits.
+CC012 - Offers a high cashback rate of 4.0% on online shopping, making it a suitable choice for the user's online-focused spending style and goal of online shopping rewards."
+P0194,zero_shot,2,CC016|CC015|CC017,"CC016 - Offers a high cashback rate of 3.0% on online shopping, making it suitable for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5.0% on groceries and 4.0% on online shopping, aligning with the user's spending habits and low annual fee preference.
+CC017 - Offers a high cashback rate of 2.0% on dining and 1.0% on groceries, matching the user's spending style and low annual fee preference."
+P0194,zero_shot,3,CC016|CC015|CC011,"CC016 - Offers a high cashback rate of 3% on online shopping, making it a suitable choice for the user's goal of online shopping rewards.
+CC015 - Provides a high cashback rate of 5% on groceries, which aligns with the user's monthly grocery spend, and a low annual fee.
+CC011 - Although not the highest cashback rate, it has a low annual fee and is suitable for the user's low-cost preference, given its lack of fees."
+P0194,structured,1,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High online shopping rewards and low annual fee."", ""warnings"": ""High fuel rewards may not be relevant to this user.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced rewards across various categories and low annual fee."", ""warnings"": ""May not offer the highest online shopping rewards.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""Low annual fee and decent online shopping rewards."", ""warnings"": ""Grocery and dining rewards are lower compared to other options.""}
+}"
+P0194,structured,2,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rates on online shopping and other categories, with a low annual fee."", ""warnings"": ""High cashback rates may lead to overspending.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including online shopping, with a low annual fee."", ""warnings"": ""Cashback rates are not as high as some other cards.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""Competitive cashback rates on groceries and dining, with a low annual fee."", ""warnings"": ""Cashback rates on online shopping are lower than some other cards.""}
+}"
+P0194,structured,3,CC015|CC016|CC012,"{
+  ""rank_1"": {""card_id"": ""CC015"", ""card_name"": ""MBNA Everyday Plus Credit Card"", ""reason"": ""High cashback rates on online shopping and other categories, low annual fee."", ""warnings"": ""High cashback rates may not be sustainable in the long term.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""Balanced cashback rates across various categories, including online shopping, and low annual fee."", ""warnings"": ""Cashback rates may not be as high as some other cards.""},
+  ""rank_3"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""High cashback rate on online shopping and other categories, low annual fee."", ""warnings"": ""Annual fee is slightly higher than some other cards in the top 3.""}
+}"
+P0194,few_shot,1,CC015|CC016|CC012,"CC015 - High online shopping cashback rate (1.0%) and low fee, matching the user's online shopping focus and low fee preference.
+CC016 - High online shopping cashback rate (3.0%) and low fee, aligning with the user's online shopping goals and low fee preference.
+CC012 - High online shopping cashback rate (4.0%) and low fee, complementing the user's heavy online shopping spend and low fee preference."
+P0194,few_shot,2,CC016|CC015|CC017,"CC016 - High cashback rate on online shopping (3%) and low annual fee, matching the user's online shopping focus and low fee preference.
+CC015 - High cashback rate on online shopping (1%) and low annual fee, complementing the user's online shopping habits.
+CC017 - No annual fee and cashback on online shopping (0.5%), designed for low-cost, online-focused spenders."
+P0194,few_shot,3,CC015|CC016|CC017,"CC015 - High online shopping reward rate (1.0%) and low fee, matching the user's online shopping focus and low fee preference.
+CC016 - Balanced cashback rates across various categories, including online shopping, and no fee, aligning with the user's needs.
+CC017 - Low fee and decent cashback rates on groceries and dining, complementing the user's spending habits and low fee preference."
+P0034,zero_shot,1,CC016|CC015|CC017,"CC016 - This card offers a high cashback rate on groceries (3.0%) and other spend categories, making it suitable for a student with a frugal spending style.
+CC015 - With a high cashback rate on groceries (5.0%) and other spend categories, this card is ideal for a student with a low income and a preference for cashback rewards.
+CC017 - This card offers a moderate cashback rate on groceries (1.0%) and dining (2.0%), making it a suitable choice for a student with a low income and a preference for cashback rewards."
+P0034,zero_shot,2,CC016|CC017|CC015,"CC016 - Offers a low annual fee and a high cashback rate on groceries, fuel, and online shopping, making it suitable for the user's frugal spending style and low annual fee preference.
+CC017 - Provides a low annual fee and a decent cashback rate on groceries and dining, aligning with the user's low annual fee preference and spending habits.
+CC015 - Offers a high cashback rate on groceries, fuel, and dining, making it a good fit for the user's spending style and preferred reward type, despite having a higher annual fee than the other two recommended cards."
+P0034,zero_shot,3,CC016|CC017|CC015,"CC016 - Offers a low annual fee and a high cashback rate of 3.0% on groceries, making it suitable for the user's frugal spending style and low annual fee preference.
+CC017 - Provides a low annual fee and a decent cashback rate of 2.0% on dining, aligning with the user's spending habits and low annual fee preference.
+CC015 - Offers a low annual fee and a high cashback rate of 5.0% on groceries, making it a good fit for the user's frugal spending style and low annual fee preference."
+P0034,structured,1,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""This card offers a high cashback rate on groceries, fuel, dining, travel, and online shopping, making it suitable for your spending habits."", ""warnings"": ""The annual fee is not specified, but it is generally considered to be a low-fee card.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""This card offers a good balance of cashback rates across various categories, including groceries, fuel, dining, travel, and online shopping."", ""warnings"": ""The annual fee is not specified, but it is generally considered to be a low-fee card.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""This card offers a decent cashback rate on groceries, dining, and other categories, making it a suitable option for your spending habits."", ""warnings"": ""The annual fee is not specified, but it is generally considered to be a low-fee card.""}
+}"
+P0034,structured,2,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""This card offers a high cashback rate on groceries and travel, which aligns with your spending habits, and has a low annual fee."", ""warnings"": ""Be aware that this card has a high cashback rate on fuel, which may not be relevant to your spending habits.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""This card offers a high cashback rate on groceries, fuel, and online shopping, which aligns with your spending habits, and has a low annual fee."", ""warnings"": ""Be aware that this card has a high cashback rate on travel, which may not be relevant to your spending habits.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""This card offers a moderate cashback rate on groceries and dining, which aligns with your spending habits, and has a low annual fee."", ""warnings"": ""Be aware that this card has a low cashback rate on online shopping, which may not be relevant to your spending habits.""}
+}"
+P0034,structured,3,CC012|CC017|CC016,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""This card offers a good balance of cashback rates across various categories, including grocery, fuel, and online shopping, making it suitable for a student with a frugal spending style."", ""warnings"": ""Annual fee is not specified, but it is generally considered to be low.""},
+  ""rank_2"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""This card offers a decent cashback rate on groceries and dining, which aligns with the user's spending habits, and has a low annual fee."", ""warnings"": ""The cashback rate on groceries is relatively low compared to other cards.""},
+  ""rank_3"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""This card offers a good cashback rate on groceries and online shopping, making it suitable for a student with a frugal spending style, and has a low annual fee."", ""warnings"": ""The cashback rate on groceries is not as high as some other cards, but it is still a good option.""}
+}"
+P0034,few_shot,1,CC019|CC011|CC017,"CC019 - No annual fee, simple entry-level card suited to a low, irregular spender, matching the student_low_spend profile.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal to build credit.
+CC017 - No annual fee and cashback rewards on groceries and dining, suitable for a frugal student with low spend."
+P0034,few_shot,2,CC019|CC011|CC017,"CC019 - No annual fee, simple entry-level card suited to a low, irregular spender, matching the student_low_spend profile.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal to build credit.
+CC017 - Low-fee cashback card with rewards on groceries and dining, aligning with the user's spending habits and cashback preference."
+P0034,few_shot,3,CC011|CC004|CC017,"CC011 - Student-focused card with no fee, matching the low-income/student profile and goal of building credit.
+CC004 - No annual fee and no rewards complexity, designed specifically for building credit history.
+CC017 - No annual fee and a cashback rate of 1% on grocery spend, suitable for a low-income/student with some dining spend."
+P0037,zero_shot,1,CC016|CC015|CC017,"CC016 - This card fits the user's profile due to its low annual fee and high cashback rates across various categories, including grocery, fuel, dining, travel, and online shopping.
+CC015 - This card is suitable for the user as it offers a low annual fee and high cashback rates on grocery, fuel, dining, travel, and online shopping, catering to their spending style and goals.
+CC017 - This card matches the user's profile with its low annual fee and competitive cashback rates on grocery, dining, and other categories, making it a suitable choice for their spending habits."
+P0037,zero_shot,2,CC015|CC011|CC017,"CC015 - This card fits the user due to its high cashback rate on groceries (5.0%) and online shopping (1.0%), aligning with their spending habits.
+CC011 - This card is recommended as it has no annual fee, which aligns with the user's preference for a low annual fee.
+CC017 - This card is suitable for the user due to its cashback rewards and low annual fee of £0, making it a good fit for their spending style and financial situation."
+P0037,zero_shot,3,CC016|CC015|CC017,"CC016 - This card fits the user's spending habits due to its high cashback rates on various categories, including grocery, fuel, dining, travel, and online shopping.
+CC015 - This card suits the user's frugal spending style and low-income profile with its high cashback rates on grocery, fuel, dining, travel, and online shopping.
+CC017 - This card matches the user's low annual fee preference and offers a decent cashback rate on grocery and dining, making it suitable for a student or recent school leaver."
+P0037,structured,1,CC011|CC017|CC003,"{
+  ""rank_1"": {""card_id"": ""CC011"", ""card_name"": ""HSBC Student Credit Card"", ""reason"": ""Low annual fee and suitable for students with low income."", ""warnings"": ""No rewards or cashback rates specified.""},
+  ""rank_2"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""Low annual fee and offers cashback on groceries and dining."", ""warnings"": ""Limited cashback rates compared to other cards.""},
+  ""rank_3"": {""card_id"": ""CC003"", ""card_name"": ""Barclaycard Rewards"", ""reason"": ""Low annual fee and offers cashback on groceries and online shopping."", ""warnings"": ""Limited cashback rates on base spend.""}
+}"
+P0037,structured,2,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""This card offers a high cashback rate on groceries and travel, which aligns with the user's spending habits."", ""warnings"": ""The annual fee is not specified, but it is likely to be low given the card's features.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""This card offers a high cashback rate on groceries, fuel, and online shopping, which aligns with the user's spending habits."", ""warnings"": ""The card has a low annual fee, but the user's income may not be sufficient to justify the card's features.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""This card offers a moderate cashback rate on groceries and dining, which aligns with the user's spending habits."", ""warnings"": ""The card has a low annual fee, but the user's income may not be sufficient to justify the card's features.""}
+}"
+P0037,structured,3,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""This card offers a high cashback rate on groceries, fuel, dining, travel, and online shopping, making it suitable for your spending habits."", ""warnings"": ""Annual fee is not mentioned in the catalogue, but it's usually around £0.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""This card offers a good balance of cashback rates across various categories, including groceries, fuel, dining, travel, and online shopping."", ""warnings"": ""Annual fee is not mentioned in the catalogue, but it's usually around £0.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""This card offers a decent cashback rate on groceries, dining, and other categories, making it a good option for your spending habits."", ""warnings"": ""Annual fee is not mentioned in the catalogue, but it's usually around £0.""}
+}"
+P0037,few_shot,1,CC019|CC011|CC017,"CC019 - No annual fee and no rewards complexity, designed specifically for building credit history, matching the student_low_spend profile and build_credit goal.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and student_low_spend type.
+CC017 - No annual fee and a low cashback rate on groceries and dining, suited to a low, irregular spender with a frugal spending style."
+P0037,few_shot,2,CC011|CC004|CC005,"CC011 - Student-focused card with no fee, matching the low-income/student profile and goal to build credit.
+CC004 - No annual fee and no rewards complexity, designed specifically for building credit history.
+CC005 - No annual fee, simple entry-level card suited to a low, irregular spender."
+P0037,few_shot,3,CC019|CC011|CC017,"CC019 - No annual fee and no rewards complexity, designed specifically for building credit history and low-income spenders.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal of building credit.
+CC017 - Low annual fee and cashback rewards on groceries and dining, suitable for a student with a frugal spending style."
+P0005,zero_shot,1,CC015|CC016|CC017,"CC015 - This card fits the user's profile due to its low annual fee and high cashback rate on grocery and online shopping, which aligns with the user's spending habits.
+CC016 - This card is suitable for the user as it offers a low annual fee and a high cashback rate on various categories, including grocery, fuel, and online shopping, which matches the user's spending style.
+CC017 - This card is recommended to the user due to its low annual fee and competitive cashback rates on grocery and dining, which align with the user's spending habits and goals."
+P0005,zero_shot,2,CC016|CC015|CC017,"CC016 - This card fits the user's profile due to its low annual fee and high cashback rates on various categories, including grocery, fuel, dining, travel, and online shopping.
+CC015 - This card suits the user's spending habits with its low annual fee and high cashback rates on grocery, fuel, dining, travel, and online shopping, making it ideal for a frugal student.
+CC017 - This card is a suitable option for the user due to its low annual fee and decent cashback rates on grocery, dining, and other categories, aligning with their preferred reward type and spending style."
+P0005,zero_shot,3,CC016|CC015|CC017,"CC016 - This card fits the user's profile due to its low annual fee and high cashback rates on various categories, including grocery, fuel, and online shopping.
+CC015 - This card is suitable for the user because it offers a low annual fee and high cashback rates on grocery, fuel, dining, and online shopping, catering to their frugal spending style.
+CC017 - This card matches the user's profile as it has a low annual fee and offers decent cashback rates on grocery and dining, aligning with their spending habits and goals."
+P0005,structured,1,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""This card offers a high cashback rate on groceries, fuel, dining, travel, and online shopping, which aligns with your spending habits."", ""warnings"": ""Annual fee is not specified, but it's likely to be low given the card's features.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""This card offers a high cashback rate on groceries, fuel, dining, travel, and online shopping, making it a good fit for your spending style."", ""warnings"": ""Annual fee is not specified, but it's likely to be low given the card's features.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""This card offers a moderate cashback rate on groceries, dining, and online shopping, which aligns with your spending habits."", ""warnings"": ""Annual fee is not specified, but it's likely to be low given the card's features.""}
+}"
+P0005,structured,2,CC012|CC016|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""This card offers a high cashback rate on groceries, fuel, and travel, which matches the user's spending habits."", ""warnings"": ""Annual fee is not specified, but it's likely to be low.""},
+  ""rank_2"": {""card_id"": ""CC016"", ""card_name"": ""Santander All in One Credit Card"", ""reason"": ""This card offers a high cashback rate on groceries, fuel, and online shopping, which matches the user's spending habits."", ""warnings"": ""Annual fee is not specified, but it's likely to be low.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""This card offers a moderate cashback rate on groceries and dining, which matches the user's spending habits."", ""warnings"": ""Annual fee is not specified, but it's likely to be low.""}
+}"
+P0005,structured,3,CC012|CC006|CC017,"{
+  ""rank_1"": {""card_id"": ""CC012"", ""card_name"": ""NatWest Reward Credit Card"", ""reason"": ""Offers a good balance of cashback rates across various categories, including groceries, dining, and online shopping, making it suitable for your spending habits."", ""warnings"": ""Has a relatively high cashback rate for fuel, which may not be beneficial for you since you don't spend much on fuel.""},
+  ""rank_2"": {""card_id"": ""CC006"", ""card_name"": ""Virgin Money Cashback Credit Card"", ""reason"": ""Provides a high cashback rate on groceries, which aligns with your regular grocery spending, and has a low annual fee."", ""warnings"": ""Has a relatively low cashback rate on other categories, which may not be beneficial for your overall spending habits.""},
+  ""rank_3"": {""card_id"": ""CC017"", ""card_name"": ""HSBC Cashback Credit Card"", ""reason"": ""Offers a low annual fee and a decent cashback rate on groceries and dining, making it a suitable option for your spending habits and budget."", ""warnings"": ""Has a relatively low cashback rate on online shopping, which may not be beneficial for your online spending habits.""}
+}"
+P0005,few_shot,1,CC019|CC011|CC017,"CC019 - No annual fee and no rewards complexity, designed specifically for building credit history and low-income spenders.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and goal to build credit.
+CC017 - Low fee and cashback rewards on groceries and dining, suitable for a student with a frugal spending style."
+P0005,few_shot,2,CC019|CC011|CC004,"CC019 - No annual fee, student-focused card with no rewards complexity, matching the student_low_spend profile and low annual fee preference.
+CC011 - Student-focused card with no fee, matching the student_low_spend profile and low-income/no-vehicle profile.
+CC004 - No annual fee and no rewards complexity, designed specifically for building credit history, aligning with the build_credit goal."
+P0005,few_shot,3,CC019|CC011|CC017,"CC019 - No annual fee and no rewards complexity, designed specifically for building credit history and students.
+CC011 - Student-focused card with no fee, matching the low-income/no-vehicle profile and building credit goal.
+CC017 - No annual fee, simple entry-level card suited to a low, irregular spender with a cashback reward."
+P0110,zero_shot,1,CC018|CC008|CC013,"CC018 - Offers a high annual fee, which aligns with the user's preference, and a high travel reward rate of 5%.
+CC008 - Provides a high annual fee, matching the user's preference, and a travel reward rate of 1.0%, which is suitable for a frequent traveller.
+CC013 - Offers a high travel reward rate of 2.0%, aligning with the user's goal of earning travel points and spending style of being travel-focused."
+P0110,zero_shot,2,CC018|CC008|CC013,"CC018 - The Lloyds Cashback Credit Card is the best match due to its high annual fee preference and high travel reward rate of 5%.
+CC008 - The American Express Preferred Rewards Gold is a close second due to its high annual fee preference and high reward rates for travel, grocery, and dining.
+CC013 - The Halifax World Elite Mastercard is a good third option due to its high travel reward rate of 2% and its ability to cater to the user's travel-focused spending style."
+P0110,zero_shot,3,CC018|CC008|CC013,"CC018 - This card offers a high annual fee, which aligns with the user's preference, and a high travel reward rate of 5%, making it suitable for frequent travellers.
+CC008 - With a high annual fee of £125, this card offers a high travel reward rate of 1.0% and a high grocery reward rate of 2.0%, which matches the user's spending habits and goals.
+CC013 - This card offers a high travel reward rate of 2.0%, which aligns with the user's goal of earning travel points and spending style of travel-focused."
+P0110,structured,1,CC007|CC013|CC008,"{
+  ""rank_1"": {""card_id"": ""CC007"", ""card_name"": ""British Airways American Express"", ""reason"": ""High travel interest and frequent traveller profile make this card ideal for earning travel points."", ""warnings"": ""Annual fee is not specified, but it's likely to be high.""},
+  ""rank_2"": {""card_id"": ""CC013"", ""card_name"": ""Halifax World Elite Mastercard"", ""reason"": ""High travel interest and frequent traveller profile make this card ideal for earning travel points, with a competitive rate of 2.0% on travel."", ""warnings"": ""Annual fee is not specified, but it's likely to be high.""},
+  ""rank_3"": {""card_id"": ""CC008"", ""card_name"": ""American Express Preferred Rewards Gold"", ""reason"": ""High travel interest and frequent traveller profile make this card ideal for earning travel points, with a competitive rate of 1.0% on travel and lounge access."", ""warnings"": ""Annual fee is high at £125.""}
+}"
+P0110,structured,2,CC007|CC013|CC008,"{
+  ""rank_1"": {""card_id"": ""CC007"", ""card_name"": ""British Airways American Express"", ""reason"": ""Earns 1.5% travel points, ideal for frequent travellers."", ""warnings"": ""Foreign transaction fee applies for non-UK transactions.""},
+  ""rank_2"": {""card_id"": ""CC013"", ""card_name"": ""Halifax World Elite Mastercard"", ""reason"": ""Earns 2.0% travel points, suitable for those who value travel rewards."", ""warnings"": ""No specific rewards for other spending categories.""},
+  ""rank_3"": {""card_id"": ""CC008"", ""card_name"": ""American Express Preferred Rewards Gold"", ""reason"": ""Earns points on various categories, including travel, and offers lounge access."", ""warnings"": ""Annual fee is high (£125), and foreign transaction fee applies.""}
+}"
+P0110,structured,3,CC007|CC013|CC008,"{
+  ""rank_1"": {""card_id"": ""CC007"", ""card_name"": ""British Airways American Express"", ""reason"": ""Earns 1.5% travel points, ideal for frequent travellers like yourself."", ""warnings"": ""Annual fee is not mentioned in the catalogue, but it's usually around £195.""},
+  ""rank_2"": {""card_id"": ""CC013"", ""card_name"": ""Halifax World Elite Mastercard"", ""reason"": ""Earns 2.0% travel points, suitable for your travel-focused spending style."", ""warnings"": ""No information about annual fee is available.""},
+  ""rank_3"": {""card_id"": ""CC008"", ""card_name"": ""American Express Preferred Rewards Gold"", ""reason"": ""Earns points on grocery, dining, travel, and online shopping, and offers lounge access."", ""warnings"": ""Annual fee is £125, which may be higher than your preferred high fee.""}
+}"
+P0110,few_shot,1,CC013|CC008|CC007,"CC013 - Travel-focused points card with 2 points per £1 on travel, matching the high travel spend and travel points preference.
+CC008 - High annual fee (£125) but offers 1 point per £1 on travel and points transfer to airlines, aligning with the high travel spend and points preference.
+CC007 - Earn Avios on BA spend directly rewards frequent flying, aligned with the earn_travel_points goal and traveller_frequent profile."
+P0110,few_shot,2,CC008|CC013|CC007,"CC008 - Highest travel reward rate (1 point per £1 on travel) and points transfer to airlines, matching the high travel spend and points preference.
+CC013 - Travel-focused points card with free travel insurance, complementing heavy travel spend.
+CC007 - Avios earned on BA spend directly rewards frequent flying, aligned with travel_rewards goal."
+P0110,few_shot,3,CC013|CC008|CC007,"CC013 - Travel-focused points card with 2 points per £1 on travel, matching the frequent traveller profile and travel_rewards goal.
+CC008 - High-end points card with 1 point per £1 on travel and points transfer to airlines, complementing heavy travel spend and high-income profile.
+CC007 - Avios earned on BA spend directly rewards frequent flying, aligned with travel_rewards goal and traveller_frequent profile."
+P0113,zero_shot,1,CC018|CC008|CC013,"CC018 - Offers a high annual fee, which aligns with the user's preference, and a high travel reward rate of 5.0%.
+CC008 - Provides a high annual fee, matching the user's preference, and a high travel reward rate of 1.0% in addition to other high reward rates.
+CC013 - Offers a high travel reward rate of 2.0%, aligning with the user's goal of earning travel points and their high travel interest."
+P0113,zero_shot,2,CC018|CC008|CC013,"CC018 - Offers a high annual fee of £30, which aligns with the user's preference, and a high travel reward rate of 5.0%.
+CC008 - Provides a high annual fee of £125, which matches the user's preference, and a high travel reward rate of 1.0% with the American Express Preferred Rewards Gold card.
+CC013 - Offers a high travel reward rate of 2.0% with the Halifax World Elite Mastercard, which aligns with the user's goal of earning travel points."
+P0113,zero_shot,3,CC018|CC013|CC008,"CC018 - Offers a high annual fee, which aligns with the user's preference, and a high travel reward rate of 5.0%.
+CC013 - Provides a high travel reward rate of 2.0% and a low annual fee, making it suitable for the user's goal of earning travel points.
+CC008 - Offers a high annual fee and a high reward rate for travel, grocery, and dining, which aligns with the user's spending habits and goal."
+P0113,structured,1,CC008|CC013|CC007,"{
+  ""rank_1"": {""card_id"": ""CC008"", ""card_name"": ""American Express Preferred Rewards Gold"", ""reason"": ""High annual fee but offers high travel rewards and lounge access, matching your traveller frequent profile and goal to earn travel points."", ""warnings"": ""High annual fee of £125""},
+  ""rank_2"": {""card_id"": ""CC013"", ""card_name"": ""Halifax World Elite Mastercard"", ""reason"": ""High travel rewards rate of 2% on travel purchases, matching your traveller frequent profile and goal to earn travel points."", ""warnings"": ""No specific rewards for dining or online shopping""},
+  ""rank_3"": {""card_id"": ""CC007"", ""card_name"": ""British Airways American Express"", ""reason"": ""High travel rewards rate of 1.5% on travel purchases, matching your traveller frequent profile and goal to earn travel points."", ""warnings"": ""No rewards for dining or online shopping""}
+}"
+P0113,structured,2,CC007|CC013|CC018,"{
+  ""rank_1"": {""card_id"": ""CC007"", ""card_name"": ""British Airways American Express"", ""reason"": ""Earns 1.5% on travel, matching your goal of earning travel points."", ""warnings"": ""Has a relatively low annual fee of £0.""},
+  ""rank_2"": {""card_id"": ""CC013"", ""card_name"": ""Halifax World Elite Mastercard"", ""reason"": ""Earns 2.0% on travel, aligning with your travel-focused spending style and goal."", ""warnings"": ""Annual fee preference is high, but this card has a £0 fee.""},
+  ""rank_3"": {""card_id"": ""CC018"", ""card_name"": ""Lloyds Cashback Credit Card"", ""reason"": ""Earns 5.0% on travel, meeting your goal of earning travel points, but has a higher annual fee of £30."", ""warnings"": ""Has a higher annual fee than your preferred high fee, but offers a high cashback rate on travel.""}
+}"
+P0113,structured,3,CC007|CC013|CC008,"{
+  ""rank_1"": {""card_id"": ""CC007"", ""card_name"": ""British Airways American Express"", ""reason"": ""Earns 1.5% travel points, suitable for frequent traveller with high travel interest."", ""warnings"": ""Annual fee is not mentioned in the catalogue, but it's expected to be high.""},
+  ""rank_2"": {""card_id"": ""CC013"", ""card_name"": ""Halifax World Elite Mastercard"", ""reason"": ""Earns 2.0% travel points, suitable for frequent traveller with high travel interest."", ""warnings"": ""Annual fee is not mentioned in the catalogue, but it's expected to be high.""},
+  ""rank_3"": {""card_id"": ""CC008"", ""card_name"": ""American Express Preferred Rewards Gold"", ""reason"": ""Earns points on grocery, dining, travel and online shopping, suitable for traveller with high travel interest."", ""warnings"": ""Annual fee is £125, which may be high for some users.""}
+}"
+P0113,few_shot,1,CC013|CC008|CC007,"CC013 - Travel-focused points card with 2 points per £1 on travel, directly rewarding frequent travel spend.
+CC008 - High annual fee (£125) but highest travel reward rate (1 point per £1 on travel) and points transfer to airlines, matching the high travel spend and points preference.
+CC007 - Avios earned on BA spend directly rewards frequent flying, aligned with travel_rewards goal."
+P0113,few_shot,2,CC013|CC008|CC007,"CC013 - Travel-focused points card with 2 points per £1 on travel, matching the high travel spend and travel points preference.
+CC008 - High annual fee but highest travel reward rate (1 point per £1 on travel) and points transfer to airlines, matching the high travel spend and points preference.
+CC007 - Avios earned on BA spend directly rewards frequent flying, aligned with travel_rewards goal."
+P0113,few_shot,3,CC013|CC008|CC007,"CC013 - Travel-focused points card with a high travel reward rate (2 points per £1 on travel), matching the frequent traveller profile and travel_rewards goal.
+CC008 - High annual fee but highest travel reward rate (1 point per £1 on travel) and points transfer to airlines, matching the high travel spend and points preference.
+CC007 - Avios earned on BA spend directly rewards frequent flying, aligned with travel_rewards goal and traveller_frequent profile."
+P0081,zero_shot,1,CC018|CC008|CC013,"CC018 - Offers a high annual fee, which matches the user's preference, and a high travel reward rate of 5.0%.
+CC008 - Provides a high annual fee, which aligns with the user's preference, and a travel reward rate of 1.0%, as well as lounge access.
+CC013 - Offers a high travel reward rate of 2.0% and does not have an annual fee, which is a good fit for the user's goal of earning travel points."
+P0081,zero_shot,2,CC018|CC008|CC013,"CC018 - The Lloyds Cashback Credit Card is the best fit due to its high annual fee preference matching the user's preference and high travel reward rate of 5% that aligns with the user's goal of earning travel points.
+CC008 - The American Express Preferred Rewards Gold is a suitable option due to its high annual fee, which matches the user's preference, and its travel reward rate of 1.0% that caters to the user's frequent travel needs.
+CC013 - The Halifax World Elite Mastercard is a suitable option due to its high travel reward rate of 2.0% that aligns with the user's goal of earning travel points and its zero foreign fee, which is beneficial for frequent international travellers."
+P0081,zero_shot,3,CC018|CC008|CC013,"CC018 - The Lloyds Cashback Credit Card is recommended due to its high annual fee matching the user's preference and high travel reward rate of 5% that aligns with the user's goal of earning travel points.
+CC008 - The American Express Preferred Rewards Gold is recommended due to its high annual fee matching the user's preference and high reward rates for grocery, dining, and travel that cater to the user's spending habits.
+CC013 - The Halifax World Elite Mastercard is recommended due to its high travel reward rate of 2% that aligns with the user's goal of earning travel points and the user's high travel interest."
+P0081,structured,1,CC007|CC013|CC008,"{
+  ""rank_1"": {""card_id"": ""CC007"", ""card_name"": ""British Airways American Express"", ""reason"": ""High travel interest and frequent traveller profile make this card ideal for earning travel points."", ""warnings"": ""Annual fee is not specified, but it is likely to be high.""},
+  ""rank_2"": {""card_id"": ""CC013"", ""card_name"": ""Halifax World Elite Mastercard"", ""reason"": ""High travel interest and frequent traveller profile make this card ideal for earning travel points."", ""warnings"": ""Annual fee is not specified, but it is likely to be high.""},
+  ""rank_3"": {""card_id"": ""CC008"", ""card_name"": ""American Express Preferred Rewards Gold"", ""reason"": ""High travel interest and frequent traveller profile make this card ideal for earning travel points and lounge access."", ""warnings"": ""High annual fee of £125.""}
+}"
+P0081,structured,2,CC008|CC013|CC007,"{
+  ""rank_1"": {""card_id"": ""CC008"", ""card_name"": ""American Express Preferred Rewards Gold"", ""reason"": ""High annual fee but offers 1.5% travel rate and lounge access, matching your traveller profile and goal to earn travel points."", ""warnings"": ""High annual fee of £125""},
+  ""rank_2"": {""card_id"": ""CC013"", ""card_name"": ""Halifax World Elite Mastercard"", ""reason"": ""No annual fee and offers 2.0% travel rate, matching your traveller profile and goal to earn travel points."", ""warnings"": ""Limited information on rewards rates for other categories""},
+  ""rank_3"": {""card_id"": ""CC007"", ""card_name"": ""British Airways American Express"", ""reason"": ""No annual fee and offers 1.5% travel rate, matching your traveller profile and goal to earn travel points."", ""warnings"": ""Limited information on rewards rates for other categories""}
+}"
+P0081,structured,3,CC007|CC013|CC008,"{
+  ""rank_1"": {""card_id"": ""CC007"", ""card_name"": ""British Airways American Express"", ""reason"": ""Earns 1.5% travel points, matching your goal of earning travel points and high travel interest."", ""warnings"": ""High annual fee of £125.""},
+  ""rank_2"": {""card_id"": ""CC013"", ""card_name"": ""Halifax World Elite Mastercard"", ""reason"": ""Earns 2.0% travel points, matching your goal of earning travel points and high travel interest."", ""warnings"": ""No specific rewards for other spending categories.""},
+  ""rank_3"": {""card_id"": ""CC008"", ""card_name"": ""American Express Preferred Rewards Gold"", ""reason"": ""Earns 1.0% travel points and offers lounge access, matching your goal of earning travel points and high travel interest."", ""warnings"": ""High annual fee of £125 and foreign transaction fee of 2.99%.""}
+}"
+P0081,few_shot,1,CC013|CC008|CC007,"CC013 - Travel-focused points card with 2 points per £1 on travel, complementing heavy travel spend and matching the earn_travel_points goal.
+CC008 - High annual fee (£125) but highest travel reward rate (1 point per £1 on travel) and points transfer to airlines, matching the high travel spend and points preference.
+CC007 - Avios earned on BA spend directly rewards frequent flying, aligned with travel_rewards goal and high travel interest."
+P0081,few_shot,2,CC008|CC013|CC007,"CC008 - Highest travel reward rate (1 point per £1 on travel) and points transfer to airlines, matching the high travel spend and points preference.
+CC013 - Travel-focused points card with free travel insurance, complementing heavy travel spend.
+CC007 - Avios earned on BA spend directly rewards frequent flying, aligned with travel_rewards goal."
+P0081,few_shot,3,CC013|CC008|CC007,"CC013 - Travel-focused points card with 2 points per £1 on travel, matching the high travel spend and travel points preference.
+CC008 - High annual fee but highest travel reward rate (1 point per £1 on travel) and points transfer to airlines, matching the high travel spend and points preference.
+CC007 - Avios earned on BA spend directly rewards frequent flying, aligned with travel_rewards goal."
