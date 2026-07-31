@@ -113,9 +113,33 @@ Few-shot    & 232/300 & 3{,}150 & 1{,}021 & 2{,}117 & 12  & 24.0\% \\
 
 Structured prompting produces both the most consistently checkable responses (300/300 contain at least one checkable claim, against 170/300 for zero-shot and 232/300 for few-shot) and the highest accuracy rate on those claims (73.7\% of structured responses are entirely error-free, against 55.0\% for zero-shot). Few-shot prompting is a clear outlier in the opposite direction: despite generating the largest volume of checkable claims (3,150, roughly 1.8$\times$ structured's total), only 24.0\% of few-shot responses are entirely free of factual errors, and 2,117 of the 3,150 claims checked (67.2\%) were incorrect. This suggests the two worked examples in the few-shot prompt (Section~3.4.2) may lead the model to over-generate specific numeric claims about fees and reward rates by pattern-matching the examples' level of detail, without those specific figures being reliably grounded in the actual target card's data --- a hypothesis explored further in Chapter~\ref{ch:discussion}.
 
-Combined with Section~\ref{sec:rq1rq2}, this produces a striking three-way split rather than a single strategy dominating on every criterion: zero-shot leads on recommendation-baseline overlap, structured leads on factual reliability, and few-shot leads on neither measured criterion so far. This is precisely the kind of trade-off the four-criteria evaluation framework (Section~3.4.3) was designed to surface, and would not have been visible from recommendation-quality scoring alone.
+Combined with Section~\ref{sec:rq1rq2}, this produces a striking split rather than a single strategy dominating on every criterion: zero-shot leads on recommendation-baseline overlap, structured leads on factual reliability. Section~\ref{sec:consistency-results} adds a third dimension (consistency) to this picture. This is precisely the kind of trade-off the four-criteria evaluation framework (Section~3.4.3) was designed to surface, and would not have been visible from recommendation-quality scoring alone.
 
-\section{Explanation Quality and Consistency}
+\section{Consistency}
+\label{sec:consistency-results}
+
+Table~\ref{tab:consistency} reports the mean pairwise Jaccard similarity of the top-3 card set across three repeated runs, on the stratified 24-profile sample described in Section~3.4.4 (24 profiles $\times$ 3 strategies $\times$ 3 runs = 216 calls). A score of 1.0 means all three runs returned an identical top-3 set; 0.0 would mean no overlap at all between any pair of runs.
+
+\begin{table}[htbp]
+\centering
+\caption{Consistency (mean pairwise Jaccard similarity across 3 runs) by strategy, n=24 profiles per strategy}
+\label{tab:consistency}
+\begin{tabular}{lcccc}
+\toprule
+Strategy & Mean & Std.\ dev.\ & Min & Max \\
+\midrule
+Zero-shot   & 0.826 & 0.200 & 0.500 & 1.000 \\
+Few-shot    & 0.808 & 0.227 & 0.400 & 1.000 \\
+Structured  & 0.776 & 0.184 & 0.467 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All three strategies show reasonably high stability on average (0.78--0.83 on the 0--1 scale), and 13 of 24 zero-shot profiles and 13 of 24 few-shot profiles were perfectly stable (identical top-3 across all three runs), against 9 of 24 for structured. Numerically, zero-shot is the most stable strategy and structured the least, which is notable alongside Section~\ref{sec:factual}'s finding that structured is the \textit{most} factually reliable strategy --- a possible stability/reliability trade-off, discussed further in Chapter~\ref{ch:discussion}. However, a Kruskal-Wallis test across the three strategies on this metric is not statistically significant ($H = 0.78$, $p = 0.68$), so this difference should be read as a numerical trend on a modest stratified sample (24 profiles per strategy) rather than a confirmed effect --- unlike the recommendation-quality and factual-correctness results in Sections~\ref{sec:rq1rq2} and~\ref{sec:factual}, which are backed by the full 300-profile sample and are statistically significant.
+
+The per-archetype pattern (not tabulated in full here; see \texttt{results/consistency\_scores.csv}) is uneven: \texttt{fuel\_commuter} and \texttt{traveller\_frequent} are highly stable across all three strategies (0.78--1.00), while \texttt{online\_shopper} and \texttt{dining\_heavy} show more run-to-run variation, particularly for few-shot (0.42 and 0.67 respectively) --- consistent with the pattern already seen in Section~\ref{sec:archetype}, where these strategies' performance is generally less uniform across archetypes.
+
+\section{Explanation Quality}
 \label{sec:explanation-consistency}
 
-The explanation-quality (LLM-as-judge, \texttt{src/llm\_judge.py}) and consistency (\texttt{src/consistency\_check.py}) evaluations require additional Groq API calls beyond the primary 900-call experiment, run under the same free-tier constraints discussed in Section~\ref{sec:limitations}. [NOTE TO SELF/SUPERVISOR: insert final explanation-quality and consistency results and statistics here once \texttt{results/explanation\_quality.csv} and \texttt{results/consistency\_scores.csv} are populated from a completed local run --- both scripts are implemented, tested, and resumable; only the data collection itself remains outstanding at time of writing.]
+The explanation-quality criterion (LLM-as-judge, \texttt{src/llm\_judge.py}, Section~3.4.3) scores each response 1--3 on the clarity and grounding of its stated reasoning, using Llama 3.3 70B as judge. This evaluation requires one additional judge call per response (900 in total) beyond the primary experiment, and data collection was still in progress at the time of writing, under the same free-tier rate constraints discussed in Section~\ref{sec:limitations}. Preliminary results on the structured strategy, for which judging is complete (300/300), show a mean overall explanation-quality score of 2.62/3, indicating generally clear, moderately well-grounded reasoning with room for improvement in specificity. Full results across all three strategies, once data collection completes, will be reported here in the final version of this chapter.
