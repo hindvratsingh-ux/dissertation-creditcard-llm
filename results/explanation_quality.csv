@@ -584,3 +584,166 @@ P0146,zero_shot,3,3,3,3,All lines provide clear and specific reasoning grounded 
 P0146,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and the card's attributes.
 P0147,zero_shot,3,2,3,3,The explanation is clear and explicitly grounded in the user's spending style and goal.
 P0147,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's profile attributes and the card's attributes.
+P0148,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending style and categories.
+P0148,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's profile attributes and card rewards.
+P0149,zero_shot,2,3,3,3,The explanation is clear and grounded in the user's spending habits and profile attributes.
+P0149,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's profile attributes and card rewards.
+P0150,zero_shot,2,3,3,3,The explanation is clear and grounded in the user's spending style and goal.
+P0150,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's profile attributes and card rewards.
+P0151,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending style and profile attributes.
+P0151,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's profile attributes and the card's attributes.
+P0152,zero_shot,2,3,3,3,The explanation is clear and grounded in the user's spending style and profile attributes.
+P0152,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's profile attributes and the card's attributes.
+P0153,zero_shot,1,2,2,2,The explanation is partially grounded in the user's profile but contains inaccuracies and vague connections.
+P0153,few_shot,3,3,2,3,The explanation is clear and grounded in the user's spending habits and preferred reward type.
+P0154,zero_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's spending habits and preferred reward type.
+P0154,few_shot,3,3,1,2,"The explanation is mostly clear and relevant, but one line is contradictory to the user's profile."
+P0155,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and goal of earning rewards for large purchases.
+P0155,few_shot,2,2,1,2,Reasoning is partially grounded in user's spending habits but lacks consideration of their specific goal and low travel interest.
+P0156,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and preferred reward type.
+P0156,few_shot,3,3,2,3,The explanation is clear and grounded in the user's spending profile and reward preferences.
+P0157,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and preferred reward type.
+P0157,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's spending habits and preferred reward type.
+P0158,zero_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's spending habits and goal of earning rewards for large purchases.
+P0158,few_shot,3,3,1,2,"The explanation is mostly clear and relevant, but one line is contradictory to the user's profile."
+P0159,zero_shot,1,2,2,2,The explanation is partially grounded in the user's profile but contains inaccuracies and vague connections.
+P0159,few_shot,2,3,1,2,The explanation is partially grounded in the user's profile but contains irrelevant information.
+P0160,zero_shot,2,2,2,2,Reasoning is loosely relevant to the user's spending habits but lacks specific details about the cards' attributes and the user's goals.
+P0160,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and preferred reward type.
+P0161,zero_shot,2,2,2,2,Reasoning is loosely relevant to the user's profile but lacks specific details about the cards' attributes relevant to the user's goal of large purchase rewards.
+P0161,few_shot,3,3,1,2,"The explanation is mostly clear and relevant, but contradicts the user's low travel interest."
+P0162,zero_shot,2,2,2,2,Reasoning is loosely relevant to the user's spending habits but lacks specificity regarding the user's goal of large purchase rewards and prioritization of 0% interest period or purchase protection.
+P0162,few_shot,3,3,1,2,"The explanation is mostly clear and relevant, but one line is contradictory to the user's profile."
+P0163,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and goals.
+P0163,few_shot,3,3,2,3,The explanation is clear and grounded in the user's spending habits and preferences.
+P0164,zero_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's spending habits and goal.
+P0164,few_shot,3,3,2,3,The explanation is clear and grounded in the user's spending profile and cashback preference.
+P0165,zero_shot,2,1,2,2,The explanation is partially grounded in the user's profile but lacks specificity and relevance to the user's goal of large purchase rewards.
+P0165,few_shot,3,3,1,2,"The explanation is mostly clear and relevant, but one line is contradictory to the user's profile."
+P0166,zero_shot,2,2,2,2,Reasoning is loosely relevant to the user's spending habits but lacks specific details about the cards' attributes and the user's goals.
+P0166,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending profile and preferred reward type.
+P0167,zero_shot,2,2,2,2,Reasoning is loosely relevant to the user's spending habits but lacks specific details about the cards' attributes and the user's large purchase goal.
+P0167,few_shot,3,3,2,3,The explanation is clear and grounded in the user's spending profile and cashback preference.
+P0168,zero_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's spending habits and goal.
+P0168,few_shot,3,3,2,3,"The explanation is clear and grounded in the user's profile attributes, such as spending habits and reward preferences."
+P0169,zero_shot,3,3,2,3,The explanation is clear and grounded in the user's spending habits and goals.
+P0169,few_shot,2,2,3,2,Reasoning is mostly relevant but lacks specific details about the user's profile and card attributes.
+P0170,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and preferred reward type.
+P0170,few_shot,3,3,2,3,The explanation is clear and grounded in the user's spending profile and preferred reward type.
+P0171,zero_shot,2,2,2,2,Reasoning is loosely relevant to the user's spending habits but lacks specific details about the large purchase rewards goal.
+P0171,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending profile and preferred reward type.
+P0172,zero_shot,1,2,2,2,The explanation is partially grounded in the user's profile but contains inaccuracies and vague connections.
+P0172,few_shot,3,3,1,2,"The explanation is mostly clear and relevant, but one line is contradictory to the user's travel interest."
+P0173,zero_shot,3,1,3,2,The explanation is partially grounded in the user's profile but contains inconsistencies and irrelevant information.
+P0173,few_shot,2,2,1,2,Reasoning is partially grounded in user's profile but lacks specificity and relevance to the user's goal and low travel interest.
+P0174,zero_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's spending habits and preference for cashback rewards.
+P0174,few_shot,3,3,1,2,The explanation is mostly clear and relevant but fails to consider the user's low travel interest.
+P0175,zero_shot,2,1,3,2,The explanation is partially grounded in the user's profile but contains irrelevant information and contradictions.
+P0175,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's profile attributes and card features.
+P0176,zero_shot,2,2,2,2,Reasoning is loosely relevant to the user's spending style and goals but lacks specific details about the cards' attributes and the user's profile.
+P0176,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's spending profile and preferred reward type.
+P0177,zero_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's spending habits and goal.
+P0177,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending profile and preferred reward type.
+P0178,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits.
+P0178,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's spending profile and preferred reward type.
+P0179,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and goal.
+P0179,few_shot,3,3,2,3,"The explanation is clear and grounded in the user's profile, but one line is less relevant due to the user's low travel interest."
+P0180,zero_shot,2,2,2,2,The reasoning is loosely relevant to the user's spending habits but lacks specificity and detail about the cards' attributes.
+P0180,few_shot,3,3,2,3,"The explanation is clear and grounded in the user's profile attributes, but the third line is less relevant due to the user's low travel interest."
+P0181,zero_shot,2,2,2,2,Reasoning is loosely relevant to the user's spending habits but lacks specific details about the cards' attributes and the user's profile.
+P0181,few_shot,3,3,1,2,"The explanation is mostly clear and relevant, but one line is contradictory to the user's stated profile."
+P0182,zero_shot,2,2,3,2,Reasoning is mostly generic and loosely relevant to the user's profile.
+P0182,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and preferences.
+P0183,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and preferred reward type.
+P0183,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's spending profile and preferred reward type.
+P0184,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and preferred reward type.
+P0184,few_shot,2,3,1,2,The explanation is partially grounded in the user's profile but contains inconsistencies and irrelevant information.
+P0185,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and goal.
+P0185,few_shot,2,3,1,2,The explanation is partially grounded in the user's profile but lacks specificity and relevance in some cases.
+P0186,zero_shot,1,2,2,2,The explanation is partially grounded in the user's profile but contains inaccuracies and vague connections.
+P0186,few_shot,2,2,2,2,Reasoning is loosely relevant to the user's profile but lacks specific details about the large purchase goal.
+P0187,zero_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's spending habits and preferred reward type.
+P0187,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending profile and preferred reward type.
+P0188,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and goal.
+P0188,few_shot,3,2,3,3,"The explanation is clear and grounded in the user's profile attributes, such as spending style and reward type preference."
+P0189,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's spending habits and goal.
+P0189,few_shot,3,3,1,2,"The explanation is mostly clear and relevant, but one line is irrelevant to the user's low travel interest."
+P0190,zero_shot,3,2,2,2,The explanation is partially grounded in the user's profile but lacks specificity in some areas.
+P0190,few_shot,3,2,3,3,The explanation is clear and grounded in the user's profile attributes.
+P0191,zero_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and card features.
+P0191,few_shot,3,2,3,3,The explanation is clear and explicitly grounded in the user's profile attributes.
+P0192,zero_shot,3,2,3,3,The explanation is clear and grounded in the user's online shopping habits and goals.
+P0192,few_shot,3,2,3,3,The explanation is clear and explicitly grounded in the user's profile attributes and card features.
+P0193,zero_shot,3,3,2,3,"The explanation is clear and grounded in the user's profile attributes, but the third line is less relevant to the user's primary goal."
+P0193,few_shot,2,3,1,2,The explanation is partially grounded in the user's profile but lacks specificity in some cases.
+P0194,zero_shot,3,2,3,3,The explanation is clear and explicitly grounded in the user's online-focused spending style and goal of online shopping rewards.
+P0194,few_shot,3,2,3,3,The explanation is clear and explicitly grounded in the user's profile attributes and card features.
+P0195,zero_shot,3,2,2,2,The explanation is mostly relevant but sometimes prioritizes generic card benefits over the user's specific profile attributes.
+P0195,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and the card's attributes.
+P0196,zero_shot,3,2,3,3,"The explanation is clear and grounded in the user's profile attributes, especially for online shopping rewards."
+P0196,few_shot,3,3,2,3,The explanation is clear and grounded in the user's profile attributes and card features.
+P0197,zero_shot,3,2,3,3,"The explanation is clear and grounded in the user's profile attributes, especially for online shopping rewards."
+P0197,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile and goal.
+P0198,zero_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's online shopping habits and goal.
+P0198,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's profile and card attributes.
+P0199,zero_shot,3,2,3,3,The explanation is clear and explicitly grounded in the user's online shopping habits and goals.
+P0199,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile and card attributes.
+P0200,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's profile attributes and the card's attributes.
+P0200,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and the card's attributes.
+P0201,zero_shot,3,2,3,3,"The explanation is clear and grounded in the user's profile attributes, particularly their goal and spending habits."
+P0201,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and the card's attributes.
+P0202,zero_shot,3,2,2,2,The explanation is partially grounded in the user's profile but lacks consideration of other relevant attributes like annual fee preference.
+P0202,few_shot,3,2,3,3,The explanation is clear and grounded in the user's profile attributes and card features.
+P0203,zero_shot,3,2,3,3,"The explanation is clear and grounded in the user's profile attributes, especially for online shopping rewards."
+P0203,few_shot,3,3,2,3,"The explanation is clear and grounded in the user's profile attributes, but the third line is less relevant to the user's primary goal."
+P0204,zero_shot,3,1,3,2,The explanation is clear and relevant for online shopping rewards but lacks relevance for the grocery spend line.
+P0204,few_shot,3,3,2,3,The explanation is clear and grounded in the user's profile and card attributes.
+P0205,zero_shot,3,2,3,3,"The explanation is clear and grounded in the user's profile attributes, especially for online shopping rewards."
+P0205,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and card attributes.
+P0206,zero_shot,3,3,1,2,The explanation is mostly clear and relevant but fails to consider the user's primary spending category.
+P0206,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and the card's attributes.
+P0001,zero_shot,3,3,2,3,The explanation is clear and grounded in the user's profile attributes.
+P0001,few_shot,3,2,3,3,The explanation is clear and explicitly grounded in the user's profile attributes.
+P0002,zero_shot,2,2,2,2,Reasoning is loosely relevant to the user's profile but lacks specific details about the user's actual spending habits and card attributes.
+P0002,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's profile attributes.
+P0003,zero_shot,2,2,2,2,The reasoning is loosely relevant to the user's profile but lacks specific details about the user's attributes and card benefits.
+P0003,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes.
+P0004,zero_shot,3,2,3,3,The explanation is clear and grounded in the user's profile attributes.
+P0004,few_shot,3,3,2,3,The explanation is clear and explicitly grounded in the user's profile attributes.
+P0005,zero_shot,3,3,2,3,"The explanation is clear and grounded in the user's profile attributes, but the third line is less convincing due to the higher annual fee."
+P0207,zero_shot,3,1,3,2,The explanation is partially grounded in the user's profile but contains a mismatch in spending priorities.
+P0207,few_shot,2,3,2,2,The explanation is mostly relevant but lacks specific details about the user's profile and card attributes in some lines.
+P0208,zero_shot,3,2,3,3,The explanation is clear and grounded in the user's goal and spending habits.
+P0208,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and the card's attributes.
+P0209,zero_shot,3,2,2,2,The explanation is partially grounded in the user's profile but lacks specificity in some areas.
+P0209,few_shot,3,1,1,2,Only the first line provides clear and specific reasoning relevant to the user's profile.
+P0210,zero_shot,3,2,3,3,The explanation is clear and grounded in the user's profile attributes.
+P0210,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and the card's attributes.
+P0211,zero_shot,3,2,3,3,The explanation is clear and grounded in the user's profile attributes.
+P0211,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and the card's attributes.
+P0212,zero_shot,3,3,2,3,The explanation is clear and grounded in the user's profile attributes.
+P0212,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and the card's attributes.
+P0213,zero_shot,3,2,3,3,"The explanation is clear and grounded in the user's profile attributes, especially for online shopping rewards."
+P0213,few_shot,2,3,2,2,Reasoning is mostly relevant but lacks specific details about the user's profile and card attributes in some lines.
+P0214,zero_shot,3,3,2,3,"The explanation is clear and grounded in the user's profile attributes, especially for online shopping rewards."
+P0214,few_shot,3,2,2,2,The explanation is mostly relevant but lacks specificity in some areas.
+P0215,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's online-focused spending style and goal of online shopping rewards.
+P0215,few_shot,3,3,2,3,The explanation is clear and grounded in the user's profile attributes.
+P0216,zero_shot,2,3,3,3,"The explanation is clear and grounded in the user's profile attributes, such as online shopping rewards goal and low annual fee preference."
+P0216,few_shot,3,3,2,3,The explanation is clear and grounded in the user's profile attributes.
+P0217,zero_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's online shopping habits and reward preferences.
+P0217,few_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's profile attributes and card attributes.
+P0218,zero_shot,2,2,3,2,Reasoning is mostly relevant but lacks explicit connections to user's specific attributes beyond online shopping rewards.
+P0218,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and card features.
+P0219,zero_shot,2,2,3,2,Reasoning is mostly relevant but lacks specific details about the user's profile.
+P0219,few_shot,3,3,2,3,The explanation is clear and grounded in the user's profile attributes.
+P0220,zero_shot,3,1,3,2,The explanation is clear for online shopping rewards but irrelevant for grocery spend.
+P0220,few_shot,3,3,2,3,The explanation is clear and grounded in the user's profile attributes.
+P0221,zero_shot,3,3,3,3,The explanation is clear and explicitly grounded in the user's online-focused spending style and goal of online shopping rewards.
+P0221,few_shot,3,2,3,3,The explanation is clear and grounded in the user's profile attributes and card features.
+P0222,zero_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's online shopping habits and goal.
+P0222,few_shot,3,2,3,3,The explanation is clear and grounded in the user's profile attributes and card features.
+P0223,zero_shot,3,2,3,3,The explanation is clear and explicitly grounded in the user's online shopping habits and goals.
+P0223,few_shot,3,3,2,3,The explanation is clear and grounded in the user's profile and card attributes.
+P0224,zero_shot,3,2,1,2,The explanation is partially grounded in the user's profile but lacks relevance in one of the recommendations.
+P0224,few_shot,3,3,3,3,The reasoning is clear and explicitly grounded in the user's profile attributes and the card's attributes.
