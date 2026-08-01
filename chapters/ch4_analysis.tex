@@ -113,7 +113,7 @@ Few-shot    & 232/300 & 3{,}150 & 1{,}021 & 2{,}117 & 12  & 24.0\% \\
 
 Structured prompting produces both the most consistently checkable responses (300/300 contain at least one checkable claim, against 170/300 for zero-shot and 232/300 for few-shot) and the highest accuracy rate on those claims (73.7\% of structured responses are entirely error-free, against 55.0\% for zero-shot). Few-shot prompting is a clear outlier in the opposite direction: despite generating the largest volume of checkable claims (3,150, roughly 1.8$\times$ structured's total), only 24.0\% of few-shot responses are entirely free of factual errors, and 2,117 of the 3,150 claims checked (67.2\%) were incorrect. This suggests the two worked examples in the few-shot prompt (Section~3.4.2) may lead the model to over-generate specific numeric claims about fees and reward rates by pattern-matching the examples' level of detail, without those specific figures being reliably grounded in the actual target card's data --- a hypothesis explored further in Chapter~\ref{ch:discussion}.
 
-Combined with Section~\ref{sec:rq1rq2}, this produces a striking split rather than a single strategy dominating on every criterion: zero-shot leads on recommendation-baseline overlap, structured leads on factual reliability. Section~\ref{sec:consistency-results} adds a third dimension (consistency) to this picture. This is precisely the kind of trade-off the four-criteria evaluation framework (Section~3.4.3) was designed to surface, and would not have been visible from recommendation-quality scoring alone.
+Combined with Section~\ref{sec:rq1rq2}, this produces a striking split rather than a single strategy dominating on every criterion: zero-shot leads on recommendation-baseline overlap, structured leads on factual reliability. Sections~\ref{sec:consistency-results} and~\ref{sec:explanation-consistency} add two further dimensions (consistency and explanation quality) to this picture, and --- as shown below --- the pattern becomes sharper still: no strategy leads on more than two of the four criteria, and few-shot in particular scores best on explanation quality while scoring worst on the two criteria that measure whether that explanation is actually accurate. This is precisely the kind of trade-off the four-criteria evaluation framework (Section~3.4.3) was designed to surface, and would not have been visible from recommendation-quality scoring alone.
 
 \section{Consistency}
 \label{sec:consistency-results}
@@ -142,4 +142,23 @@ The per-archetype pattern (not tabulated in full here; see \texttt{results/consi
 \section{Explanation Quality}
 \label{sec:explanation-consistency}
 
-The explanation-quality criterion (LLM-as-judge, \texttt{src/llm\_judge.py}, Section~3.4.3) scores each response 1--3 on the clarity and grounding of its stated reasoning, using Llama 3.3 70B as judge. This evaluation requires one additional judge call per response (900 in total) beyond the primary experiment, and data collection was still in progress at the time of writing, under the same free-tier rate constraints discussed in Section~\ref{sec:limitations}. Preliminary results on the structured strategy, for which judging is complete (300/300), show a mean overall explanation-quality score of 2.62/3, indicating generally clear, moderately well-grounded reasoning with room for improvement in specificity. Full results across all three strategies, once data collection completes, will be reported here in the final version of this chapter.
+The explanation-quality criterion (LLM-as-judge, \texttt{src/llm\_judge.py}, Section~3.4.3) scores each response 1--3 on the clarity and grounding of its stated reasoning, using Llama 3.3 70B as judge --- a distinct, larger model than the one being evaluated, to reduce self-enhancement bias (Zheng et al., 2023). All 900 responses were judged. Table~\ref{tab:explanation-quality} summarises the results.
+
+\begin{table}[htbp]
+\centering
+\caption{Explanation-quality scores (LLM-as-judge, 1--3 scale) by strategy, n=300 per strategy}
+\label{tab:explanation-quality}
+\begin{tabular}{lcccc}
+\toprule
+Strategy & Mean & Std.\ dev.\ & \% scored 3/3 & \% scored $\leq$1 \\
+\midrule
+Few-shot    & 2.907 & 0.291 & 90.7\% & 0.0\% \\
+Zero-shot   & 2.730 & 0.459 & 73.7\% & 0.7\% \\
+Structured  & 2.650 & 0.478 & 65.0\% & 0.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The result here is, on its own, the opposite of the recommendation-quality and factual-correctness findings: \textbf{few-shot prompting produces the highest-rated explanations} (mean 2.907/3, with 90.7\% of responses scoring the maximum), followed by zero-shot (2.730) and structured (2.650). A Kruskal-Wallis test confirms this is statistically significant ($H = 56.60$, $p = 5.1 \times 10^{-13}$), and all three pairwise Wilcoxon comparisons are also significant (zero-shot vs.\ structured $p = 0.016$; zero-shot vs.\ few-shot and structured vs.\ few-shot both $p < 0.0001$).
+
+Read alongside Sections~\ref{sec:rq1rq2} and~\ref{sec:factual}, this produces the sharpest trade-off in the whole study: few-shot prompting writes the most highly-rated, clearest-\textit{sounding} explanations, while simultaneously being the least accurate against the baseline (mean overlap 0.539, Section~\ref{sec:rq1rq2}) and the least factually reliable (only 24.0\% of responses entirely error-free, Section~\ref{sec:factual}). In other words, on this task, a response reading as well-explained is not a reliable signal that it is either accurate or factually correct --- the worked examples in the few-shot prompt appear to teach the model to write in a more confident, detailed, well-structured style, without a corresponding improvement (indeed with a measurable decline) in whether that style is backed by correct facts. This is discussed further in Chapter~\ref{ch:discussion}.
